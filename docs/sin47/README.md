@@ -1,5 +1,9 @@
 # SIN-47 — потребителско дизайн ревю
 
+## Седма ревизия — bold заглавия и подравнени service икони
+
+Всички Manrope заглавия и „Luxury Architects“ вече са weight 700. Официалният CSS за Manrope 500–700 сочи същия локален variable asset; @font-face е актуализиран без синтетичен bold или нов font download. Services групира иконата и заглавието в общ подравнен блок, без вертикалния offset на иконата. Няма нови скрийншоти или визуално ревю от агента.
+
 ## Шеста ревизия — tablet като phone
 
 Центрираната Menu капсула, identity в разгънатия панел, анимацията и избутването на изображението вече са еднакви при всички ширини под 900px. Бутонът Menu/Close има graphite фон с 8% opacity и graphite текст вместо плътно черно. Desktop навигацията е запазена. TypeScript, ESLint и static build минаха. Техническите phone/tablet DOM проверки са в [compact-motion-checks.json](compact-motion-checks.json); няма скрийншоти или визуално ревю от агента.

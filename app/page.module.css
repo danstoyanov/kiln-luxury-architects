@@ -89,7 +89,7 @@
   font-size: var(--step-head);
   line-height: 1.12;
   letter-spacing: -0.03em;
-  font-weight: 500;
+  font-weight: 700;
 }
 .projectWall {
   display: grid;
@@ -134,7 +134,7 @@
 .processList h3,
 .studioNote h3 {
   font-size: clamp(1.5rem, 2.1vw, 2rem);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.025em;
 }
@@ -198,13 +198,17 @@
 }
 .serviceColumns > li {
   display: grid;
-  grid-template-columns: 3rem minmax(0, 4fr) minmax(0, 7fr);
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   gap: var(--grid-gap);
   align-items: start;
   min-width: 0;
 }
-.serviceColumns > li > .sectionIcon {
-  margin-top: 0.375rem;
+.serviceHeading {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  align-items: center;
+  gap: var(--grid-gap);
+  min-width: 0;
 }
 .serviceColumns p {
   max-width: 48ch;
@@ -369,8 +373,8 @@
     grid-template-columns: minmax(0, 1fr);
     gap: 1rem;
   }
-  .serviceColumns > li {
-    grid-template-columns: 2.5rem minmax(0, 4fr) minmax(0, 7fr);
+  .serviceHeading {
+    grid-template-columns: 2.5rem minmax(0, 1fr);
   }
   .processList {
     gap: 2.5rem;
@@ -409,11 +413,15 @@
     height: 2rem;
   }
   .serviceColumns > li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.875rem;
+  }
+  .serviceHeading {
     grid-template-columns: 2rem minmax(0, 1fr);
-    gap: 0.875rem 1rem;
+    gap: 1rem;
   }
   .serviceColumns p {
-    grid-column: 2;
+    margin-left: 3rem;
   }
   .stageHeading {
     flex-direction: row;

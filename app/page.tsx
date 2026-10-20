@@ -228,8 +228,10 @@ export default function HomePage() {
           <ul className={styles.serviceColumns}>
             {services.map((service) => (
               <li key={service.name}>
-                <OutlineIcon name={service.icon} className={styles.sectionIcon} />
-                <h3>{service.name}</h3>
+                <div className={styles.serviceHeading}>
+                  <OutlineIcon name={service.icon} className={styles.sectionIcon} />
+                  <h3>{service.name}</h3>
+                </div>
                 <p>{service.description}</p>
               </li>
             ))}
