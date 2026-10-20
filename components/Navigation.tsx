@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore, type MouseEvent } from "react";
 import styles from "./Navigation.module.css";
 
 const links = [
@@ -32,6 +32,66 @@ export function Navigation() {
   const header = useRef<HTMLElement>(null);
   const navigation = useRef<HTMLElement>(null);
   const focusedControl = useRef<HTMLElement>(null);
+  const pendingTarget = useRef<string | null>(null);
+
+  function closeAndNavigate(event: MouseEvent<HTMLAnchorElement>) {
+    if (
+      !isCompact || !isOpen || event.button !== 0 ||
+      event.metaKey || event.ctrlKey || event.shiftKey || event.altKey
+    ) {
+      setIsOpen(false);
+      return;
+    }
+    const hash = event.currentTarget.hash;
+    if (!document.getElementById(hash.slice(1))) {
+      return;
+    }
+    event.preventDefault();
+    pendingTarget.current = hash;
+    menuButton.current?.focus({ preventScroll: true });
+    setIsOpen(false);
+  }
+
+  useEffect(() => {
+    if (isOpen || !pendingTarget.current) {
+      return;
+    }
+    const hash = pendingTarget.current;
+    pendingTarget.current = null;
+    let cancelled = false;
+    const frame = requestAnimationFrame(async () => {
+      const menu = header.current;
+      if (!menu) {
+        return;
+      }
+      // Wait for the real closing transitions before measuring the destination.
+      menu.getBoundingClientRect();
+      await Promise.allSettled(
+        menu.getAnimations({ subtree: true }).map((animation) => animation.finished),
+      );
+      if (cancelled) {
+        return;
+      }
+      const target = document.getElementById(hash.slice(1));
+      if (!target) {
+        return;
+      }
+      if (window.location.hash !== hash) {
+        window.history.pushState(null, "", hash);
+      }
+      target.focus({ preventScroll: true });
+      target.scrollIntoView({
+        block: "start",
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "instant"
+          : "smooth",
+      });
+    });
+    return () => {
+      cancelled = true;
+      cancelAnimationFrame(frame);
+    };
+  }, [isOpen]);
 
   useEffect(() => {
     const desktop = window.matchMedia("(min-width: 900px)");
@@ -121,7 +181,10 @@ export function Navigation() {
         type="button"
         aria-expanded={isOpen}
         aria-controls="main-navigation"
-        onClick={() => setIsOpen((open) => !open)}
+        onClick={() => {
+          pendingTarget.current = null;
+          setIsOpen((open) => !open);
+        }}
       >
         {isOpen ? "Close" : "Menu"}
       </button>
@@ -137,12 +200,12 @@ export function Navigation() {
           href="#main"
           className={styles.mobileIdentity}
           aria-label="Luxury Architects — KILN home"
-          onClick={() => setIsOpen(false)}
+          onClick={closeAndNavigate}
         >
           Luxury Architects
         </a>
         {links.map((link) => (
-          <a key={link.href} href={link.href} onClick={() => setIsOpen(false)}>
+          <a key={link.href} href={link.href} onClick={closeAndNavigate}>
             {link.label}
           </a>
         ))}

@@ -1,5 +1,9 @@
 # SIN-47 — потребителско дизайн ревю
 
+## Осма ревизия — точна позиция след избор на секция
+
+Phone/tablet anchor навигацията изчаква реалното прибиране на менюто преди скрола. URL fragment и фокусът се прехвърлят към секцията, а heading-ът остава в началото на viewport-а. Desktop продължава да използва native anchors. Няма скрийншоти или визуално ревю от агента. Техническият regression сценарий е `node scripts/check-menu-anchors.mjs`: петте секции на 375/768/1440px, normal/reduced motion, scroll margin, видим heading, focus/hash и стабилна позиция след завършване. [Измервания](menu-anchor-checks.json).
+
 ## Седма ревизия — bold заглавия и подравнени service икони
 
 Всички Manrope заглавия и „Luxury Architects“ вече са weight 700. Официалният CSS за Manrope 500–700 сочи същия локален variable asset; @font-face е актуализиран без синтетичен bold или нов font download. Services групира иконата и заглавието в общ подравнен блок, без вертикалния offset на иконата. Няма нови скрийншоти или визуално ревю от агента.
