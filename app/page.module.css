@@ -1,0 +1,69 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding-inline: var(--page-gutter);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-1) var(--space-3);
+  padding-block: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.wordmark {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.label,
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.label {
+  color: var(--color-muted);
+}
+
+.main {
+  flex: 1;
+  padding-block: clamp(5rem, 14vw, 12rem);
+}
+
+.eyebrow {
+  margin-bottom: var(--space-3);
+  color: var(--color-accent);
+}
+
+.title {
+  max-width: 12ch;
+  font-family: var(--font-heading);
+  font-size: clamp(3.5rem, 7vw, 7rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.description {
+  max-width: 40ch;
+  margin-top: var(--space-4);
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+
+.footer {
+  padding-block: var(--space-3);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.8125rem;
+}
