@@ -1,0 +1,49 @@
+{
+  "github_commit": "0ede8ff846620b6ae9fd99c4fd2410295ff43103",
+  "github_source_tree": "00b6912a6adbaa399dc26922986113115408cd48",
+  "sites_source_commit": "cf82d99ae512a199266696c58b9a73e80c9da38e",
+  "sites_source_tree": "00b6912a6adbaa399dc26922986113115408cd48",
+  "archive_sha256": "7e60be63009777c5149907329a0879156252a23a17f43145cc8b62f41bc4ccc1",
+  "deployment": {
+    "id": "appgdep_6ad7d00e20108191aa041b9d86fbc26a",
+    "project_id": "appgprj_6ad7a66712308191affa1a98c4525761",
+    "title": "KILN Luxury Architects",
+    "version_id": "appgprj_6ad7a66712308191affa1a98c4525761~appgver_fc48c78c86fc81918edd6ed87d9bb510",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://kiln-luxury-architects.stoyanov-dann.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ad7a66712308191affa1a98c4525761",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-20T20:33:53.516491+00:00"
+  },
+  "version": {
+    "id": "appgprj_6ad7a66712308191affa1a98c4525761~appgver_fc48c78c86fc81918edd6ed87d9bb510",
+    "project_id": "appgprj_6ad7a66712308191affa1a98c4525761",
+    "version_number": 1,
+    "source": {
+      "commit_sha": "cf82d99ae512a199266696c58b9a73e80c9da38e"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000ee6c820a934d8f217d3479e7",
+      "content_hash": "sha256:6f8a5e633758603a7db93a6d29cc7b8b4f3376f89d36b1d307bb2a3e93be1780",
+      "size_bytes": 6809600,
+      "file_count": 66
+    },
+    "screenshot_url": null,
+    "deployment_id": "appgdep_6ad7d00e20108191aa041b9d86fbc26a"
+  },
+  "access": {
+    "mode": "custom",
+    "role": "owner",
+    "owner_only": true,
+    "additional_editors": 0,
+    "groups": 0,
+    "external_visitors": 0,
+    "revision": 1
+  },
+  "screenshots_created": false
+}
