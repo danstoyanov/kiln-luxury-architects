@@ -6,6 +6,8 @@ export default defineConfig([
   ...nextVitals,
   ...nextTypeScript,
   globalIgnores([
+    ".agents/skills/**",
+    ".taste-skill/**",
     ".next/**",
     ".next-dev/**",
     "out/**",
