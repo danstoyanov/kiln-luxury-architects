@@ -13,6 +13,7 @@
   --font-editorial: "Manrope", Arial, Helvetica, sans-serif;
   --color-glass: rgb(242 241 237 / 64%);
   --color-glass-edge: rgb(255 255 255 / 55%);
+  --color-menu-control: rgb(40 43 40 / 8%);
   --shadow-glass: 0 8px 32px rgb(25 30 25 / 10%), inset 0 1px 0 rgb(255 255 255 / 75%);
   --page-gutter: 2rem;
   --grid-gap: 1.5rem;

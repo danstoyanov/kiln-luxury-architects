@@ -11,23 +11,23 @@ const links = [
   { href: "#contact", label: "Contact" },
 ];
 
-function subscribePhone(onChange: () => void) {
-  const query = window.matchMedia("(max-width: 599px)");
+function subscribeCompact(onChange: () => void) {
+  const query = window.matchMedia("(max-width: 899px)");
   query.addEventListener("change", onChange);
   return () => query.removeEventListener("change", onChange);
 }
 
-function getPhone() {
-  return window.matchMedia("(max-width: 599px)").matches;
+function getCompact() {
+  return window.matchMedia("(max-width: 899px)").matches;
 }
 
-function getServerPhone() {
+function getServerCompact() {
   return false;
 }
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
-  const isPhone = useSyncExternalStore(subscribePhone, getPhone, getServerPhone);
+  const isCompact = useSyncExternalStore(subscribeCompact, getCompact, getServerCompact);
   const menuButton = useRef<HTMLButtonElement>(null);
   const header = useRef<HTMLElement>(null);
   const navigation = useRef<HTMLElement>(null);
@@ -35,37 +35,27 @@ export function Navigation() {
 
   useEffect(() => {
     const desktop = window.matchMedia("(min-width: 900px)");
-    const phone = window.matchMedia("(max-width: 599px)");
     function closeOnResize() {
       // CSS may hide the control before this media event and move focus to body.
       const activeControl = document.activeElement === document.body
         ? focusedControl.current
         : document.activeElement;
+      const homeLink = header.current?.querySelector<HTMLAnchorElement>("a[aria-label]");
+      const drawerHome = navigation.current?.querySelector("a[aria-label]");
       if (desktop.matches && activeControl === menuButton.current) {
         navigation.current
           ?.querySelector<HTMLAnchorElement>('a[href="#projects"]')
           ?.focus({ preventScroll: true });
-      } else if (!desktop.matches && navigation.current?.contains(activeControl)) {
-        menuButton.current?.focus({ preventScroll: true });
-      }
-      setIsOpen(false);
-    }
-    function closeOnPhoneResize() {
-      const activeControl = document.activeElement === document.body
-        ? focusedControl.current
-        : document.activeElement;
-      const homeLink = header.current?.querySelector("a[aria-label]");
-      // The phone identity lives in the disclosure, so keep focus on a visible control.
-      if (activeControl === homeLink || navigation.current?.contains(activeControl)) {
+      } else if (desktop.matches && activeControl === drawerHome) {
+        homeLink?.focus({ preventScroll: true });
+      } else if (!desktop.matches && (activeControl === homeLink || navigation.current?.contains(activeControl))) {
         menuButton.current?.focus({ preventScroll: true });
       }
       setIsOpen(false);
     }
     desktop.addEventListener("change", closeOnResize);
-    phone.addEventListener("change", closeOnPhoneResize);
     return () => {
       desktop.removeEventListener("change", closeOnResize);
-      phone.removeEventListener("change", closeOnPhoneResize);
     };
   }, []);
 
@@ -135,7 +125,7 @@ export function Navigation() {
       >
         {isOpen ? "Close" : "Menu"}
       </button>
-      <div className={styles.drawer} inert={isPhone && !isOpen}>
+      <div className={styles.drawer} inert={isCompact && !isOpen}>
         <div className={styles.drawerInner}>
           <nav
         ref={navigation}

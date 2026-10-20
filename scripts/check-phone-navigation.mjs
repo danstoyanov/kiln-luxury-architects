@@ -4,9 +4,10 @@ import { Browser, sleep } from "../.agents/skills/design-taste-frontend/scripts/
 const browser = await Browser.launch();
 const results = [];
 try {
+  for (const width of [375, 768]) {
   for (const reducedMotion of [false, true]) {
-    const page = await browser.newPage({ width: 375, height: 812, reducedMotion });
-    await page.goto("http://localhost:3001/?review=5");
+    const page = await browser.newPage({ width, height: 812, reducedMotion });
+    await page.goto("http://localhost:3001/?review=6");
     const measure = () => page.eval(() => {
       const header = document.querySelector("header").getBoundingClientRect();
       const image = document.querySelector("main img").getBoundingClientRect();
@@ -37,9 +38,10 @@ try {
     assert(Math.abs(restored.imageTop - closed.imageTop) < 1);
     if (!reducedMotion) assert(closing.headerHeight > closed.headerHeight && closing.headerHeight < open.headerHeight);
     assert.deepEqual(page.consoleErrors, []);
-    results.push({ reducedMotion, closed, opening, open, closing, restored });
+    results.push({ width, reducedMotion, closed, opening, open, closing, restored });
     await page.close();
   }
-  writeFileSync("docs/sin47/phone-motion-checks.json", JSON.stringify(results, null, 2) + "\n");
-  console.log("PASS: skip hidden, menu expands/collapses, image clears panel and returns, closed links inert, reduced motion. No screenshots or visual review.");
+  }
+  writeFileSync("docs/sin47/compact-motion-checks.json", JSON.stringify(results, null, 2) + "\n");
+  console.log("PASS: phone/tablet menu expands/collapses, image clears panel and returns, closed links inert, reduced motion. No screenshots or visual review.");
 } finally { await browser.close(); }
