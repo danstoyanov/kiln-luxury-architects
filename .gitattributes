@@ -1,1 +1,2 @@
 .agents/skills/design-taste-frontend/** -text
+docs/k08/prompts/*.txt text eol=lf

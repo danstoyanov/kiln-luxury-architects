@@ -1,0 +1,62 @@
+{
+  "issue": "SIN-39",
+  "generated_on": "2026-10-20",
+  "tool": "image_gen.imagegen (built-in)",
+  "transparent_background": false,
+  "input_images": [],
+  "base_commit": "2b4a2784738680d2f1127e2791bbfce956943096",
+  "assets": [
+    {
+      "slot": "hero",
+      "file": "originals/hero.png",
+      "prompt": "prompts/hero.txt",
+      "source_file": "exec-331433f1-6b21-4875-93e1-776592cf69d7.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "bytes": 3468053,
+      "sha256": "df604e63029d6c82d70b4d630697ed33c73810747b19654f46f352f281e5e5e6",
+      "prompt_sha256": "76d37487fc68c3448d3c2938ffac91c757d67d951c5e6c64b765a7818f3f49cf",
+      "postprocessing": "none; byte-for-byte copy of built-in ImageGen output"
+    },
+    {
+      "slot": "courtyard",
+      "file": "originals/courtyard.png",
+      "prompt": "prompts/courtyard.txt",
+      "source_file": "exec-45fb0461-930c-4ab7-8b12-36a12310415c.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "bytes": 3349886,
+      "sha256": "b288776ae6b8b39ee6da5c97fa787271419dd04d18fa874d906a9d84e7ca4474",
+      "prompt_sha256": "10c829aa76fe30d65035ffe44611cd34e32dc797e9532b9c3f0c3c7b231c11f0",
+      "postprocessing": "none; byte-for-byte copy of built-in ImageGen output"
+    },
+    {
+      "slot": "ridge",
+      "file": "originals/ridge.png",
+      "prompt": "prompts/ridge.txt",
+      "source_file": "exec-fbd99b36-a8b8-45fd-a558-23902a3b3efc.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "bytes": 3258046,
+      "sha256": "c345f13ee4bce7c920e55fd4ecfed3ba76c0a90e5313a20d8eda2ce282bf99e2",
+      "prompt_sha256": "0965f2867736b013c5ed7e15c8ab4efb63e7b890ab4aaff18c4a4d871378b458",
+      "postprocessing": "none; byte-for-byte copy of built-in ImageGen output"
+    },
+    {
+      "slot": "woodland",
+      "file": "originals/woodland.png",
+      "prompt": "prompts/woodland.txt",
+      "source_file": "exec-c6467974-8921-4ca8-a705-90f741bbc119.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "bytes": 3818795,
+      "sha256": "d3abb98ee757fb36e7163819cd6a1b431d9e7dfe92474b35d5b4ef8082ef2cd9",
+      "prompt_sha256": "893efdc73f9a9fd5c7b86da052270885369fc3917069e0718f07ed1167ab2e1c",
+      "postprocessing": "none; byte-for-byte copy of built-in ImageGen output"
+    }
+  ]
+}
