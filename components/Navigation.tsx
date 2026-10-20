@@ -20,6 +20,7 @@ export function Navigation() {
 
   useEffect(() => {
     const desktop = window.matchMedia("(min-width: 900px)");
+    const phone = window.matchMedia("(max-width: 599px)");
     function closeOnResize() {
       // CSS may hide the control before this media event and move focus to body.
       const activeControl = document.activeElement === document.body
@@ -27,15 +28,30 @@ export function Navigation() {
         : document.activeElement;
       if (desktop.matches && activeControl === menuButton.current) {
         navigation.current
-          ?.querySelector<HTMLAnchorElement>("a")
+          ?.querySelector<HTMLAnchorElement>('a[href="#projects"]')
           ?.focus({ preventScroll: true });
       } else if (!desktop.matches && navigation.current?.contains(activeControl)) {
         menuButton.current?.focus({ preventScroll: true });
       }
       setIsOpen(false);
     }
+    function closeOnPhoneResize() {
+      const activeControl = document.activeElement === document.body
+        ? focusedControl.current
+        : document.activeElement;
+      const homeLink = header.current?.querySelector("a[aria-label]");
+      // The phone identity lives in the disclosure, so keep focus on a visible control.
+      if (activeControl === homeLink || navigation.current?.contains(activeControl)) {
+        menuButton.current?.focus({ preventScroll: true });
+      }
+      setIsOpen(false);
+    }
     desktop.addEventListener("change", closeOnResize);
-    return () => desktop.removeEventListener("change", closeOnResize);
+    phone.addEventListener("change", closeOnPhoneResize);
+    return () => {
+      desktop.removeEventListener("change", closeOnResize);
+      phone.removeEventListener("change", closeOnPhoneResize);
+    };
   }, []);
 
   useEffect(() => {
@@ -71,7 +87,7 @@ export function Navigation() {
   return (
     <header
       ref={header}
-      className={styles.header}
+      className={styles.header + (isOpen ? " " + styles.expanded : "")}
       onFocusCapture={(event) => {
         if (event.target instanceof HTMLElement) {
           focusedControl.current = event.target;
@@ -109,6 +125,14 @@ export function Navigation() {
         aria-label="Main navigation"
         className={styles.navigation + (isOpen ? " " + styles.open : "")}
       >
+        <a
+          href="#main"
+          className={styles.mobileIdentity}
+          aria-label="Luxury Architects — KILN home"
+          onClick={() => setIsOpen(false)}
+        >
+          Luxury Architects
+        </a>
         {links.map((link) => (
           <a key={link.href} href={link.href} onClick={() => setIsOpen(false)}>
             {link.label}
