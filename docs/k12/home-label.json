@@ -1,0 +1,9 @@
+{
+  "url": "http://localhost:4230/",
+  "ariaLabel": "KILN home",
+  "href": "#main",
+  "outerHTML": "<a href=\"#main\" class=\"Pj2Xoq_identity\" aria-label=\"KILN home\">Luxury Architects</a>",
+  "visibleText": "Luxury Architects",
+  "source": "components/Navigation.tsx:93",
+  "accessibilityTree": "link Description: KILN home, Value: localhost:4230/#main"
+}

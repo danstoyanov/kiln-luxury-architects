@@ -1,0 +1,29 @@
+{
+  "issue": "SIN-43",
+  "assessedCommit": "2046370b302363c52d25198de57ebe931676ebb0",
+  "previousPullRequest": "https://github.com/danstoyanov/kiln-luxury-architects/pull/12",
+  "previousMergedAt": "2026-10-20T15:03:25Z",
+  "target": "app/page.tsx",
+  "preview": "http://localhost:4230",
+  "artifact": "production static out/",
+  "node": "v22.21.0",
+  "npm": "10.9.4",
+  "checks": [
+    "npm ci: passed (5 inherited high development audit records)",
+    "npm run typecheck: passed",
+    "npm run lint: passed",
+    "npm run build: passed"
+  ],
+  "hashes": {
+    "app/page.tsx": "c7c7a08ad1031456b49fc48a4dbfe8d46a1bd462a2d06420116d129c8a3edf04",
+    "app/globals.css": "c091a8b1df74bd55aebbcd67c2bb9da15272dd3974037b5fb7c627412382b091",
+    "app/page.module.css": "9211d73ec1b0fa11fd495e668287a381fa752cea16d67702503e40574d8228c7",
+    "components/Navigation.tsx": "b512210fee8a24761767fec71b2073221f8d640513628b6f420a117dc2c23285",
+    "components/Navigation.module.css": "bbcc69c9d9b6dd9d8c43db51af4fb0a224a541c5b6a294850c0345a8fa412d37",
+    "components/EnquiryForm.tsx": "5132db09cf3b765f8f8b57aa43611acc10dbbd60291efd245ec69ed8c57e9865",
+    "components/EnquiryForm.module.css": "ee412cc4a60de98b571168f2c6e9f731a301366f8ed963f09a6d5a83298724d8",
+    "components/ConceptImage.tsx": "0a09cd62f0a317e2b8fc359cfe5d6265001976e0fb04d82e0b1cd22f3dd8570c",
+    "package-lock.json": "e73cd0153d61793b7d485e37b06674dd6fad926d89beba413efa2d0a39a53038",
+    "out/index.html": "fc5a0e7d9f33e1a1f5fce918fa6eddc83bb5037ca87aff00d31fc882bd81bff6"
+  }
+}
