@@ -41,7 +41,12 @@ export function EnquiryForm() {
 
   useEffect(() => {
     // Wait until the error descriptions exist before moving keyboard focus.
-    focusAfterValidation.current?.focus();
+    const input = focusAfterValidation.current;
+    if (input) {
+      input.focus({ preventScroll: true });
+      // Keep the label, control and error together, without animated scrolling.
+      input.parentElement?.scrollIntoView({ behavior: "instant", block: "nearest" });
+    }
     focusAfterValidation.current = null;
   }, [errors]);
 

@@ -90,7 +90,7 @@ export function Navigation() {
       <a className={styles.skip} href="#main">
         Skip to content
       </a>
-      <a href="#main" className={styles.identity} aria-label="KILN home">
+      <a href="#main" className={styles.identity} aria-label="Luxury Architects — KILN home">
         Luxury Architects
       </a>
       <button

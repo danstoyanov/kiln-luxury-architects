@@ -1,0 +1,511 @@
+{
+  "timestamp": "2026-10-20T15:52:15.914Z",
+  "url": "http://localhost:4240",
+  "sourceCommit": "2193fdba6d28104189490395276bfab11c7e0ea2",
+  "workingTreeDirty": true,
+  "sourceSha256": "db0242cd2b9543f36b5feda4367e55608e18c93857b88f4a637c0b85e129068e",
+  "exportHtmlSha256": "31ebc9ebd96f59eacbe6c54d9932603468319c901f29599957f6df62ca177a69",
+  "results": [
+    {
+      "width": 375,
+      "height": 812,
+      "reducedMotion": false,
+      "home": {
+        "text": "Luxury Architects",
+        "name": "Luxury Architects — KILN home",
+        "href": "#main",
+        "outline": "3px"
+      },
+      "accessibleName": "Luxury Architects — KILN home",
+      "name": {
+        "field": "name",
+        "focused": true,
+        "top": 674.1875,
+        "bottom": 792.6875,
+        "viewportHeight": 812,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 3961
+      },
+      "email": {
+        "field": "email",
+        "focused": true,
+        "top": 675.1875,
+        "bottom": 793.6875,
+        "viewportHeight": 812,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4069
+      },
+      "message": {
+        "field": "message",
+        "focused": true,
+        "top": 601.1875,
+        "bottom": 796.1875,
+        "viewportHeight": 812,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4252
+      }
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "reducedMotion": true,
+      "home": {
+        "text": "Luxury Architects",
+        "name": "Luxury Architects — KILN home",
+        "href": "#main",
+        "outline": "3px"
+      },
+      "accessibleName": "Luxury Architects — KILN home",
+      "name": {
+        "field": "name",
+        "focused": true,
+        "top": 16.1875,
+        "bottom": 134.6875,
+        "viewportHeight": 812,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4619
+      },
+      "email": {
+        "field": "email",
+        "focused": true,
+        "top": 125.1875,
+        "bottom": 243.6875,
+        "viewportHeight": 812,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4619
+      },
+      "message": {
+        "field": "message",
+        "focused": true,
+        "top": 234.1875,
+        "bottom": 429.1875,
+        "viewportHeight": 812,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4619
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "reducedMotion": false,
+      "home": {
+        "text": "Luxury Architects",
+        "name": "Luxury Architects — KILN home",
+        "href": "#main",
+        "outline": "3px"
+      },
+      "accessibleName": "Luxury Architects — KILN home",
+      "name": {
+        "field": "name",
+        "focused": true,
+        "top": 888.296875,
+        "bottom": 1006.796875,
+        "viewportHeight": 1024,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4407
+      },
+      "email": {
+        "field": "email",
+        "focused": true,
+        "top": 885.296875,
+        "bottom": 1003.796875,
+        "viewportHeight": 1024,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4519
+      },
+      "message": {
+        "field": "message",
+        "focused": true,
+        "top": 811.296875,
+        "bottom": 1006.296875,
+        "viewportHeight": 1024,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4702
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "reducedMotion": true,
+      "home": {
+        "text": "Luxury Architects",
+        "name": "Luxury Architects — KILN home",
+        "href": "#main",
+        "outline": "3px"
+      },
+      "accessibleName": "Luxury Architects — KILN home",
+      "name": {
+        "field": "name",
+        "focused": true,
+        "top": 83.296875,
+        "bottom": 201.796875,
+        "viewportHeight": 1024,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 5212
+      },
+      "email": {
+        "field": "email",
+        "focused": true,
+        "top": 192.296875,
+        "bottom": 310.796875,
+        "viewportHeight": 1024,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 5212
+      },
+      "message": {
+        "field": "message",
+        "focused": true,
+        "top": 301.296875,
+        "bottom": 496.296875,
+        "viewportHeight": 1024,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 5212
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "reducedMotion": false,
+      "home": {
+        "text": "Luxury Architects",
+        "name": "Luxury Architects — KILN home",
+        "href": "#main",
+        "outline": "3px"
+      },
+      "accessibleName": "Luxury Architects — KILN home",
+      "name": {
+        "field": "name",
+        "focused": true,
+        "top": 760.46875,
+        "bottom": 883.46875,
+        "viewportHeight": 900,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 3647
+      },
+      "email": {
+        "field": "email",
+        "focused": true,
+        "top": 761.46875,
+        "bottom": 884.46875,
+        "viewportHeight": 900,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 3758
+      },
+      "message": {
+        "field": "message",
+        "focused": true,
+        "top": 680.46875,
+        "bottom": 884.46875,
+        "viewportHeight": 900,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 3951
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "reducedMotion": true,
+      "home": {
+        "text": "Luxury Architects",
+        "name": "Luxury Architects — KILN home",
+        "href": "#main",
+        "outline": "3px"
+      },
+      "accessibleName": "Luxury Architects — KILN home",
+      "name": {
+        "field": "name",
+        "focused": true,
+        "top": 16.46875,
+        "bottom": 139.46875,
+        "viewportHeight": 900,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4391
+      },
+      "email": {
+        "field": "email",
+        "focused": true,
+        "top": 128.46875,
+        "bottom": 251.46875,
+        "viewportHeight": 900,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4391
+      },
+      "message": {
+        "field": "message",
+        "focused": true,
+        "top": 240.46875,
+        "bottom": 444.46875,
+        "viewportHeight": 900,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4391
+      }
+    },
+    {
+      "width": 375,
+      "height": 420,
+      "reducedMotion": false,
+      "home": {
+        "text": "Luxury Architects",
+        "name": "Luxury Architects — KILN home",
+        "href": "#main",
+        "outline": "3px"
+      },
+      "accessibleName": "Luxury Architects — KILN home",
+      "name": {
+        "field": "name",
+        "focused": true,
+        "top": 283.109375,
+        "bottom": 401.609375,
+        "viewportHeight": 420,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4268
+      },
+      "email": {
+        "field": "email",
+        "focused": true,
+        "top": 281.109375,
+        "bottom": 399.609375,
+        "viewportHeight": 420,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4379
+      },
+      "message": {
+        "field": "message",
+        "focused": true,
+        "top": 209.109375,
+        "bottom": 404.109375,
+        "viewportHeight": 420,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4560
+      }
+    },
+    {
+      "width": 375,
+      "height": 420,
+      "reducedMotion": true,
+      "home": {
+        "text": "Luxury Architects",
+        "name": "Luxury Architects — KILN home",
+        "href": "#main",
+        "outline": "3px"
+      },
+      "accessibleName": "Luxury Architects — KILN home",
+      "name": {
+        "field": "name",
+        "focused": true,
+        "top": 16.109375,
+        "bottom": 134.609375,
+        "viewportHeight": 420,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4535
+      },
+      "email": {
+        "field": "email",
+        "focused": true,
+        "top": 16.109375,
+        "bottom": 134.609375,
+        "viewportHeight": 420,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4644
+      },
+      "message": {
+        "field": "message",
+        "focused": true,
+        "top": 125.109375,
+        "bottom": 320.109375,
+        "viewportHeight": 420,
+        "labelVisible": true,
+        "errorVisible": true,
+        "invalid": "true",
+        "described": true,
+        "outline": {
+          "style": "solid",
+          "width": "3px"
+        },
+        "scroll": 4644
+      }
+    },
+    {
+      "fontScale": "200% root",
+      "textSpacing": "WCAG 1.4.12 values simultaneously",
+      "width": 375,
+      "scrollWidth": 375,
+      "clipped": []
+    },
+    {
+      "fontScale": "200% root",
+      "textSpacing": "WCAG 1.4.12 values simultaneously",
+      "width": 768,
+      "scrollWidth": 768,
+      "clipped": []
+    },
+    {
+      "fontScale": "200% root",
+      "textSpacing": "WCAG 1.4.12 values simultaneously",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "clipped": []
+    }
+  ]
+}
