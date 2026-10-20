@@ -12,3 +12,15 @@ Thumbs.db
 
 # Local Taste Skill directions, downloads and browser reports
 .taste-skill/
+
+# Local project planning and stage archives
+/IMPLEMENTATION_PLAN.md
+/docs/k*/
+/docs/qa/
+/docs/sin47/
+/.impeccable/
+
+# Local stage QA and image preparation helpers
+/scripts/check-*.mjs
+/scripts/prepare-k09-images.py
+/scripts/qa-output.mjs
