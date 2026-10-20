@@ -121,7 +121,7 @@ try {
       await expectClosed(page);
       await activate(page, toggle);
       await press(page, "Tab", true);
-      await expectFocus(page, 'header a[aria-label="KILN home"]');
+      await expectFocus(page, 'header a[aria-label="Luxury Architects — KILN home"]');
       await press(page, "Tab", true);
       await press(page, "Tab", true);
       await expectClosed(page);

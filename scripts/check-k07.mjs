@@ -42,7 +42,7 @@ try {
         }),
         name: { ...bounds("h1"), client: document.querySelector("h1").clientWidth, scroll: document.querySelector("h1").scrollWidth },
         footerName: { ...bounds('footer [aria-hidden="true"]'), client: document.querySelector('footer [aria-hidden="true"]').clientWidth, scroll: document.querySelector('footer [aria-hidden="true"]').scrollWidth },
-        identityLink: bounds('header a[aria-label="KILN home"]'),
+        identityLink: bounds('header a[aria-label="Luxury Architects — KILN home"]'),
         processFocus: style("#process").getPropertyValue("--color-focus").trim(),
         sheetFocus: style("#process ol").getPropertyValue("--color-focus").trim(),
         footerFocus: style("footer").getPropertyValue("--color-focus").trim(),

@@ -4,6 +4,7 @@
   gap: 1.5rem;
 }
 .field {
+  scroll-margin-block: 1rem;
   display: grid;
   gap: 0.5rem;
 }

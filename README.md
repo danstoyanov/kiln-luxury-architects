@@ -6,6 +6,7 @@ KILN е измислено студио за луксозна жилищна а�
 
 ## Контекст и документи
 
+- [docs/k13/README.md](docs/k13/README.md) — поправки по Impeccable, финални снимки, сравнение с K04 и конкретни ограничения.
 - [docs/k12/README.md](docs/k12/README.md) — финална Impeccable оценка, доказателства и две конкретни поправки за K13.
 - [brief.md](brief.md) — аудитория, съдържание, поведение, визуална посока и ограничения.
 - [AGENTS.md](AGENTS.md) — правила за код, отделни worktrees, проверки и PR.
@@ -157,3 +158,24 @@ node scripts/check-k11.mjs http://localhost:4220
 ```
 
 Скриптът използва наличния Chrome/Edge CDP помощник и синтетични примерни данни. По подразбиране създава нова timestamp папка под `.taste-skill/checks/k11/`; `--out <new-directory>` запазва отделен комплект за ревю. Проверява 375/768/1440px, реални клавиатурни събития, меню и responsive focus при 899/900px, формата, hover/error focus, reduced motion и опити за съхранение. Историческите резултати остават непроменени.
+
+
+## K13 — поправки и финален polish
+
+[SIN-44: резултати по находки и финални снимки](docs/k13/README.md). Home връзката има име, съответстващо на видимия текст; първата грешка във формата запазва label–поле–error в екрана. Знакът KILN допуска reflow при увеличено потребителско spacing. При стандартни настройки приетият дизайн е запазен.
+
+След production build стартирай static server в отделен терминал:
+
+~~~sh
+npm exec -- serve out --listen 4240 --no-clipboard
+~~~
+
+После:
+
+~~~sh
+node scripts/check-k13.mjs http://localhost:4240
+node scripts/check-k11.mjs http://localhost:4240
+node scripts/check-k09.mjs http://localhost:4240
+~~~
+
+K13 проверява DOM/AX името и keyboard home навигацията, действителната позиция след фокус към всяка грешка при нормално/reduced motion, намален viewport 375×420 и 200% root текст със spacing. K11 проверява менюто, формата и runtime липсата на заявки/опити за запис; K09 — export ресурсите и responsive изображенията. Изискват Node 22 и локален Chrome/Edge; новите резултати са под .taste-skill/checks/. За отделен комплект добави --out <new-directory>. Намаленият viewport е симулация, не тест с физически телефон и системна клавиатура.

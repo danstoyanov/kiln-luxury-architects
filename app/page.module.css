@@ -49,7 +49,8 @@
   font-weight: 700;
   letter-spacing: -0.055em;
   line-height: 0.9;
-  white-space: nowrap;
+  /* Let user-expanded letter spacing reflow the name instead of clipping it. */
+  white-space: normal;
   margin-left: -0.016em;
 }
 .projects,
@@ -251,12 +252,13 @@
 }
 .footerName {
   font-family: var(--font-heading);
-  /* Keep the single-line name inside the gutters when text spacing grows. */
+  /* Keep the name inside the gutters when the root text size grows. */
   font-size: min(28.3vw, 33.96rem, calc((min(100vw, 1920px) - 2 * var(--page-gutter)) / 3.27));
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.055em;
-  white-space: nowrap;
+  /* Let user-expanded letter spacing reflow the name instead of clipping it. */
+  white-space: normal;
   margin-top: 2rem;
 }
 /* Reuse the project wall's right-hand axis for the section introductions. */
