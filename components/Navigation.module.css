@@ -42,6 +42,10 @@
   flex-wrap: wrap;
   gap: clamp(0.25rem, 1.1vw, 1rem);
 }
+.drawer,
+.drawerInner {
+  display: contents;
+}
 .navigation a {
   display: inline-flex;
   align-items: center;
@@ -77,15 +81,22 @@
   text-decoration: underline;
 }
 .skip {
-  position: absolute;
-  left: var(--page-gutter);
-  top: -6rem;
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  max-width: calc(100% - 2rem);
   background: var(--color-background);
-  padding: 1rem;
+  padding: 0.75rem 1rem;
 }
-.skip:focus {
-  top: 0.5rem;
-  z-index: 3;
+.skip:not(:focus-visible) {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 @media (max-width: 899px) {
   .header {
@@ -112,30 +123,67 @@
 }
 @media (max-width: 599px) {
   .header {
-    width: max-content;
-    max-width: calc(100% - 2 * var(--page-gutter));
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: calc(100% - 2 * var(--page-gutter));
     margin-inline: auto;
-    justify-content: center;
-    padding: 0.625rem;
-    border-radius: 999px;
+    gap: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  .header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 7rem;
+    margin-inline: auto;
+    border: 1px solid var(--color-glass-edge);
+    border-radius: 2.125rem;
+    background: var(--color-background);
+    box-shadow: var(--shadow-glass);
+    pointer-events: none;
   }
   .identity {
     display: none;
   }
   .toggle {
+    justify-self: center;
+    margin-block: 0.75rem;
     background: transparent;
     color: var(--color-text);
     padding-inline: 1.25rem;
   }
   .expanded {
-    width: calc(100% - 2 * var(--page-gutter));
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 0.625rem 1.5rem 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .expanded::before {
+    width: 100%;
     border-radius: 1.75rem;
   }
-  .navigation {
-    padding: 0;
+  .drawer {
+    display: grid;
+    grid-template-rows: 0fr;
+    visibility: hidden;
+  }
+  .expanded .drawer {
+    grid-template-rows: 1fr;
+    visibility: visible;
+  }
+  .drawerInner {
+    display: block;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .drawer .navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.75rem 1.5rem 1.5rem;
   }
   .navigation a {
     padding: 0.75rem 0.5rem;
@@ -150,6 +198,29 @@
     margin-bottom: 1rem;
   }
 }
+@media (max-width: 599px) and (prefers-reduced-motion: no-preference) {
+  .header {
+    transition: margin-bottom 320ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .header::before {
+    transition: width 320ms cubic-bezier(0.22, 1, 0.36, 1), border-radius 320ms ease;
+  }
+  .drawer {
+    transition: grid-template-rows 320ms cubic-bezier(0.22, 1, 0.36, 1), visibility 0s 320ms;
+  }
+  .expanded .drawer {
+    transition-delay: 0s;
+  }
+}
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+  @media (max-width: 599px) {
+    .header::before {
+      background: var(--color-glass);
+      -webkit-backdrop-filter: blur(16px) saturate(130%);
+      backdrop-filter: blur(16px) saturate(130%);
+    }
+  }
+}
 @media (prefers-reduced-transparency: reduce) {
   .header {
     background: var(--color-background);
@@ -162,5 +233,28 @@
     border: 1px solid CanvasText;
     background: Canvas;
     box-shadow: none;
+  }
+}
+@media (max-width: 599px) and (prefers-reduced-transparency: reduce) {
+  .header {
+    background: transparent;
+  }
+  .header::before {
+    background: var(--color-background);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+@media (max-width: 599px) and (forced-colors: active) {
+  .header {
+    border: 0;
+    background: transparent;
+  }
+  .header::before {
+    border: 1px solid CanvasText;
+    background: Canvas;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
 }

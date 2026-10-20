@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import styles from "./Navigation.module.css";
 
 const links = [
@@ -11,8 +11,23 @@ const links = [
   { href: "#contact", label: "Contact" },
 ];
 
+function subscribePhone(onChange: () => void) {
+  const query = window.matchMedia("(max-width: 599px)");
+  query.addEventListener("change", onChange);
+  return () => query.removeEventListener("change", onChange);
+}
+
+function getPhone() {
+  return window.matchMedia("(max-width: 599px)").matches;
+}
+
+function getServerPhone() {
+  return false;
+}
+
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const isPhone = useSyncExternalStore(subscribePhone, getPhone, getServerPhone);
   const menuButton = useRef<HTMLButtonElement>(null);
   const header = useRef<HTMLElement>(null);
   const navigation = useRef<HTMLElement>(null);
@@ -85,6 +100,10 @@ export function Navigation() {
   }, [isOpen]);
 
   return (
+    <>
+      <a className={styles.skip} href="#main">
+        Skip to content
+      </a>
     <header
       ref={header}
       className={styles.header + (isOpen ? " " + styles.expanded : "")}
@@ -103,9 +122,6 @@ export function Navigation() {
         }
       }}
     >
-      <a className={styles.skip} href="#main">
-        Skip to content
-      </a>
       <a href="#main" className={styles.identity} aria-label="Luxury Architects — KILN home">
         Luxury Architects
       </a>
@@ -119,7 +135,9 @@ export function Navigation() {
       >
         {isOpen ? "Close" : "Menu"}
       </button>
-      <nav
+      <div className={styles.drawer} inert={isPhone && !isOpen}>
+        <div className={styles.drawerInner}>
+          <nav
         ref={navigation}
         id="main-navigation"
         aria-label="Main navigation"
@@ -138,7 +156,10 @@ export function Navigation() {
             {link.label}
           </a>
         ))}
-      </nav>
+          </nav>
+        </div>
+      </div>
     </header>
+    </>
   );
 }
