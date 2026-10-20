@@ -1,39 +1,39 @@
 # KILN — Design system
 
-Визуален договор за [SIN-37 / K06](https://linear.app/singularity-lab/issue/SIN-37/k06-designmd-za-kiln), 20 октомври 2026 г.
+Visual contract for [SIN-37 / K06](https://linear.app/singularity-lab/issue/SIN-37/k06-designmd-za-kiln), 20 October 2026.
 
-**Статус:** приета система чрез [K06 PR #7](https://github.com/danstoyanov/kiln-luxury-architects/pull/7), слят на 20 октомври 2026 г.; приложена в K07. Посоката е „Материална архитектура“ със запазено геометрично KILN. Проверената адаптация за увеличен текст е описана в раздел 9. Поисканите от потребителя промени за SIN-47 са описани в раздел 13; той заменя старите правила за навигацията, serif типографията и трите засегнати секции.
+**Status:** system accepted through [K06 PR #7](https://github.com/danstoyanov/kiln-luxury-architects/pull/7), merged on 20 October 2026; applied in K07. The direction is “Material architecture”, retaining the geometric KILN wordmark. The verified adjustment for enlarged text is described in section 9. The changes requested by the user for SIN-47 are described in section 13; it supersedes the old rules for navigation, serif typography and the three affected sections.
 
-Визуално табло (локален архив) · desktop (локален архив) · tablet (локален архив) · phone (локален архив). Таблото показва палитра, шрифтове и състояния, а не финален layout. Временната фотография в него не е финален кадър.
+Visual board (local archive) · desktop (local archive) · tablet (local archive) · phone (local archive). The board shows the palette, fonts and states, rather than a final layout. Its temporary photograph is not a final image.
 
-## 1. Идея и характер
+## 1. Idea and character
 
-**Земя → материал → обитаван дом.** Името KILN дава материалната отправна точка: суровото придобива характер чрез условията и грижата. На страницата това се превежда в минерална светла основа, плътен знак, глина само върху действията и изображения, в които се виждат светлината, повърхностите и човешкият мащаб на дома.
+**Ground → material → a lived-in home.** The name KILN provides the material starting point: raw material gains character through conditions and care. On the page, this becomes a light mineral ground, a solid wordmark, clay reserved for actions, and images that show light, surfaces and the human scale of a home.
 
-Характерът е уверен, топъл и конкретен. Луксът идва от пропорциите, материалите и качеството на кадрите. Не добавяме злато, лъскави повърхности на интерфейса, курортна естетика или твърдения за награди и реални клиенти.
+The character is confident, warm and specific. Luxury comes from proportions, materials and image quality. We do not add gold, glossy interface surfaces, a resort aesthetic or claims about awards and real clients.
 
-Запазваме секциите, реда, английските текстове, anchor IDs и работещите взаимодействия от K05. Геометричното KILN остава отличителният знак, но споделя първия екран с архитектурата. Няма нов слоган: текстът „Ground. Material. A place to live.“ в таблото обяснява посоката и не заменя съдържанието на сайта.
+We retain the sections, order, English copy, anchor IDs and working interactions from K05. The geometric KILN remains the distinctive wordmark, but shares the first screen with the architecture. There is no new slogan: “Ground. Material. A place to live.” on the board explains the direction and does not replace the site content.
 
-## 2. Цветове
+## 2. Colours
 
-Използвай тези глобални CSS променливи. Компонентите използват роли, без локални алтернативни нюанси.
+Use these global CSS variables. Components use colour roles, without local alternative shades.
 
-| Променлива | Стойност | Употреба |
+| Variable | Value | Usage |
 | --- | --- | --- |
-| `--color-background` | `#F2F1ED` | Минерален фон; светъл текст в тъмните полета и бутоните. |
-| `--color-surface` | `#E3E0D8` | Limestone: Studio и светлият лист на Process. |
-| `--color-text` | `#282B28` | Графит: основен текст; фон на Process и Footer. |
-| `--color-muted` | `#5C605A` | Само вторична информация върху светлите два фона. |
-| `--color-accent` | `#805542` | Fired clay: основният CTA и submit. |
-| `--color-accent-hover` | `#684333` | Hover на глинените действия. |
-| `--color-error` | `#983D32` | Текст и рамка за грешка на формата. |
-| `--color-focus` | `var(--color-text)` | 3px фокус върху светло. |
+| `--color-background` | `#F2F1ED` | Mineral ground; light text in dark areas and buttons. |
+| `--color-surface` | `#E3E0D8` | Limestone: Studio and the light sheet in Process. |
+| `--color-text` | `#282B28` | Graphite: body text; Process and Footer background. |
+| `--color-muted` | `#5C605A` | Secondary information only, on the two light backgrounds. |
+| `--color-accent` | `#805542` | Fired clay: primary CTA and submit button. |
+| `--color-accent-hover` | `#684333` | Hover state for clay actions. |
+| `--color-error` | `#983D32` | Form error text and border. |
+| `--color-focus` | `var(--color-text)` | 3px focus outline on light backgrounds. |
 
-В Process и Footer локално задай `--color-focus: var(--color-background)`. Върху графит всички текстове и връзки са в `--color-background`; не използвай `--color-muted` или accent за текст/фокус върху графит. Светлият Process лист използва graphite текст и възстановява `--color-focus: var(--color-text)`.
+In Process and Footer, set `--color-focus: var(--color-background)` locally. All text and links on graphite use `--color-background`; do not use `--color-muted` or accent for text/focus on graphite. The light Process sheet uses graphite text and restores `--color-focus: var(--color-text)`.
 
-Минералният фон е по-неутрален от временния `#F4F1EB`; няма жълт кремав оттенък. Акцентът остава зададената от brief-а глина. Не оцветявай заглавия, проектни имена, маркери, изображения или цели секции в акцента. Неговата площ е под 5% от видимия екран извън документа с цветни мостри.
+The mineral ground is more neutral than the temporary `#F4F1EB`; it has no yellow cream tint. The accent remains the clay specified in the brief. Do not apply the accent to headings, project names, markers, images or entire sections. It covers less than 5% of the visible screen outside the colour swatch document.
 
-| Двойка | Изчислен контраст |
+| Pair | Calculated contrast |
 | --- | --- |
 | Graphite / mineral ground | 12.67:1 |
 | Graphite / limestone | 10.86:1 |
@@ -44,63 +44,63 @@
 | Error / mineral ground | 6.09:1 |
 | Error / limestone | 5.22:1 |
 
-Това са изчисления по sRGB luminance за плътни цветове, а не резултат от одит на бъдещата имплементация. Няма текст върху фотография и няма понижена opacity на текста. Глобален selection: accent фон и background текст.
+These are sRGB luminance calculations for solid colours, not audit results for the future implementation. There is no text over photography and no reduced text opacity. Global selection: accent background and text in the background colour.
 
-## 3. Шрифтове и скала
+## 3. Fonts and scale
 
-Запазваме наличните self-hosted файлове и лиценза в [public/fonts](public/fonts/FFL.txt). Не добавяме ново семейство или външни font заявки.
+We retain the existing self-hosted files and the licence in [public/fonts](public/fonts/FFL.txt). We do not add a new family or external font requests.
 
-- **Panchang 700:** само KILN в hero и повторението му във footer. `--font-heading: "Panchang", Arial, Helvetica, sans-serif` остава ролята за знака.
-- **Switzer 400:** всички секционни заглавия, параграфи, вторични текстове и студийното statement. `--font-body: "Switzer", Arial, Helvetica, sans-serif`.
-- **Switzer 500:** проектни заглавия, услуги, process заглавия, identity link, контроли и статус на формата.
+- **Panchang 700:** only KILN in the hero and its repetition in the footer. `--font-heading: "Panchang", Arial, Helvetica, sans-serif` remains the wordmark role.
+- **Switzer 400:** all section headings, paragraphs, secondary text and the studio statement. `--font-body: "Switzer", Arial, Helvetica, sans-serif`.
+- **Switzer 500:** project titles, services, process headings, identity link, controls and form status.
 
-Файлове: `panchang-bold.woff2`, `switzer-regular.woff2`, `switzer-medium.woff2`. `font-display: swap`; без синтетични italic/bold. В K07 preload само Panchang 700 и Switzer 400, които се използват над сгъвката; Switzer 500 се зарежда чрез CSS. Запази цялата FFL и [произхода на файловете](docs/temporary-assets.md#fonts).
+Files: `panchang-bold.woff2`, `switzer-regular.woff2`, `switzer-medium.woff2`. `font-display: swap`; no synthetic italic/bold. In K07, preload only Panchang 700 and Switzer 400, which are used above the fold; Switzer 500 loads through CSS. Keep the full FFL and the [file provenance](docs/temporary-assets.md#fonts).
 
-При стандартен root размер 16px:
+At the standard root size of 16px:
 
-| Роля / CSS token | Размер | Weight / leading / tracking |
+| Role / CSS token | Size | Weight / leading / tracking |
 | --- | --- | --- |
-| Бележки `--step-small` | `0.875rem` (14px) | 400 / 1.45 / 0 |
-| Текст `--step-body` | `1.125rem` (18px); под 900px `1.0625rem` (17px) | 400 / 1.5 / 0 |
-| Lead и h3 `--step-lead` | `clamp(1.25rem, 1.8vw, 1.625rem)` (20–26px) | Lead 400, h3 500 / 1.3 / -0.015em |
+| Notes `--step-small` | `0.875rem` (14px) | 400 / 1.45 / 0 |
+| Body `--step-body` | `1.125rem` (18px); below 900px `1.0625rem` (17px) | 400 / 1.5 / 0 |
+| Lead and h3 `--step-lead` | `clamp(1.25rem, 1.8vw, 1.625rem)` (20–26px) | Lead 400, h3 500 / 1.3 / -0.015em |
 | h2 `--step-head` | `clamp(2rem, 4vw, 3.5rem)` (32–56px) | 400 / 1.08 / -0.035em |
-| KILN hero | ≥900px `clamp(3rem, 18.5vw, 22.2rem)`; под 900px `27.3vw` | 700 / 0.9 / -0.055em |
+| KILN hero | ≥900px `clamp(3rem, 18.5vw, 22.2rem)`; below 900px `27.3vw` | 700 / 0.9 / -0.055em |
 | KILN footer | `min(28.3vw, 33.96rem)` | 700 / 1 / -0.055em |
 
-Знакът е отделна display роля; не се използва за h2/h3. Hero описанието, навигацията, labels, errors, статусът и бутоните са в body размера. Не увеличавай дългото Studio statement до размер на заглавие.
+The wordmark is a separate display role; it is not used for h2/h3. The hero description, navigation, labels, errors, status and buttons use the body size. Do not enlarge the long Studio statement to heading size.
 
-Един `h1`: KILN. Видимото описание непосредствено до/под него казва „Residential architecture.“ и запазва „Shaped by the land. Made for living.“. Всеки раздел има съществуващото си h2; проектите/услугите/етапите са h3. Нормален регистър извън KILN, без tracked uppercase, декоративен italic или оцветена дума в заглавие.
+One `h1`: KILN. The visible description immediately beside/below it says “Residential architecture.” and retains “Shaped by the land. Made for living.”. Each section keeps its existing h2; projects/services/stages use h3. Use normal case outside KILN, without tracked uppercase, decorative italic or a coloured word in a heading.
 
-Основен текст: максимум 52ch, Studio параграфи 40ch, hero описание 34ch, contact описание 34ch; без принудителен тесен минимум на телефон. Заглавията остават до два реда при стандартен текст и договорените ширини. При увеличен текст приоритет имат четимостта и reflow: не намалявай шрифта, не отрязвай и не скривай съдържание заради този лимит. Запази authored breaks в Process/Contact. Не добавяй nowrap на текстовете. KILN е на един ред при стандартните настройки; при увеличен потребителски spacing може да се пренася според уточнението от K13.
+Body text: maximum 52ch, Studio paragraphs 40ch, hero description 34ch, contact description 34ch; no forced narrow minimum on phones. Headings stay within two lines at standard text size and the agreed widths. With enlarged text, readability and reflow take priority: do not shrink the font, truncate or hide content to meet this limit. Keep authored breaks in Process/Contact. Do not add nowrap to text. KILN stays on one line at standard settings; with increased user spacing, it may wrap as clarified in K13.
 
-## 4. Рамка, отстояния и responsive договор
+## 4. Frame, spacing and responsive contract
 
-Полета и gutters се задават с rem, за да зачитат увеличен текст. Широчините по-долу са CSS px, таблицата е за стандартен размер на текста.
+Margins and gutters use rem to respect enlarged text. The widths below are CSS px; the table assumes standard text size.
 
-| Правило | 375–599px | 600–899px | ≥900px |
+| Rule | 375–599px | 600–899px | ≥900px |
 | --- | --- | --- | --- |
-| `--page-gutter` от всяка страна | 1rem / 16px | 1.5rem / 24px | 2rem / 32px |
+| `--page-gutter` on each side | 1rem / 16px | 1.5rem / 24px | 2rem / 32px |
 | `--grid-gap` | 1rem / 16px | 1.5rem / 24px | 1.5rem / 24px |
-| `--space-section` — padding на всяка секция отгоре и отдолу | 2.5rem / 40px | 4rem / 64px | 5rem / 80px |
-| Intro → основно съдържание | 2rem / 32px | 2.5rem / 40px | 3rem / 48px |
-| Между отделни проекти | 3rem / 48px | 3rem / 48px | row-gap 3rem / 48px |
-| Основна подредба | 1 колона | 1 или 2 според секцията по-долу | 12 колони |
+| `--space-section` — top and bottom padding of each section | 2.5rem / 40px | 4rem / 64px | 5rem / 80px |
+| Intro → main content | 2rem / 32px | 2.5rem / 40px | 3rem / 48px |
+| Between individual projects | 3rem / 48px | 3rem / 48px | row-gap 3rem / 48px |
+| Main layout | 1 column | 1 or 2, depending on the section below | 12 columns |
 
-Съседните секции със същия фон имат общо 80/128/160px между съдържанието. Не прибавяй още section margin върху тези paddings. Header, hero и footer използват собствените стойности от раздел 5.
+Adjacent sections with the same background have a total of 80/128/160px between their content. Do not add extra section margin on top of these paddings. Header, hero and footer use their own values from section 5.
 
-Скала за вътрешни разстояния: `0.25rem`, `0.5rem`, `0.75rem`, `1rem`, `1.5rem`, `2rem`, `3rem`, `4rem`, `6rem`. Елементи от една група са на 8–24px; 32–48px отделят групи. 96px е само desktop offset на втория проект.
+Internal spacing scale: `0.25rem`, `0.5rem`, `0.75rem`, `1rem`, `1.5rem`, `2rem`, `3rem`, `4rem`, `6rem`. Elements within a group are 8–24px apart; 32–48px separates groups. 96px is only the desktop offset of the second project.
 
-Еднакви външни полета във всички секции. Максимална ширина на вътрешната рамка 1920px, центрирана при по-широк екран; фотографията на hero и цветните полета остават full bleed. Не чертай grid линии. Всички grid деца са с `min-width: 0`; дълги непредвидени думи могат да се пренасят. Не прикривай overflow с глобално `overflow-x: hidden`.
+Use equal outer margins in all sections. The inner frame has a maximum width of 1920px and is centred on wider screens; hero photography and colour fields remain full bleed. Do not draw grid lines. All grid children use `min-width: 0`; unexpected long words can wrap. Do not conceal overflow with a global `overflow-x: hidden`.
 
-## 5. Композиция по секции
+## 5. Composition by section
 
-Това е прецизиране на съществуващата структура, не нова страница. Запази anchor IDs и DOM реда. Решенията са за K07; K06 не променя application source.
+This refines the existing structure rather than creating a new page. Keep anchor IDs and DOM order. These decisions are for K07; K06 does not change application source.
 
-### Header и hero
+### Header and hero
 
-Header остава в нормалния поток, върху mineral ground. Padding `1rem var(--page-gutter)`, gap 16px; видим identity link „Luxury Architects“, съществуващите пет anchor връзки. Навигация с body размер, gap `clamp(1rem, 2.6vw, 3rem)`. Menu/Close се показва под 900px. Контролите са поне 44×44px. Header може да расте и да пренася елементи при увеличен текст; няма фиксирана височина или компенсация върху hero.
+The header stays in normal flow, on mineral ground. Padding `1rem var(--page-gutter)`, gap 16px; visible identity link “Luxury Architects”, the existing five anchor links. Navigation uses body size, gap `clamp(1rem, 2.6vw, 3rem)`. Menu/Close appears below 900px. Controls are at least 44×44px. The header can grow and wrap elements with enlarged text; there is no fixed height or compensating offset on the hero.
 
-Архитектурният кадър остава **над името**, без текст върху него. На desktop заема до 56svh вместо сегашните до 36svh. Начална CSS геометрия:
+The architectural image stays **above the name**, without text over it. On desktop, it occupies up to 56svh instead of the current maximum of 36svh. Initial CSS geometry:
 
 ```css
 /* At 900px and above. Reserve room for the name, header and supporting text. */
@@ -127,175 +127,175 @@ Header остава в нормалния поток, върху mineral ground.
 }
 ```
 
-Формулата `16.65vw` е display размерът `18.5vw × 0.9`. Знакът е в лявата част; вдясно са съществуващото описание и CTA един под друг. Тази промяна използва наличните `.heroBand`, `.monument`, `.heroIntro`; няма нов headline, допълнителен CTA или скрити текстове.
+The formula `16.65vw` is the display size `18.5vw × 0.9`. The wordmark sits on the left; the existing description and CTA are stacked on the right. This change uses the existing `.heroBand`, `.monument`, `.heroIntro`; there is no new headline, additional CTA or hidden copy.
 
-При 600–899px: hero кадър `height: clamp(15rem, 40svh, 28rem)`, band е block с 24px top padding; intro е flex row с wrap, gap 24px, margin-top 24px. Под 600px: кадър `height: clamp(12rem, 34svh, 20rem)`, focal `58% 50%`; band top padding 20px; intro е flex column с gap 20px и margin-top 24px. Между intro и временния credit: 16px; credit е в small размера и върху mineral ground. Без credit absolute positioning.
+At 600–899px: hero image `height: clamp(15rem, 40svh, 28rem)`, band is block with 24px top padding; intro is a flex row with wrap, gap 24px, margin-top 24px. Below 600px: image `height: clamp(12rem, 34svh, 20rem)`, focal `58% 50%`; band top padding 20px; intro is a flex column with gap 20px and margin-top 24px. Between the intro and temporary credit: 16px; the credit uses the small size on mineral ground. No absolute positioning for the credit.
 
-В K07 трябва отново да се потвърди видимостта на описание и CTA на стандартен текст при 1366×768, 1440×900 и 375×812. Формулата е конкретна начална геометрия, а не твърдение за вече проверен нов hero. При увеличен текст hero расте естествено и съдържанието може да продължи под сгъвката.
+In K07, the visibility of the description and CTA at standard text size must be confirmed again at 1366×768, 1440×900 and 375×812. The formula is a specific starting geometry, not a claim that the new hero has already been verified. With enlarged text, the hero grows naturally and content may continue below the fold.
 
 ### Projects — `#projects`
 
-„Living studies“ и съществуващият увод: над 899px решетка от 12 колони с общия gap 24px; heading в колони 1–6 (`1 / 7`), увод в 8–12 (`8 / 13`), подравнени отгоре; отдолу 48px. Уводът следва левия ръб на Ridge House. Това е уточнението от K10; същата intro геометрия се използва в Services. Под 900px уводът е под заглавието с gap 24px.
+“Living studies” and the existing introduction: above 899px, a 12-column grid with the shared 24px gap; heading in columns 1–6 (`1 / 7`), introduction in 8–12 (`8 / 13`), aligned at the top; 48px below. The introduction follows the left edge of Ridge House. This is the K10 refinement; Services uses the same intro geometry. Below 900px, the introduction sits below the heading with a 24px gap.
 
-Desktop стена: Courtyard House в колони **1–7** (`1 / 8`), Ridge House в **8–12** (`8 / 13`), с top padding **96px**. Woodland Retreat в **3–12** (`3 / 13`), след реда с 48px gap, без negative margin. Изображенията са **3:2** и при трите проекта; Ridge вече няма тесен портретен crop. Всички captions са под изображенията. Име/Concept редът е с wrap и gap 16px; след него setting, после описанието в DOM реда. От 1200px само Woodland има двуколонен надпис под изображението: вложена решетка от 10 колони, gap 24px, име/Concept и setting в 1–5, описание в 6–10 на 16px под кадъра. Описанието започва по същата ос като Ridge и Projects intro; setting няма допълнителен долен margin в този режим. Под 1200px надписът остава последователен. Няма промяна на image рамката, crops или `sizes`.
+Desktop wall: Courtyard House in columns **1–7** (`1 / 8`), Ridge House in **8–12** (`8 / 13`), with **96px** top padding. Woodland Retreat in **3–12** (`3 / 13`), after the row with a 48px gap, without negative margin. Images are **3:2** for all three projects; Ridge no longer has a narrow portrait crop. All captions sit below the images. The name/Concept row wraps with a 16px gap; the setting follows, then the description in DOM order. From 1200px, only Woodland has a two-column caption below the image: a nested 10-column grid, gap 24px, name/Concept and setting in 1–5, description in 6–10 at 16px below the image. The description starts on the same axis as Ridge and the Projects intro; the setting has no extra bottom margin in this mode. Below 1200px, the caption remains sequential. There is no change to the image frame, crops or `sizes`.
 
-Под 900px и трите проекта са една колона, в същия DOM ред, gap 48px, без offsets; еднакъв ratio 3:2. Това премахва тясната Ridge колона при 768px. Проектите са articles, без повдигнати cards, контур, фонова плочка, hover zoom или фалшива връзка към несъществуващ case study.
+Below 900px, all three projects form one column in the same DOM order, gap 48px, without offsets; a shared 3:2 ratio. This removes the narrow Ridge column at 768px. Projects are articles, without raised cards, outlines, background tiles, hover zoom or fake links to nonexistent case studies.
 
 ### Studio — `#studio`
 
-Limestone фон. Над 899px две области с пропорция 1:2 и gap 48px: heading вляво, съществуващите три параграфа вдясно. Statement заема цялата дясна област в lead размера; двата пояснителни параграфа под него са в две равни колони с gap 32px. При 600–899px heading е над областта с gap 32px, двата параграфа остават в две колони. Под 600px всичко е една колона, gap 24px. Няма пето изображение или декоративна текстура.
+Limestone background. Above 899px, two areas in a 1:2 proportion with a 48px gap: heading on the left, the existing three paragraphs on the right. The statement spans the whole right area at lead size; the two explanatory paragraphs below it form two equal columns with a 32px gap. At 600–899px, the heading sits above the area with a 32px gap; the two paragraphs remain in two columns. Below 600px, everything forms one column, gap 24px. There is no fifth image or decorative texture.
 
 ### Services — `#services`
 
-Mineral ground; heading/увод със същата intro геометрия като Projects. Architecture, Interiors и Landscape са открити текстови колони с 32px gap. Използвай съществуващата безопасна решетка `repeat(auto-fit, minmax(min(100%, 14rem), 1fr))`; под 600px изрично една колона. h3 → параграф: 16px. Няма икони, отделни cards или номера. Колоните могат да станат две/една и на desktop при увеличен текст.
+Mineral ground; heading/introduction with the same intro geometry as Projects. Architecture, Interiors and Landscape are open text columns with a 32px gap. Use the existing safe grid `repeat(auto-fit, minmax(min(100%, 14rem), 1fr))`; explicitly one column below 600px. h3 → paragraph: 16px. No icons, separate cards or numbers. The columns may also become two/one on desktop with enlarged text.
 
 ### Process — `#process`
 
-Един основен тъмен раздел, graphite фон и mineral текст. Над 899px intro/list са две равни колони, gap 64px. Съществуващият списък е един limestone лист с graphite текст, 40px вътрешен padding и 32px gap между четирите етапа. `ol` се запазва семантично; няма видима декоративна номерация, timeline или icons.
+One main dark section, graphite background and mineral text. Above 899px, intro/list form two equal columns, gap 64px. The existing list is a single limestone sheet with graphite text, 40px internal padding and a 32px gap between the four stages. The semantic `ol` is retained; no visible decorative numbering, timeline or icons.
 
-Под 900px intro и листът са една колона с gap 32px; листът е с 24px padding. Това пази четимостта при 768px и голям текст. Няма sticky или pinned секция.
+Below 900px, intro and sheet form one column with a 32px gap; the sheet has 24px padding. This preserves readability at 768px and with large text. No sticky or pinned section.
 
 ### Contact — `#contact`
 
-Mineral ground. Над 899px две равни колони с gap 64px: heading/обяснения вляво, форма вдясно. Под 900px една колона с gap 48px. Формата заема цялата налична ширина в своята колона; labels и полета са left aligned. Demo notice е преди полетата и остава видим.
+Mineral ground. Above 899px, two equal columns with a 64px gap: heading/explanations on the left, form on the right. Below 900px, one column with a 48px gap. The form takes the full available width of its column; labels and fields are left aligned. The demo notice precedes the fields and stays visible.
 
 ### Footer
 
-Graphite фон с mineral текст и светъл фокус. Padding отгоре 48px, хоризонтално общите page gutters. Fictional studio disclosure и Back to top са в един ред с wrap и gap 32px; под 600px са един под друг с gap 24px. Временните attribution/license бележки остават до K09. Под тях KILN се връща в широк display размер, с margin-top 32px; допустимо е само декоративното footer повторение да бъде изрязано отдолу с до `0.1em`. То остава `aria-hidden`; връзки и текст никога не се изрязват. Не добавяй sitemap, social icons или контакти на реално студио.
+Graphite background with mineral text and light focus. Top padding 48px, shared page gutters horizontally. Fictional studio disclosure and Back to top form one row with wrap and a 32px gap; below 600px, they stack with a 24px gap. Temporary attribution/licence notes remain until K09. Below them, KILN returns at a wide display size, with margin-top 32px; only the decorative footer repetition may be cropped at the bottom by up to `0.1em`. It remains `aria-hidden`; links and text are never cropped. Do not add a sitemap, social icons or contact details for a real studio.
 
-## 6. Контроли, форма и състояния
+## 6. Controls, form and states
 
-- CTA текстът навсякъде е **“Discuss your project”**. Hero CTA е anchor към `#contact`, submit е button. Квадратни ъгли (`border-radius: 0`), accent fill, background текст, Switzer 500, body размер, `min-height: 48px`, padding `0.75rem 1.5rem`, gap 24px. Декоративната ↗ в hero остава `aria-hidden`; не добавяй икона на submit.
-- Hover: `--color-accent-hover`. Active: hover цвят и `translateY(1px)` само при no-preference. Няма hover lift, сянка или промяна на font weight. Фокус: **3px solid `--color-focus`**, offset **5px**, без изключване на outline. При бутоните светлата междина отделя рамката от fill-а.
-- Текстови навигационни връзки: graphite; hover/focus има underline с offset `0.25em`, дебелина `0.07em`. Inline връзките в текст и временните credits са постоянно подчертани. В тъмни секции същото поведение с mineral текст.
-- Menu/Close: квадратен graphite бутон, mineral текст, минимум 44px височина и ширина. Менюто се разгръща в нормалния поток под header; без прозрачна/замъглена плаваща повърхност и без height animation. Запази `aria-expanded`, затваряне с Escape, след избор и при външен клик, и връщането на фокуса според работещия компонент.
-- Fields: mineral background, graphite текст, **1px solid muted** рамка, `border-radius: 0`, padding 12px, минимум 48px височина. Textarea: съществуващите 4 реда, vertical resize, min-height 128px. Label → поле: 8px; между field групи: 24px. Labels/errors са body размер; не използвай placeholder като label.
-- Invalid: error рамка и отделен error текст под полето с 8px gap, съществуващите `aria-invalid` и `aria-describedby`. Фокусът остава ясно различен от грешката. Не разчитай само на цвят.
-- Запази сегашната проверка на име, email и съобщение, фокус върху първата грешка и изчистването след валидно попълване. Статусът остава `role="status"`, body 500, минимум `3rem` запазено място; за дългия текст височината може да расте.
-- Точен статус: **“Demo only — your enquiry has not been sent or saved.”** Няма success toast, зелена отметка, email изпращане, backend, analytics или запис във browser storage, cookies, URL и логове. Всички видими текстове, включително грешки и alt, остават на английски.
+- CTA copy is **“Discuss your project”** everywhere. The hero CTA is an anchor to `#contact`, submit is a button. Square corners (`border-radius: 0`), accent fill, text in the background colour, Switzer 500, body size, `min-height: 48px`, padding `0.75rem 1.5rem`, gap 24px. The decorative ↗ in the hero remains `aria-hidden`; do not add an icon to submit.
+- Hover: `--color-accent-hover`. Active: hover colour and `translateY(1px)` only with no-preference. No hover lift, shadow or font weight change. Focus: **3px solid `--color-focus`**, offset **5px**, without disabling the outline. On buttons, the light gap separates the outline from the fill.
+- Text navigation links: graphite; hover/focus adds an underline with offset `0.25em`, thickness `0.07em`. Inline links in text and temporary credits are always underlined. The same behaviour applies in dark sections with mineral text.
+- Menu/Close: square graphite button, mineral text, minimum height and width 44px. The menu expands in normal flow below the header; no transparent/blurred floating surface and no height animation. Keep `aria-expanded`, closing with Escape, after selection and on outside click, and focus return as implemented in the working component.
+- Fields: mineral background, graphite text, **1px solid muted** border, `border-radius: 0`, padding 12px, minimum height 48px. Textarea: the existing 4 rows, vertical resize, min-height 128px. Label → field: 8px; between field groups: 24px. Labels/errors use body size; do not use a placeholder as a label.
+- Invalid: error border and separate error text below the field with an 8px gap, the existing `aria-invalid` and `aria-describedby`. Focus stays clearly distinct from the error. Do not rely on colour alone.
+- Keep the current validation of name, email and message, focus on the first error and clearing after valid input. Status remains `role="status"`, body 500, with at least `3rem` reserved space; the height may grow for the long text.
+- Exact status: **“Demo only — your enquiry has not been sent or saved.”** No success toast, green checkmark, email sending, backend, analytics or storage in browser storage, cookies, URL or logs. All visible text, including errors and alt text, remains in English.
 
-### K11 — завършени взаимодействия
+### K11 — completed interactions
 
-Anchor целите `main` и петте секции имат `tabIndex={-1}`: native навигацията премества фокуса към прочетеното съдържание, без нови спирки в Tab реда. Менюто остава disclosure в потока; Tab/Shift+Tab продължават към страницата, без focus trap. При преминаване през 899/900px фокусът от скрития Menu се прехвърля към Projects, а от скрита desktop връзка — към Menu. Външен клик не оставя фокус в скрита навигация и запазва фокуса на избран външен контрол.
+The anchor targets `main` and the five sections have `tabIndex={-1}`: native navigation moves focus to the content being read, without new stops in the Tab order. The menu remains a disclosure in the flow; Tab/Shift+Tab continue to the page, without a focus trap. When crossing 899/900px, focus moves from the hidden Menu to Projects, and from a hidden desktop link to Menu. An outside click does not leave focus in hidden navigation and preserves focus on a selected external control.
 
-Menu/Close получава моментално underline при hover/focus. Полетата получават graphite рамка при hover; invalid рамката остава error дори при hover. Глобалният 3px фокус с 5px offset се запазва. Грешка на поле се обновява при корекция и изчезва веднага след валидна стойност; нова проверка при submit остава задължителна. Фокусът към първата грешка се мести след рендериране на нейните `aria-describedby` описания. Demo статусът е atomic `role="status"`; редакция го изчиства. Няма ново движение или зависимости. Отчет и снимки (локален архив).
+Menu/Close gets an immediate underline on hover/focus. Fields get a graphite border on hover; an invalid border stays in the error colour even on hover. The global 3px focus outline with 5px offset is retained. A field error updates during correction and disappears as soon as the value is valid; validation on submit remains mandatory. Focus moves to the first error after its `aria-describedby` descriptions have rendered. The demo status is an atomic `role="status"`; editing clears it. No new motion or dependencies. Report and screenshots (local archive).
 
-## 7. Архитектурни изображения — договор за K08–K09
+## 7. Architectural images — contract for K08–K09
 
-Точно **четири** финални кадъра от вградения ImageGen: hero и трите съществуващи концепции. Генерирането и финалните промптове са K08; замяната и уеб оптимизацията са K09. Дотогава временните изображения и честните им credits остават. Не купуваме/добавяме stock серия в K06.
+Exactly **four** final images from the built-in ImageGen: the hero and the three existing concepts. Generation and final prompts belong to K08; replacement and web optimisation belong to K09. Until then, temporary images and their honest credits remain. We do not buy/add a stock series in K06.
 
-Общ характер: съвременни ниски жилищни обеми, светъл варовик или минерална мазилка, естествено дърво, тънки тъмни рамки, сдържано озеленяване. Мека странична дневна светлина, умерен контраст, естествени зелени цветове; човешки мащаб чрез мебели и проходи, без нужда от хора. Камера на нивото на човек, визуален характер на 28–35mm обектив и прави вертикали. Няма драматично HDR, sunset orange, безкраен басейн, oversized автомобил, фантастична конструкция, текст, watermark или чуждо лого. Не имитирай конкретен жив архитект или съществуваща къща.
+Shared character: contemporary low residential volumes, light limestone or mineral render, natural wood, thin dark frames, restrained planting. Soft side daylight, moderate contrast, natural greens; human scale through furniture and passageways, without needing people. Camera at human eye level, the visual character of a 28–35mm lens and straight verticals. No dramatic HDR, sunset orange, infinity pool, oversized car, fantastical structure, text, watermark or third-party logo. Do not imitate a specific living architect or an existing house.
 
-Трите концепции са различни места, но изглеждат като заснети с обща фотографска дисциплина. Не ги представяй като един и същ строеж или реални поръчки. Запази атмосферата на умерен климат, без tropical resort/palms. Не добавяй измислени координати, квадратури или години на завършване.
+The three concepts are different places, but look as though they were captured with a shared photographic discipline. Do not present them as the same construction project or as real commissions. Keep a temperate-climate atmosphere, without tropical resorts/palms. Do not add invented coordinates, floor areas or completion years.
 
-| Slot | Какво задължително се вижда | Master и crop |
+| Slot | What must be visible | Master and crop |
 | --- | --- | --- |
-| Hero | Нисък минерален дом, дървен праг/навес и градина; връзката от терен през защитен праг към обитавано пространство. | Landscape 3:2 master; ключовият дом е в централните 60% от ширината и средните 40% от височината за широк desktop strip. Desktop focal 50% 55%, mobile 58% 50%; mobile frame близо до 4:3 според височината в раздел 5. |
-| Courtyard House | Реално четим засаден вътрешен двор, светли стени, сянка и поне една връзка към жилищна стая. | Landscape 3:2 master и 3:2 web frame; focal 50% 50% при всички ширини. |
-| Ridge House | Хоризонтална къща по склона, дълбока стряха и открит хоризонт; видима връзка със земята. | Landscape 3:2 master и 3:2 web frame; focal 50% 55%. Не режи стряхата или края на обема с портретен crop. |
-| Woodland Retreat | Компактен дървен дом сред дървета, защитен вход и топъл интериор с обща маса, видим през отвор. | Landscape 3:2 master и 3:2 web frame; focal 50% 50%. Покривът не е задължително A-frame; това е само сегашната временна референция. |
+| Hero | A low mineral home, timber threshold/canopy and garden; the connection from ground through a sheltered threshold to a lived-in space. | Landscape 3:2 master; the main home stays within the central 60% of the width and middle 40% of the height for a wide desktop strip. Desktop focal 50% 55%, mobile 58% 50%; mobile frame close to 4:3 according to the height in section 5. |
+| Courtyard House | A clearly legible planted courtyard, light walls, shade and at least one connection to a living room. | Landscape 3:2 master and 3:2 web frame; focal 50% 50% at all widths. |
+| Ridge House | A horizontal house along the slope, deep eaves and an open horizon; a visible connection to the ground. | Landscape 3:2 master and 3:2 web frame; focal 50% 55%. Do not cut off the eaves or the end of the volume with a portrait crop. |
+| Woodland Retreat | A compact timber home among trees, a sheltered entrance and a warm interior with a shared table, visible through an opening. | Landscape 3:2 master and 3:2 web frame; focal 50% 50%. The roof does not have to be A-frame; that is only the current temporary reference. |
 
-Не разтягай кадър и не добавяй CSS saturation/sepia/gradient overlay. Правоъгълни изображения без рамка, radius или drop shadow. Hero няма текст върху себе си. Ако crop-ът унищожава задължителния детайл, K08 регенерира/избира подходящ master; K09 не компенсира с произволен портретен crop или разтягане.
+Do not stretch an image or add CSS saturation/sepia/gradient overlay. Rectangular images without borders, radius or drop shadow. The hero has no text over it. If a crop destroys a required detail, K08 regenerates/selects a suitable master; K09 does not compensate with an arbitrary portrait crop or stretching.
 
-K08 проверява геометрия на отвори, опори, стрехи, перспективи, връзка с терена, отражения, повтаряща се растителност и неправдоподобни мебели. Проверява и широкия hero strip, и mobile crop преди избор. Пази оригиналите и точните промптове в проекта; не твърди, че са фотографии на построени KILN домове.
+K08 checks the geometry of openings, supports, eaves, perspectives, connection to the terrain, reflections, repetitive vegetation and implausible furniture. It checks both the wide hero strip and mobile crop before selection. Keep the originals and exact prompts in the project; do not claim they are photographs of built KILN homes.
 
-K09 уеб договор:
+K09 web contract:
 
-- `<picture>` с WebP source и JPEG fallback; варианти 480, 768 и 1280px ширина плюс native master ширината, ако е по-голяма. Hero получава и 1920px вариант **само ако master-ът е поне 1920px**. Не увеличавай изкуствено оригиналите. Имената съдържат slot и ширина; финалните файлове са под `public/assets/`.
-- Начална compression quality: WebP 80, JPEG 82; намали само ако видимите повърхности и детайли се запазват. Целеви бюджети за WebP: hero до 280KB при 1920px и до 110KB при 768px; всеки проект до 180KB при 1280px. Това са цели за K09, не измерени резултати на K06.
-- Hero е `fetchPriority="high"`, без lazy loading. Трите проекта: `loading="lazy"`, `decoding="async"`. Реални `width`/`height` за fallback файла, фиксиран frame и правилен ratio предотвратяват layout shift.
-- `sizes`: hero `100vw`; проекти под 600px `calc(100vw - 32px)`, 600–899px `calc(100vw - 48px)`; desktop Courtyard `calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)`, Ridge `calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)`, Woodland `calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)`. Тези формули са за grid от 12 колони и 11 gaps по 24px.
-- Alt описва конкретно видимото, на английски, започвайки с „Concept visualisation:“; не описва желания интериор, ако той не се вижда. Visible project disclosure продължава да казва, че това са fictional concepts. K09 заменя временните credits с честна бележка за AI-generated concept imagery; не скрива demo статуса.
+- `<picture>` with WebP source and JPEG fallback; variants at 480, 768 and 1280px wide plus the native master width, if larger. The hero also gets a 1920px variant **only if the master is at least 1920px**. Do not upscale the originals. Names include slot and width; final files live under `public/assets/`.
+- Initial compression quality: WebP 80, JPEG 82; reduce only if visible surfaces and details are preserved. Target WebP budgets: hero up to 280KB at 1920px and up to 110KB at 768px; each project up to 180KB at 1280px. These are K09 targets, not measured K06 results.
+- Hero uses `fetchPriority="high"`, without lazy loading. The three projects: `loading="lazy"`, `decoding="async"`. Actual `width`/`height` for the fallback file, a fixed frame and the correct ratio prevent layout shift.
+- `sizes`: hero `100vw`; projects below 600px `calc(100vw - 32px)`, 600–899px `calc(100vw - 48px)`; desktop Courtyard `calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)`, Ridge `calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)`, Woodland `calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)`. These formulas are for a grid of 12 columns and 11 gaps of 24px.
+- Alt text describes what is actually visible, in English, starting with “Concept visualisation:”; it does not describe the intended interior if it cannot be seen. The visible project disclosure continues to state that these are fictional concepts. K09 replaces temporary credits with an honest note about AI-generated concept imagery; it does not hide the demo status.
 
-## 8. Движение
+## 8. Motion
 
-Движението подпомага тежестта на името и обратната връзка на контролите. Няма квота за движещи се елементи. Без scroll scenes, parallax, pinned stages, marquee, autoplay видео, custom cursor, preloader или анимационна библиотека.
+Motion supports the weight of the name and feedback from controls. There is no quota for moving elements. No scroll scenes, parallax, pinned stages, marquee, autoplay video, custom cursor, preloader or animation library.
 
-| Елемент | Точно поведение при `no-preference` |
+| Element | Exact behaviour with `no-preference` |
 | --- | --- |
-| Hero KILN | Еднократно `translateY(6px)` → `0`, 480ms, `cubic-bezier(0.16, 1, 0.3, 1)`. Opacity остава 1; няма маскиране на буквите. |
-| Hero изображение, само ≥900px | Еднократно `scale(1.015)` → `1`, 800ms със същата крива, в собствен frame с локално clip. Няма loop или scroll връзка. |
-| Бутони | Background hover 180ms ease; press `translateY(1px)` 120ms ease-out. |
-| Menu и секционни връзки | Моментално състояние; native smooth scroll е позволен само при no-preference. |
-| Всичко под hero | Статично, без entrance reveals и скрито начално състояние. |
+| Hero KILN | Once-only `translateY(6px)` → `0`, 480ms, `cubic-bezier(0.16, 1, 0.3, 1)`. Opacity stays at 1; no letter masking. |
+| Hero image, only ≥900px | Once-only `scale(1.015)` → `1`, 800ms with the same curve, in its own frame with local clipping. No loop or scroll connection. |
+| Buttons | Background hover 180ms ease; press `translateY(1px)` 120ms ease-out. |
+| Menu and section links | Immediate state; native smooth scroll is allowed only with no-preference. |
+| Everything below the hero | Static, without entrance reveals or a hidden initial state. |
 
-При `prefers-reduced-motion: reduce`: без transforms, animation, transitions и smooth scroll; цялото съдържание е в крайното видимо положение. При първо рисуване heading, описание и CTA са четими. Не добавяй `will-change` постоянно. K07 прилага базовите стилове/състояния; K11 завършва и проверява interaction/motion поведението, без да избира друга посока.
+With `prefers-reduced-motion: reduce`: no transforms, animation, transitions or smooth scroll; all content is in its final visible position. The heading, description and CTA are readable at first paint. Do not apply `will-change` permanently. K07 applies the base styles/states; K11 completes and verifies interaction/motion behaviour without choosing another direction.
 
-## 9. Практически критерии за ревю
+## 9. Practical review criteria
 
-Системата е приложена успешно, когато:
+The system is successfully applied when:
 
-- Архитектурата и KILN споделят първия екран; описание и CTA са видими в стандартните целеви сценарии. Header не застъпва съдържание.
-- Единствените display букви в Panchang са името; всички h2/h3/параграфи следват скалата и имат ясна йерархия.
-- Цветовете имат фиксирани роли; основният текст е graphite, accent маркира действията. В тъмното фокусът е светъл.
-- Проектите са редакционна стена на desktop и четима последователност на 375/768px; няма тесен портретен Ridge crop или механична редица cards.
-- Секциите пазят различна композиция: image/name → project wall → studio text → open service columns → dark process sheet → contact split → inverse name.
-- След K09 четирите кадъра имат общ характер, показват точно своите концепции, нямат видими AI дефекти и работят с договорените crops.
-- Менюто, keyboard focus, формата, увеличеният текст и reduced motion запазват провереното поведение. Няма мрежова заявка или съхранение на form данни.
+- The architecture and KILN share the first screen; the description and CTA are visible in the standard target scenarios. The header does not overlap content.
+- The name is the only display lettering in Panchang; all h2/h3/paragraphs follow the scale and have a clear hierarchy.
+- Colours have fixed roles; body text is graphite, accent marks actions. Focus is light in dark areas.
+- Projects form an editorial wall on desktop and a readable sequence at 375/768px; no narrow portrait Ridge crop or mechanical row of cards.
+- Sections retain distinct compositions: image/name → project wall → studio text → open service columns → dark process sheet → contact split → inverse name.
+- After K09, the four images share a character, show their specific concepts, have no visible AI defects and work with the agreed crops.
+- The menu, keyboard focus, form, enlarged text and reduced motion retain their verified behaviour. There is no network request or storage of form data.
 
-K07 проверява засегнатите секции в реален браузър на 375, 768 и 1440px, ниския desktop 1366×768 и сценариите с увеличен текст от K05; прави before/after снимки и TypeScript/ESLint/production build. K06 проверява пълнотата, линковете, цветовите изчисления и review таблото. Browser проверка на бъдещия сайт не се заявява за изпълнена в този документ.
+K07 checks the affected sections in a real browser at 375, 768 and 1440px, the short desktop viewport of 1366×768 and the enlarged-text scenarios from K05; it takes before/after screenshots and runs TypeScript/ESLint/production build. K06 checks completeness, links, colour calculations and the review board. This document does not claim that browser verification of the future site has been completed.
 
-### K07 — проверена корекция за увеличен текст
+### K07 — verified correction for enlarged text
 
-При 375px и 200% основен текст rem gutters стават по 32px, но чистият vw размер на името не отчита тази по-тясна вътрешна рамка. Браузърната проверка откри footer overflow (378px document width при 375px viewport). Затова K07 добавя горна граница спрямо наличната ширина: mobile hero `min(27.3vw, calc((100vw - 2 * var(--page-gutter)) / 3.27))`; footer `min(28.3vw, 33.96rem, calc((min(100vw, 1920px) - 2 * var(--page-gutter)) / 3.27))`. Делителят отчита ширината на четирите Panchang букви с приетия tracking. Това засяга само display знака, запазва го на един ред и не намалява основния текст, labels или заглавията. Няма скриване на overflow. На стандартен 375px footer размерът е около 104.9px вместо 106.1px; desktop стойностите остават непроменени.
+At 375px and 200% body text, rem gutters become 32px each, but the name's pure vw size does not account for this narrower inner frame. Browser verification found footer overflow (378px document width in a 375px viewport). K07 therefore adds an upper limit based on available width: mobile hero `min(27.3vw, calc((100vw - 2 * var(--page-gutter)) / 3.27))`; footer `min(28.3vw, 33.96rem, calc((min(100vw, 1920px) - 2 * var(--page-gutter)) / 3.27))`. The divisor accounts for the width of the four Panchang letters with the accepted tracking. This affects only the display wordmark, keeps it on one line and does not reduce body text, labels or headings. Overflow is not hidden. At standard 375px, the footer size is about 104.9px instead of 106.1px; desktop values remain unchanged.
 
-## 10. Произход и граници
+## 10. Provenance and boundaries
 
-Началната посока е **The name as a monument**, seed **35**, от K04 direction (локален архив), запазена в K05. K06 не прави нов draw и не смесва нови layout референции: уточнява тази основа според избора на потребителя и [brief.md](brief.md). Pinterest/Awwwards проучването остава K10; финалният Impeccable audit остава K12–K13.
+The initial direction is **The name as a monument**, seed **35**, from the K04 direction (local archive), retained in K05. K06 does not make a new draw or mix in new layout references: it refines this foundation according to the user's choice and [brief.md](brief.md). Pinterest/Awwwards research remains in K10; the final Impeccable audit remains in K12–K13.
 
-Използван е провереният проектен [Taste Skill](docs/taste-skill.md), commit `63aba5f43b5056758b15bbe7d683da8c86a7a7ad`, с насоки за type, colour, layout и motion. Приоритет имат локалният първоначален план и [AGENTS.md](AGENTS.md): топлият светъл фон/глина, точно четири ImageGen кадъра, CSS Modules, умерено движение и локална демо форма. Не приемаме автоматично предложените от skill-а сцени, видео, motion квоти или алтернативна палитра. Няма нова функционалност за неговото „live thing“; наличните меню и форма изпълняват взаимодействията.
+The verified project [Taste Skill](docs/taste-skill.md), commit `63aba5f43b5056758b15bbe7d683da8c86a7a7ad`, was used for guidance on type, colour, layout and motion. The local original plan and [AGENTS.md](AGENTS.md) take priority: warm light background/clay, exactly four ImageGen images, CSS Modules, restrained motion and a local demo form. We do not automatically accept the skill's proposed scenes, video, motion quotas or alternative palette. There is no new functionality for its “live thing”; the existing menu and form provide the interactions.
 
-След merge този файл е източникът на точни визуални решения за следващите етапи. Ако реална проверка открие конфликт, поправката включва конкретна промяна на този договор в съответния PR, а не тихо отклонение. K06 не прилага идентичността, не генерира финални изображения и не публикува сайт.
+After merge, this file is the source of precise visual decisions for the following stages. If real verification reveals a conflict, the fix includes a specific change to this contract in the relevant PR, rather than a silent deviation. K06 does not apply the identity, generate final images or publish a site.
 
-### K09 — корекция след потребителско ревю
+### K09 — correction after user review
 
-По изрично искане в ревюто на SIN-40 премахваме отделните AI бележки под hero и трите проектни кадъра. Общото обозначение за fictional/AI imagery остава в Projects intro и footer. На стандартен root 16px: image → project title/Concept е 16px (`1rem`), title → setting е 6px (`0.375rem`), setting → описание е 12px (`0.75rem`). Отстоянията остават в rem за увеличен текст. Това заменя предишните правила за per-image credits/captions и по-големите разстояния в проектния текст; композицията на стената и размерите на кадрите се запазват.
+At an explicit request in the SIN-40 review, we remove the individual AI notes below the hero and the three project images. The general fictional/AI imagery disclosure remains in the Projects intro and footer. At the standard 16px root: image → project title/Concept is 16px (`1rem`), title → setting is 6px (`0.375rem`), setting → description is 12px (`0.75rem`). Spacing remains in rem for enlarged text. This supersedes the previous rules for per-image credits/captions and larger spacing in project text; the wall composition and image dimensions are retained.
 
-## 11. K10 — уточнение на композицията
+## 11. K10 — composition refinement
 
-SIN-41 отчет и сравнение (локален архив) документира двете промени в раздел 5: обща desktop ос за Projects/Services intro и двуколонен Woodland надпис от 1200px. Те използват приетата 12-колонна решетка, без промяна на палитра, шрифтове, текстове, секционен ред, image рамки, CTA или motion. Мобилният/tablet layout и desktop надписът под 1200px остават последователни. Референциите са оценени като принципи; не се копират чужди изображения, код или взаимодействия.
+The SIN-41 report and comparison (local archive) document the two changes in section 5: a shared desktop axis for the Projects/Services intro and a two-column Woodland caption from 1200px. They use the accepted 12-column grid, without changing the palette, fonts, copy, section order, image frames, CTA or motion. The mobile/tablet layout and desktop caption below 1200px remain sequential. References are evaluated as principles; third-party images, code or interactions are not copied.
 
 
-## 12. K13 — достъпен фокус и reflow
+## 12. K13 — accessible focus and reflow
 
-SIN-44 отчетът (локален архив) затваря двете приети K12 находки. Home връзката запазва видимото „Luxury Architects“ и href="#main", а достъпното ѝ име е „Luxury Architects — KILN home“. След render на грешките формата фокусира първото невалидно поле с preventScroll и позиционира целия field wrapper с scrollIntoView({ behavior: "instant", block: "nearest" }); wrapper-ът има 1rem scroll margin отгоре и отдолу. Label, поле и грешка остават заедно, когато се побират във viewport. Няма нова анимация.
+The SIN-44 report (local archive) closes the two accepted K12 findings. The home link retains the visible “Luxury Architects” and href="#main", while its accessible name is “Luxury Architects — KILN home”. After errors render, the form focuses the first invalid field with preventScroll and positions the entire field wrapper with scrollIntoView({ behavior: "instant", block: "nearest" }); the wrapper has 1rem scroll margin at the top and bottom. Label, field and error stay together when they fit in the viewport. There is no new animation.
 
-При едновременно 200% root текст и увеличено letter-spacing: .12em принудителният nowrap на KILN причинява 409px document width при 375px viewport. Hero и footer знаците вече позволяват нормално пренасяне чрез съществуващия overflow-wrap: anywhere. Стандартните размери, tracking, шрифтове и едноредов вид са запазени. Това е изключение за потребителско разширяване на текста: не намалява шрифта и не скрива букви. Нормалните финални снимки и техническите stress-test кадри са ясно разделени в отчета.
+With both 200% root text and increased letter-spacing: .12em, KILN's forced nowrap causes a 409px document width in a 375px viewport. The hero and footer wordmarks now allow normal wrapping through the existing overflow-wrap: anywhere. Standard sizes, tracking, fonts and the single-line appearance are retained. This is an exception for user-expanded text: it does not shrink the font or hide letters. The normal final screenshots and technical stress-test screenshots are clearly separated in the report.
 
-## 13. SIN-47 — потребителско дизайн ревю преди деплой
+## 13. SIN-47 — user design review before deployment
 
-**Осмо ревю — навигация след прибиране:** под 900px изборът на обикновена menu връзка първо затваря drawer-а, изчаква реалните CSS closing transitions чрез animation.finished, после задава fragment URL, фокусира целевата секция без автоматичен scroll и скролва до нейното начало с договорения scroll margin. Няма фиксиран timeout, който да се разминава с анимацията. Reduced motion се изпълнява веднага; desktop и модифицираните кликове запазват native anchor поведението. Това предотвратява отместването надолу от едновременното свиване на менюто и native smooth scroll.
+**Eighth review — navigation after closing:** below 900px, selecting an ordinary menu link first closes the drawer, waits for the actual CSS closing transitions through animation.finished, then sets the fragment URL, focuses the target section without automatic scrolling and scrolls to its start with the agreed scroll margin. There is no fixed timeout that could fall out of sync with the animation. Reduced motion runs immediately; desktop and modified clicks retain native anchor behaviour. This prevents the downward offset caused by simultaneous menu collapse and native smooth scroll.
 
-**Седмо ревю — bold и Services:** всички Manrope h2/h3 и „Luxury Architects“ (desktop и drawer) използват weight 700. Локалният variable файл поддържа това тегло; @font-face декларира 500–700, без синтетично удебеляване. В Services всяка икона и нейното заглавие са в общ grid блок с align-items:center, без предишния margin-top на иконата. Описанието е отделната дясна колона; на телефон е под общия блок и започва по оста на заглавието.
+**Seventh review — bold and Services:** all Manrope h2/h3 and “Luxury Architects” (desktop and drawer) use weight 700. The local variable file supports this weight; @font-face declares 500–700, without synthetic bold. In Services, each icon and its heading share a grid block with align-items:center, without the icon's previous margin-top. The description is the separate right column; on phones, it sits below the shared block and aligns with the heading.
 
-**Шесто ревю — еднакво меню на phone и tablet:** всички правила за центрираната капсула, drawer, избутването на изображението, inert и анимацията вече се прилагат под 900px, включително tablet. Това заменя предишната граница 600px за менюто; останалите responsive секции не се променят. Menu/Close използва `--color-menu-control: rgb(40 43 40 / 8%)` с graphite текст — по-тъмно полупрозрачно поле вместо плътно черно. Desktop навигацията остава същата.
+**Sixth review — the same menu on phone and tablet:** all rules for the centred capsule, drawer, image displacement, inert and animation now apply below 900px, including tablet. This supersedes the previous 600px menu breakpoint; the other responsive sections do not change. Menu/Close uses `--color-menu-control: rgb(40 43 40 / 8%)` with graphite text — a darker translucent area instead of solid black. Desktop navigation remains the same.
 
-**Пето ревю — разгъване и skip връзка:** под 600px навигацията използва grid drawer от 0fr до 1fr за 320ms, с обратно прибиране. Външното отстояние се анимира така, че при напълно отворено меню началното изображение да започва след целия панел, с 1rem разстояние. Glass повърхността е отделен pseudo-element, разширяващ се от компактната капсула до ширината на панела. Затворените телефонни връзки са inert веднага, включително при анимирано затваряне. Reduced motion премахва анимацията. Skip връзката е изнесена преди header и използва визуално скриване с clip-path; показва се на клавиатурен focus-visible в отделен viewport панел. Няма фрагмент от нея над Menu. Това заменя досегашното мигновено разгъване и отрицателното отстояние при отворено телефонно меню.
+**Fifth review — expansion and skip link:** below 600px, navigation uses a grid drawer from 0fr to 1fr over 320ms, reversing on close. The outer spacing is animated so that, with the menu fully open, the opening image starts after the entire panel, with a 1rem gap. The glass surface is a separate pseudo-element expanding from the compact capsule to the panel width. Closed phone links are inert immediately, including during animated closing. Reduced motion removes the animation. The skip link is moved before the header and visually hidden with clip-path; it appears on keyboard focus-visible in a separate viewport panel. No fragment of it appears above Menu. This supersedes the previous immediate expansion and negative spacing with the phone menu open.
 
-**Телефонно меню след четвъртото ревю:** само под 600px затвореният glass панел е компактен и центриран и показва само Menu. При отваряне панелът се разширява в общите gutters; под Close се появява home връзката „Luxury Architects“, след 1rem разстояние — Projects, Studio, Services, Process и Contact вертикално. Над 599px композицията остава досегашната. Видимата home връзка е само една на всеки breakpoint; фокусът се пази при 599/600 и 899/900px. Няма нови скрийншоти, потребителят прави визуалното ревю.
+**Phone menu after the fourth review:** only below 600px, the closed glass panel is compact and centred, showing only Menu. On opening, the panel expands within the shared gutters; the home link “Luxury Architects” appears below Close, followed after a 1rem gap by Projects, Studio, Services, Process and Contact vertically. Above 599px, the composition remains as before. There is only one visible home link at each breakpoint; focus is preserved at 599/600 and 899/900px. There are no new screenshots; the user performs the visual review.
 
-**KILN след третото ревю:** hero и footer използват общ FittedWordmark. Четирите букви остават на един ред; при недостатъчна реална ширина размерът намалява спрямо измерения текст и контейнер. ResizeObserver и font loading събитие обновяват размера при responsive преход и зареждане на шрифта. Няма изрязване или horizontal scale. Това заменя изключението за пренасяне от раздел 12. Обикновеният текст и заглавията продължават да се уголемяват и пренасят нормално.
+**KILN after the third review:** hero and footer use a shared FittedWordmark. The four letters stay on one line; when the actual width is insufficient, the size is reduced according to the measured text and container. ResizeObserver and a font loading event update the size on responsive transitions and font loading. There is no cropping or horizontal scale. This supersedes the wrapping exception in section 12. Ordinary text and headings continue to enlarge and wrap normally.
 
-**Актуална ревизия след второто потребителско ревю:** Manrope заменя Bodoni Moda за identity и всички h2/h3. Локален `manrope-latin-variable.woff2`, weights 500–600, font-display swap и preload. h2 е 500, `clamp(2.25rem, 4.4vw, 4rem)` / 1.12; h3 е 600, `clamp(1.5rem, 2.1vw, 2rem)` / 1.25; identity е 600, `clamp(1.25rem, 1.8vw, 1.375rem)` / 1.25. Glass opacity е 64%, blur 16px, saturation 130%, edge 55%; сянката е 10% black. Тези стойности заменят съответните първоначални стойности по-долу. Новото ревю е директно в браузъра; по изрично искане няма нови скрийншоти.
+**Current revision after the second user review:** Manrope replaces Bodoni Moda for the identity and all h2/h3. Local `manrope-latin-variable.woff2`, weights 500–600, font-display swap and preload. h2 is 500, `clamp(2.25rem, 4.4vw, 4rem)` / 1.12; h3 is 600, `clamp(1.5rem, 2.1vw, 2rem)` / 1.25; identity is 600, `clamp(1.25rem, 1.8vw, 1.375rem)` / 1.25. Glass opacity is 64%, blur 16px, saturation 130%, edge 55%; the shadow is 10% black. These values supersede the corresponding initial values below. The new review takes place directly in the browser; at an explicit request, there are no new screenshots.
 
-Основание: четири конкретни бележки в браузъра — Apple Liquid Glass навигация, премиум заглавия и по-ясна структура с икони в Studio, Services и Process. Тези решения заменят ограниченията в раздели 3 и 5 за съответните елементи; палитрата, четирите изображения, съдържанието и редът на секциите остават основа.
+Rationale: four specific browser comments — Apple Liquid Glass navigation, premium headings and a clearer structure with icons in Studio, Services and Process. These decisions supersede the restrictions in sections 3 and 5 for the relevant elements; the palette, four images, content and section order remain the foundation.
 
-### Типография
+### Typography
 
-- Локален **Bodoni Moda 400–600**, Latin variable WOFF2, optical sizing auto: всички h2/h3 и „Luxury Architects“. `--font-editorial` е ролята; heading 400, подзаглавия и identity 500.
+- Local **Bodoni Moda 400–600**, Latin variable WOFF2, optical sizing auto: all h2/h3 and “Luxury Architects”. `--font-editorial` is the role; heading 400, subheadings and identity 500.
 - h2: `clamp(2.5rem, 4.8vw, 4.5rem)`, leading 1.06, tracking -0.03em. h3: `clamp(1.75rem, 2.6vw, 2.5rem)`, leading 1.15, tracking -0.025em.
-- Identity: `clamp(1.375rem, 2.2vw, 1.75rem)`, leading 1.1. KILN запазва Panchang 700; текстът, навигационните връзки и формата запазват Switzer. Panchang е отделен брандов знак, а Bodoni/Switzer са двете съдържателни семейства.
-- Новият файл се preload-ва, използва font-display swap и е self-hosted. Няма runtime заявка към Google Fonts. Произход и OFL лиценз (локален архив).
+- Identity: `clamp(1.375rem, 2.2vw, 1.75rem)`, leading 1.1. KILN retains Panchang 700; body text, navigation links and the form retain Switzer. Panchang is a separate brand wordmark, while Bodoni/Switzer are the two content families.
+- The new file is preloaded, uses font-display swap and is self-hosted. There is no runtime request to Google Fonts. Provenance and OFL licence (local archive).
 
-### Навигация
+### Navigation
 
-Плаващият glass панел има 1rem отстояние от горния край и общите page gutters. Височината започва от 4.25rem; 0.625rem/1.5rem padding, 2.25rem radius (1.75rem под 900px), светъл ръб и мека сянка. `--color-glass` е mineral ground с 86% opacity; blur 22px и saturation 140%. Панелът застъпва само hero изображението, остава в нормалния поток и расте при увеличен текст или отворено меню. Не е fixed/sticky и не закрива anchor цели или грешки във формата при скрол.
+The floating glass panel has a 1rem top offset and the shared page gutters. Height starts at 4.25rem; 0.625rem/1.5rem padding, 2.25rem radius (1.75rem below 900px), a light edge and soft shadow. `--color-glass` is mineral ground at 86% opacity; blur 22px and saturation 140%. The panel overlaps only the hero image, stays in normal flow and grows with enlarged text or an open menu. It is not fixed/sticky and does not obscure anchor targets or form errors during scrolling.
 
-Без backdrop-filter и при prefers-reduced-transparency фонът е плътен mineral ground. Forced colors запазва системен контур. Менюто, Escape, външният клик, фокусът и breakpoint поведението се запазват. Glass ефектът и новите икони са изрични потребителски изключения от Taste Skill правилата за glass и ornaments.
+Without backdrop-filter and with prefers-reduced-transparency, the background is solid mineral ground. Forced colors retains a system outline. The menu, Escape, outside click, focus and breakpoint behaviour are retained. The glass effect and new icons are explicit user exceptions to the Taste Skill rules on glass and ornaments.
 
 ### Studio, Services, Process
 
-- Studio: две области 1:1 с 5rem gap на desktop. Heading и съществуващото statement са вляво; вдясно два смислови блока — „A sense of place“ и „Material & light“, с икона и съществуващия текст. На tablet блоковете са две колони под intro, на телефон — една последователност.
-- Services: семантичен списък с три отворени реда — икона, heading и описание. На телефон описанието е под heading. Няма cards, badge фонове или декоративни рамки.
-- Process: graphite поле без предишния светъл лист. Intro/list са 5:7; четирите етапа са семантичен ol в решетка 2×2, а на телефон — една колона. Етапите имат икони за разговор, посока, разрешаване на детайла и дом. Подредбата следва естествения DOM ред.
-- Девет малки authored outline SVG икони (32px viewBox, stroke 1.4, currentColor); декоративни и скрити от accessibility tree. Значението винаги е и в текста. Иконите нямат анимации или отделна библиотечна зависимост.
+- Studio: two areas at 1:1 with a 5rem gap on desktop. The heading and existing statement are on the left; on the right, two thematic blocks — “A sense of place” and “Material & light”, with an icon and the existing text. On tablet, the blocks form two columns below the intro; on phones, one sequence.
+- Services: a semantic list with three open rows — icon, heading and description. On phones, the description sits below the heading. No cards, badge backgrounds or decorative borders.
+- Process: graphite field without the previous light sheet. Intro/list are 5:7; the four stages form a semantic ol in a 2×2 grid, and one column on phones. The stages have icons for conversation, direction, detail resolution and home. The layout follows the natural DOM order.
+- Nine small authored outline SVG icons (32px viewBox, stroke 1.4, currentColor); decorative and hidden from the accessibility tree. Their meaning is always also present in the text. The icons have no animations or separate library dependency.
