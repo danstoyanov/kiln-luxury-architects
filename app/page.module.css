@@ -49,8 +49,7 @@
   font-weight: 700;
   letter-spacing: -0.055em;
   line-height: 0.9;
-  /* Let user-expanded letter spacing reflow the name instead of clipping it. */
-  white-space: normal;
+  /* FittedWordmark keeps the complete name on one line inside these columns. */
   margin-left: -0.016em;
 }
 .projects,
@@ -86,10 +85,11 @@
 .services h2,
 .process h2,
 .contact h2 {
+  font-family: var(--font-editorial);
   font-size: var(--step-head);
-  line-height: 1.08;
-  letter-spacing: -0.035em;
-  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  font-weight: 700;
 }
 .projectWall {
   display: grid;
@@ -131,11 +131,12 @@
 }
 .projectTitle h3,
 .serviceColumns h3,
-.processList h3 {
-  font-size: var(--step-lead);
-  font-weight: 500;
-  line-height: 1.3;
-  letter-spacing: -0.015em;
+.processList h3,
+.studioNote h3 {
+  font-size: clamp(1.5rem, 2.1vw, 2rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
 }
 .projectTitle span {
   font-size: var(--step-small);
@@ -151,63 +152,97 @@
 }
 .studio {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-  gap: 3rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5rem;
   background: var(--color-surface);
+}
+.studioIntro h2 {
+  margin-bottom: 2rem;
+}
+.studioIntro .statement {
+  max-width: 30ch;
+  font-size: var(--step-lead);
+  line-height: 1.5;
 }
 .studioBody {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2rem;
+  align-content: start;
+  gap: 2.5rem;
 }
-.studioBody p {
-  max-width: 40ch;
+.studioNote {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  gap: 1.25rem;
 }
-.studioBody .statement {
-  grid-column: 1 / -1;
-  font-size: var(--step-lead);
-  line-height: 1.3;
-  letter-spacing: -0.015em;
-  max-width: 52ch;
+.studioNote h3 {
+  margin-bottom: 0.875rem;
+}
+.studioNote p {
+  max-width: 45ch;
+}
+.sectionIcon {
+  display: block;
+  flex: 0 0 auto;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.studioNote > .sectionIcon {
+  margin-top: 0.25rem;
 }
 .serviceColumns {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-.serviceColumns h3 {
-  margin-bottom: 1rem;
+.serviceColumns > li {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: var(--grid-gap);
+  align-items: start;
+  min-width: 0;
+}
+.serviceHeading {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  align-items: center;
+  gap: var(--grid-gap);
+  min-width: 0;
 }
 .serviceColumns p {
-  max-width: 52ch;
+  max-width: 48ch;
 }
 .process {
   --color-focus: var(--color-background);
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   gap: 4rem;
   background: var(--color-text);
   color: var(--color-background);
 }
 .process > div > p {
-  max-width: 52ch;
+  max-width: 34ch;
   margin-top: 2rem;
 }
 .processList {
-  --color-focus: var(--color-text);
-  background: var(--color-surface);
-  color: var(--color-text);
-  padding: 2.5rem;
+  padding: 0;
   margin: 0;
   list-style: none;
   display: grid;
-  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: start;
+  gap: 3rem 2.5rem;
 }
-.processList h3 {
-  margin-bottom: 0.5rem;
+.stageHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
 }
 .processList p {
-  max-width: 52ch;
+  max-width: 34ch;
 }
 .contact {
   display: grid;
@@ -257,8 +292,7 @@
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.055em;
-  /* Let user-expanded letter spacing reflow the name instead of clipping it. */
-  white-space: normal;
+  /* FittedWordmark shrinks the name to fit, including enlarged text settings. */
   margin-top: 2rem;
 }
 /* Reuse the project wall's right-hand axis for the section introductions. */
@@ -329,10 +363,21 @@
   }
   .studio,
   .process {
+    gap: 2.5rem;
+  }
+  .studioBody {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
   }
+  .studioNote {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+  .serviceHeading {
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+  }
   .processList {
-    padding: 1.5rem;
+    gap: 2.5rem;
   }
   .contact {
     gap: 3rem;
@@ -353,13 +398,38 @@
   .sectionIntro {
     margin-bottom: 2rem;
   }
-  .studio,
-  .studioBody {
-    gap: 1.5rem;
+  .studioIntro h2 {
+    margin-bottom: 1.5rem;
   }
   .studioBody,
-  .serviceColumns {
+  .processList {
     grid-template-columns: minmax(0, 1fr);
+  }
+  .studioNote {
+    grid-template-columns: 2rem minmax(0, 1fr);
+  }
+  .sectionIcon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .serviceColumns > li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.875rem;
+  }
+  .serviceHeading {
+    grid-template-columns: 2rem minmax(0, 1fr);
+    gap: 1rem;
+  }
+  .serviceColumns p {
+    margin-left: 3rem;
+  }
+  .stageHeading {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+  .processList p {
+    margin-left: 3rem;
   }
   .footerTop {
     flex-direction: column;

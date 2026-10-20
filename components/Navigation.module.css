@@ -1,13 +1,27 @@
 .header {
   position: relative;
-  z-index: 2;
+  z-index: 10;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem var(--frame-gutter);
+  gap: 0.5rem 1.5rem;
+  min-height: 4.25rem;
+  margin: 1rem var(--frame-gutter) -5.25rem;
+  padding: 0.625rem 1.5rem;
+  border: 1px solid var(--color-glass-edge);
+  border-radius: 2.25rem;
   background: var(--color-background);
+  box-shadow: var(--shadow-glass);
+  /* Stay in the document flow so enlarged text and the open menu can grow. */
+  isolation: isolate;
+}
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+  .header {
+    background: var(--color-glass);
+    -webkit-backdrop-filter: blur(16px) saturate(130%);
+    backdrop-filter: blur(16px) saturate(130%);
+  }
 }
 .identity {
   display: inline-flex;
@@ -15,36 +29,51 @@
   min-height: 44px;
   min-width: 0;
   text-decoration: none;
-  font-weight: 500;
+  font-family: var(--font-editorial);
+  font-optical-sizing: auto;
+  font-size: clamp(1.25rem, 1.8vw, 1.375rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
 }
 .navigation {
   min-width: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: clamp(1rem, 2.6vw, 3rem);
+  gap: clamp(0.25rem, 1.1vw, 1rem);
+}
+.drawer,
+.drawerInner {
+  display: contents;
 }
 .navigation a {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
-  padding-block: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
   text-decoration: none;
 }
+.navigation .mobileIdentity {
+  display: none;
+}
 .identity:hover,
-.identity:focus-visible,
+.identity:focus-visible {
+  text-decoration: underline;
+}
 .navigation a:hover,
 .navigation a:focus-visible {
-  text-decoration: underline;
+  background: var(--color-background);
 }
 .toggle {
   display: none;
   border: 0;
-  border-radius: 0;
+  border-radius: 999px;
   min-width: 44px;
   min-height: 44px;
   font-weight: 500;
-  background: var(--color-text);
-  color: var(--color-background);
+  background: var(--color-menu-control);
+  color: var(--color-text);
   padding: 0.6rem 1rem;
 }
 .toggle:hover,
@@ -52,17 +81,28 @@
   text-decoration: underline;
 }
 .skip {
-  position: absolute;
-  left: var(--page-gutter);
-  top: -6rem;
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  max-width: calc(100% - 2rem);
   background: var(--color-background);
-  padding: 1rem;
+  padding: 0.75rem 1rem;
 }
-.skip:focus {
-  top: 0.5rem;
-  z-index: 3;
+.skip:not(:focus-visible) {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 @media (max-width: 899px) {
+  .header {
+    padding-inline: 1.125rem;
+    border-radius: 1.75rem;
+  }
   .toggle {
     display: block;
     min-height: 44px;
@@ -78,6 +118,143 @@
     gap: 0;
   }
   .navigation a {
-    padding: 0.75rem 0;
+    padding: 0.75rem 1rem;
+  }
+}
+@media (max-width: 899px) {
+  .header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: calc(100% - 2 * var(--page-gutter));
+    margin-inline: auto;
+    gap: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  .header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 7rem;
+    margin-inline: auto;
+    border: 1px solid var(--color-glass-edge);
+    border-radius: 2.125rem;
+    background: var(--color-background);
+    box-shadow: var(--shadow-glass);
+    pointer-events: none;
+  }
+  .identity {
+    display: none;
+  }
+  .toggle {
+    justify-self: center;
+    margin-block: 0.75rem;
+    background: var(--color-menu-control);
+    color: var(--color-text);
+    padding-inline: 1.25rem;
+  }
+  .expanded {
+    margin-bottom: 1rem;
+  }
+  .expanded::before {
+    width: 100%;
+    border-radius: 1.75rem;
+  }
+  .drawer {
+    display: grid;
+    grid-template-rows: 0fr;
+    visibility: hidden;
+  }
+  .expanded .drawer {
+    grid-template-rows: 1fr;
+    visibility: visible;
+  }
+  .drawerInner {
+    display: block;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .drawer .navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.75rem 1.5rem 1.5rem;
+  }
+  .navigation a {
+    padding: 0.75rem 0.5rem;
+  }
+  .navigation .mobileIdentity {
+    display: inline-flex;
+    font-family: var(--font-editorial);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.025em;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 899px) and (prefers-reduced-motion: no-preference) {
+  .header {
+    transition: margin-bottom 320ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .header::before {
+    transition: width 320ms cubic-bezier(0.22, 1, 0.36, 1), border-radius 320ms ease;
+  }
+  .drawer {
+    transition: grid-template-rows 320ms cubic-bezier(0.22, 1, 0.36, 1), visibility 0s 320ms;
+  }
+  .expanded .drawer {
+    transition-delay: 0s;
+  }
+}
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+  @media (max-width: 899px) {
+    .header::before {
+      background: var(--color-glass);
+      -webkit-backdrop-filter: blur(16px) saturate(130%);
+      backdrop-filter: blur(16px) saturate(130%);
+    }
+  }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .header {
+    background: var(--color-background);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+@media (forced-colors: active) {
+  .header {
+    border: 1px solid CanvasText;
+    background: Canvas;
+    box-shadow: none;
+  }
+}
+@media (max-width: 899px) and (prefers-reduced-transparency: reduce) {
+  .header {
+    background: transparent;
+  }
+  .header::before {
+    background: var(--color-background);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+@media (max-width: 899px) and (forced-colors: active) {
+  .header {
+    border: 0;
+    background: transparent;
+  }
+  .header::before {
+    border: 1px solid CanvasText;
+    background: Canvas;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
 }
