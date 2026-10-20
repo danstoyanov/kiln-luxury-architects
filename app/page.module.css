@@ -49,8 +49,7 @@
   font-weight: 700;
   letter-spacing: -0.055em;
   line-height: 0.9;
-  /* Let user-expanded letter spacing reflow the name instead of clipping it. */
-  white-space: normal;
+  /* FittedWordmark keeps the complete name on one line inside these columns. */
   margin-left: -0.016em;
 }
 .projects,
@@ -289,8 +288,7 @@
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.055em;
-  /* Let user-expanded letter spacing reflow the name instead of clipping it. */
-  white-space: normal;
+  /* FittedWordmark shrinks the name to fit, including enlarged text settings. */
   margin-top: 2rem;
 }
 /* Reuse the project wall's right-hand axis for the section introductions. */

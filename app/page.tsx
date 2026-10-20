@@ -2,6 +2,7 @@ import { ConceptImage, type ImageSlot } from "@/components/ConceptImage";
 import { Navigation } from "@/components/Navigation";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { OutlineIcon, type IconName } from "@/components/OutlineIcon";
+import { FittedWordmark } from "@/components/FittedWordmark";
 import styles from "./page.module.css";
 
 type ConceptProject = {
@@ -120,7 +121,7 @@ export default function HomePage() {
           />
           <div className={styles.heroBand}>
             <h1 id="hero-title" className={styles.monument}>
-              KILN
+              <FittedWordmark />
             </h1>
             <div className={styles.heroIntro}>
               <p>
@@ -301,7 +302,7 @@ export default function HomePage() {
           not completed commissions.
         </p>
         <p className={styles.footerName} aria-hidden="true">
-          KILN
+          <FittedWordmark />
         </p>
       </footer>
     </>

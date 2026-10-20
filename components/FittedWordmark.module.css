@@ -1,0 +1,12 @@
+.frame {
+  display: block;
+  min-width: 0;
+}
+
+.letters {
+  display: inline-block;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  font-size: calc(1em * var(--wordmark-scale, 1));
+  letter-spacing: -0.055em;
+}
