@@ -162,7 +162,9 @@ try {
   });
   await page.goto(url);
   await pressTab(page);
-  for (let index = 0; index < 2; index++) {
+  const footerLinkCount = await page.eval(() => document.querySelectorAll("footer a").length);
+  assert(footerLinkCount >= 1, "The footer must keep its back-to-top link.");
+  for (let index = 0; index < footerLinkCount; index++) {
     await page.eval(
       (position) => document.querySelectorAll("footer a")[position].focus(),
       index,

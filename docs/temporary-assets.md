@@ -1,5 +1,7 @@
 # Temporary imagery and fonts — K04 / K05
 
+Historical record: K09 / SIN-40 replaces all temporary website images with the original ImageGen series. The five temporary JPEG derivatives have been removed from `public/`; the sources below remain for the K04–K07 screenshots and Git history. Current image provenance and web variants: [K08 originals](k08/README.md), [K09 integration](k09/README.md). Fonts below remain in use. The following image descriptions document the earlier stages.
+
 Retrieved 20 October 2026. These files support layout review only. They are not KILN commissions or final project imagery. Replace all four slots with the original ImageGen selection in K08–K09.
 
 | Local file under public/assets/temporary | Reference title / subject | Creator | Source |

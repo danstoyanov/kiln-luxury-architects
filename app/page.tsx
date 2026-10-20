@@ -1,3 +1,4 @@
+import { ConceptImage, type ImageSlot } from "@/components/ConceptImage";
 import { Navigation } from "@/components/Navigation";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import styles from "./page.module.css";
@@ -6,13 +7,21 @@ type ConceptProject = {
   name: string;
   setting: string;
   description: string;
-  image: string;
-  width: number;
-  height: number;
+  image: ImageSlot;
+  sizes: string;
   alt: string;
-  photographer: string;
-  source: string;
 };
+
+// Match the 12-column project wall and its 1920px content limit.
+const projectSizes = {
+  courtyard: "calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)",
+  ridge: "calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)",
+  woodland: "calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)",
+};
+
+function projectImageSizes(desktop: string) {
+  return `(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), ${desktop}`;
+}
 
 const projects: ConceptProject[] = [
   {
@@ -21,11 +30,8 @@ const projects: ConceptProject[] = [
     description:
       "A home gathered around an open courtyard. Pale mineral walls hold the summer shade, while a planted centre brings daylight into the rooms.",
     image: "courtyard",
-    width: 1400,
-    height: 787,
-    alt: "Temporary residential reference: a planted courtyard beside a pale living room and timber screens.",
-    photographer: "Rajith Jayawardana",
-    source: "https://unsplash.com/photos/91-cEibWbvk",
+    sizes: projectImageSizes(projectSizes.courtyard),
+    alt: "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
   },
   {
     name: "Ridge House",
@@ -33,11 +39,8 @@ const projects: ConceptProject[] = [
     description:
       "A low dwelling following the contour of a hillside. Deep roof overhangs shelter outdoor living, with long views from a shared kitchen and sitting room.",
     image: "ridge",
-    width: 1400,
-    height: 1050,
-    alt: "Temporary residential reference: a low glass-fronted house with a deep roof overhang above a planted slope.",
-    photographer: "Neon Wang",
-    source: "https://unsplash.com/photos/bxcZQT3UOaM",
+    sizes: projectImageSizes(projectSizes.ridge),
+    alt: "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
   },
   {
     name: "Woodland Retreat",
@@ -45,11 +48,8 @@ const projects: ConceptProject[] = [
     description:
       "A compact retreat with a timber interior and a protected entrance. Small, private rooms open towards the trees; a generous table anchors daily life.",
     image: "woodland",
-    width: 1400,
-    height: 933,
-    alt: "Temporary residential reference: a timber and glass A-frame cabin among pine trees.",
-    photographer: "Polina Kuzovkova",
-    source: "https://unsplash.com/photos/JSezq0Td59k",
+    sizes: projectImageSizes(projectSizes.woodland),
+    alt: "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
   },
 ];
 
@@ -100,20 +100,14 @@ export default function HomePage() {
       <Navigation />
       <main id="main">
         <section className={styles.hero} aria-labelledby="hero-title">
-          <picture className={styles.heroFrame}>
-            <source
-              media="(max-width: 600px)"
-              srcSet="/assets/temporary/hero-small.jpg"
-            />
-            <img
-              className={styles.heroImage}
-              src="/assets/temporary/hero.jpg"
-              width={2000}
-              height={1333}
-              alt="Temporary architectural reference: a contemporary stone and concrete house opens onto a planted garden."
-              fetchPriority="high"
-            />
-          </picture>
+          <ConceptImage
+            slot="hero"
+            frameClassName={styles.heroFrame}
+            imageClassName={styles.heroImage}
+            sizes="100vw"
+            alt="Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden."
+            priority
+          />
           <div className={styles.heroBand}>
             <h1 id="hero-title" className={styles.monument}>
               KILN
@@ -130,11 +124,7 @@ export default function HomePage() {
             </div>
           </div>
           <p className={styles.heroCredit}>
-            Temporary reference by{" "}
-            <a href="https://unsplash.com/photos/eWOgoFHlE8g">
-              Aalo Lens / Unsplash
-            </a>
-            . Not a KILN project.
+            AI-generated concept imagery. A fictional home, imagined for KILN.
           </p>
         </section>
         <section
@@ -146,29 +136,19 @@ export default function HomePage() {
             <h2 id="projects-title">Living studies</h2>
             <p>
               Three residential concepts exploring shelter, light and the
-              landscape. Fictional projects, with temporary reference imagery.
+              landscape. Fictional projects, illustrated with AI-generated imagery.
             </p>
           </div>
           <div className={styles.projectWall}>
             {projects.map((project) => (
               <article key={project.name} className={styles.project}>
                 <figure>
-                  <picture>
-                    <img
-                      src={"/assets/temporary/" + project.image + ".jpg"}
-                      width={project.width}
-                      height={project.height}
-                      loading="lazy"
-                      decoding="async"
-                      alt={project.alt}
-                    />
-                  </picture>
-                  <figcaption>
-                    Temporary reference:{" "}
-                    <a href={project.source}>
-                      {project.photographer} / Unsplash
-                    </a>
-                  </figcaption>
+                  <ConceptImage
+                    slot={project.image}
+                    sizes={project.sizes}
+                    alt={project.alt}
+                  />
+                  <figcaption>AI-generated concept visualisation.</figcaption>
                 </figure>
                 <div className={styles.projectTitle}>
                   <h3>{project.name}</h3>
@@ -284,9 +264,8 @@ export default function HomePage() {
           <a href="#main">Back to top</a>
         </div>
         <p className={styles.footerNote}>
-          Temporary imagery is credited beside each image.{" "}
-          <a href="https://unsplash.com/license">Unsplash License</a>. Original
-          project imagery follows in a later stage.
+          Original concept imagery created with ImageGen. These are imagined homes,
+          not completed commissions.
         </p>
         <p className={styles.footerName} aria-hidden="true">
           KILN
