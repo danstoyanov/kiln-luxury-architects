@@ -6,28 +6,43 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1rem var(--page-gutter);
+  padding: 1rem var(--frame-gutter);
   background: var(--color-background);
 }
 .identity {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  min-width: 0;
   text-decoration: none;
   font-weight: 500;
 }
 .navigation {
+  min-width: 0;
   display: flex;
   flex-wrap: wrap;
   gap: clamp(1rem, 2.6vw, 3rem);
 }
 .navigation a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   padding-block: 0.5rem;
   text-decoration: none;
 }
-.navigation a:hover {
+.identity:hover,
+.identity:focus-visible,
+.navigation a:hover,
+.navigation a:focus-visible {
   text-decoration: underline;
 }
 .toggle {
   display: none;
   border: 0;
+  border-radius: 0;
+  min-width: 44px;
+  min-height: 44px;
+  font-weight: 500;
   background: var(--color-text);
   color: var(--color-background);
   padding: 0.6rem 1rem;

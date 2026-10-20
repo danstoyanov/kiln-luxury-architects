@@ -1,5 +1,6 @@
 .form {
   display: grid;
+  min-width: 0;
   gap: 1.5rem;
 }
 .field {
@@ -18,6 +19,7 @@
 }
 .field textarea {
   resize: vertical;
+  min-height: 128px;
 }
 .field [aria-invalid="true"] {
   border-color: var(--color-error);
@@ -29,18 +31,26 @@
   justify-self: start;
   border: 0;
   min-height: 48px;
-  padding: 0.9rem 1.4rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0;
+  font-weight: 500;
   color: var(--color-background);
   background: var(--color-accent);
-  transition: transform 180ms ease;
 }
-.submit:hover {
-  transform: translateY(-2px);
-}
+.submit:hover,
 .submit:active {
-  transform: translateY(1px);
+  background: var(--color-accent-hover);
 }
 .status {
   min-height: 3rem;
   font-weight: 500;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .submit {
+    transition: background-color 180ms ease, transform 120ms ease-out;
+  }
+  .submit:active {
+    transform: translateY(1px);
+  }
 }

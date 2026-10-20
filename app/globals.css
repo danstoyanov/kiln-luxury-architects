@@ -1,18 +1,22 @@
 :root {
   color-scheme: light;
-  --color-background: #f4f1eb;
-  --color-text: #292925;
-  --color-muted: #605e57;
-  --color-accent: #89563f;
-  --color-surface: #e8e4dc;
-  --color-focus: var(--color-accent);
-  --color-error: #9b3027;
+  --color-background: #f2f1ed;
+  --color-text: #282b28;
+  --color-muted: #5c605a;
+  --color-accent: #805542;
+  --color-accent-hover: #684333;
+  --color-surface: #e3e0d8;
+  --color-focus: var(--color-text);
+  --color-error: #983d32;
   --font-body: "Switzer", Arial, Helvetica, sans-serif;
   --font-heading: "Panchang", Arial, Helvetica, sans-serif;
-  --page-gutter: clamp(1rem, 2.2vw, 2rem);
-  --space-section: clamp(5rem, 10vw, 10rem);
+  --page-gutter: 2rem;
+  --grid-gap: 1.5rem;
+  /* Keep the inner frame centred while section backgrounds stay full width. */
+  --frame-gutter: max(var(--page-gutter), calc((100% - 1920px) / 2 + var(--page-gutter)));
+  --space-section: 5rem;
   --step-small: 0.875rem;
-  --step-body: 1.0625rem;
+  --step-body: 1.125rem;
   --step-lead: clamp(1.25rem, 1.8vw, 1.625rem);
   --step-head: clamp(2rem, 4vw, 3.5rem);
 }
@@ -48,6 +52,8 @@ body {
   background: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-body);
+  font-synthesis: none;
+  overflow-wrap: anywhere;
   font-size: var(--step-body);
   line-height: 1.5;
 }
@@ -69,6 +75,7 @@ p {
 a {
   color: inherit;
   text-underline-offset: 0.25em;
+  text-decoration-thickness: 0.07em;
 }
 button,
 input,
@@ -99,6 +106,20 @@ main[id] {
   background: var(--color-accent);
   color: var(--color-background);
 }
+@media (max-width: 899px) {
+  :root {
+    --page-gutter: 1.5rem;
+    --space-section: 4rem;
+    --step-body: 1.0625rem;
+  }
+}
+@media (max-width: 599px) {
+  :root {
+    --page-gutter: 1rem;
+    --grid-gap: 1rem;
+    --space-section: 2.5rem;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -106,6 +127,7 @@ main[id] {
   *,
   *::before,
   *::after {
+    transform: none !important;
     animation: none !important;
     transition: none !important;
   }
