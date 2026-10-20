@@ -230,22 +230,27 @@ try {
     if (width === 375) {
       // Keep checking the other export widths when a breakpoint regression fails.
       try {
-        for (let iteration = 0; iteration < 5; iteration++) {
-          await focus(page, toggle);
-          await page.setViewport({ width: 900, height: 900 });
-          await sleep(150);
-          await expectFocus(page, 'nav a[href="#projects"]');
-          await focus(page, 'nav a[href="#studio"]');
-          await page.setViewport({ width: 899, height: 900 });
-          await sleep(150);
-          await expectFocus(page, toggle);
-          await expectClosed(page);
+        for (const motion of ["reduce", "no-preference"]) {
+          await page.send("Emulation.setEmulatedMedia", {
+            features: [{ name: "prefers-reduced-motion", value: motion }],
+          });
+          for (let iteration = 0; iteration < 5; iteration++) {
+            await focus(page, toggle);
+            await page.setViewport({ width: 900, height: 900 });
+            await sleep(150);
+            await expectFocus(page, 'nav a[href="#projects"]');
+            await focus(page, 'nav a[href="#studio"]');
+            await page.setViewport({ width: 899, height: 900 });
+            await sleep(150);
+            await expectFocus(page, toggle);
+            await expectClosed(page);
+          }
         }
         await focus(page, "#enquiry-name");
         await page.setViewport({ width: 1440, height: 900 });
         await sleep(150);
         await expectFocus(page, "#enquiry-name");
-        results.push({ responsiveFocus: "5 boundary round trips at 899/900; unrelated field focus preserved" });
+        results.push({ responsiveFocus: "10 boundary round trips at 899/900 with normal/reduced motion; unrelated field focus preserved" });
       } catch (error) {
         const active = await page.eval(() => ({ tag: document.activeElement.tagName, id: document.activeElement.id }));
         responsiveFailures.push({ check: "899/900 focus recovery", error: String(error), active });

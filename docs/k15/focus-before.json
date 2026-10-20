@@ -1,0 +1,246 @@
+{
+  "timestamp": "2026-10-20T17:52:25.685Z",
+  "url": "http://localhost:4260",
+  "sourceCommit": "794587126639190cafe00c95f7c0769a6bc69d5b",
+  "workingTreeDirty": false,
+  "sourceSha256": "134e3e58fe9bc7a63211f66d5ff9c23c8ed920a082d943c8f6a71ed9ac785d44",
+  "exportHtmlSha256": "a8aa2bff8ffe1ef623bdf27285a4aa7a9bb3bd542758476d4515f38b4da7ef1b",
+  "results": [
+    {
+      "width": 375,
+      "height": 812,
+      "requestsDuringForm": 0,
+      "privacy": {
+        "writes": [],
+        "local": {},
+        "session": {},
+        "cookie": "",
+        "databases": [],
+        "sameUrl": "http://localhost:4260/#contact"
+      },
+      "errorFocus": [
+        {
+          "id": "enquiry-name",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-email",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-message",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-name",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-email",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-message",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-email",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-name",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-email",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-message",
+          "descriptionsReady": true
+        }
+      ],
+      "reduced": {
+        "scroll": "auto",
+        "static": true,
+        "overflow": false
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "requestsDuringForm": 0,
+      "privacy": {
+        "writes": [],
+        "local": {},
+        "session": {},
+        "cookie": "",
+        "databases": [],
+        "sameUrl": "http://localhost:4260/#contact"
+      },
+      "errorFocus": [
+        {
+          "id": "enquiry-name",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-email",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-message",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-name",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-email",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-message",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-email",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-name",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-email",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-message",
+          "descriptionsReady": true
+        }
+      ],
+      "reduced": {
+        "scroll": "auto",
+        "static": true,
+        "overflow": false
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "requestsDuringForm": 0,
+      "privacy": {
+        "writes": [],
+        "local": {},
+        "session": {},
+        "cookie": "",
+        "databases": [],
+        "sameUrl": "http://localhost:4260/#contact"
+      },
+      "errorFocus": [
+        {
+          "id": "enquiry-name",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-email",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-message",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-name",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-email",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-message",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-email",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-name",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-email",
+          "descriptionsReady": true
+        },
+        {
+          "id": "enquiry-message",
+          "descriptionsReady": true
+        }
+      ],
+      "reduced": {
+        "scroll": "auto",
+        "static": true,
+        "overflow": false
+      },
+      "errors": []
+    },
+    {
+      "feedback": [
+        {
+          "selector": "button[aria-controls]",
+          "hover": {
+            "border": "rgb(40, 43, 40)",
+            "decoration": "underline",
+            "transform": "none"
+          }
+        },
+        {
+          "selector": "#enquiry-name",
+          "hover": {
+            "border": "rgb(40, 43, 40)",
+            "decoration": "none",
+            "transform": "none"
+          }
+        },
+        {
+          "selector": "#enquiry-email",
+          "hover": {
+            "border": "rgb(40, 43, 40)",
+            "decoration": "none",
+            "transform": "none"
+          }
+        },
+        {
+          "selector": "#enquiry-message",
+          "hover": {
+            "border": "rgb(40, 43, 40)",
+            "decoration": "none",
+            "transform": "none"
+          }
+        }
+      ],
+      "invalidFocus": {
+        "border": "rgb(152, 61, 50)",
+        "outline": "rgb(40, 43, 40)",
+        "width": "3px",
+        "offset": "5px"
+      },
+      "runtimeReduced": true
+    }
+  ],
+  "responsiveFailures": [
+    {
+      "check": "899/900 focus recovery",
+      "error": "AssertionError [ERR_ASSERTION]: Expected focus: button[aria-controls]\n\nfalse !== true\n",
+      "active": {
+        "tag": "BODY",
+        "id": ""
+      }
+    }
+  ]
+}
