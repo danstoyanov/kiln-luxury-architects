@@ -9,3 +9,6 @@ next-env.d.ts
 *.log
 .DS_Store
 Thumbs.db
+
+# Local Taste Skill directions, downloads and browser reports
+.taste-skill/
