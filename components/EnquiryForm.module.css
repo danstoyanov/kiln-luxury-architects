@@ -21,7 +21,12 @@
   resize: vertical;
   min-height: 128px;
 }
-.field [aria-invalid="true"] {
+.field input:hover,
+.field textarea:hover {
+  border-color: var(--color-text);
+}
+.field input[aria-invalid="true"],
+.field textarea[aria-invalid="true"] {
   border-color: var(--color-error);
 }
 .error {

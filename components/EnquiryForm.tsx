@@ -1,23 +1,33 @@
 "use client";
 
-import { useRef, useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import styles from "./EnquiryForm.module.css";
 
 type EnquiryValues = { name: string; email: string; message: string };
 type FieldName = keyof EnquiryValues;
 type EnquiryErrors = Partial<Record<FieldName, string>>;
 
-function validate(values: EnquiryValues): EnquiryErrors {
-  const errors: EnquiryErrors = {};
-  if (!values.name.trim()) errors.name = "Please enter your name.";
-  if (!values.email.trim()) {
-    errors.email = "Please enter your email.";
-  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email.trim())) {
-    errors.email = "Please enter a valid email address.";
+function validateField(field: FieldName, value: string): string | undefined {
+  const requiredErrors: Record<FieldName, string> = {
+    name: "Please enter your name.",
+    email: "Please enter your email.",
+    message: "Please tell us about your project.",
+  };
+  if (!value.trim()) {
+    return requiredErrors[field];
   }
-  if (!values.message.trim())
-    errors.message = "Please tell us about your project.";
-  return errors;
+  if (field === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim())) {
+    return "Please enter a valid email address.";
+  }
+  return undefined;
+}
+
+function validate(values: EnquiryValues): EnquiryErrors {
+  return {
+    name: validateField("name", values.name),
+    email: validateField("email", values.email),
+    message: validateField("message", values.message),
+  };
 }
 
 export function EnquiryForm() {
@@ -26,6 +36,24 @@ export function EnquiryForm() {
   const nameInput = useRef<HTMLInputElement>(null);
   const emailInput = useRef<HTMLInputElement>(null);
   const messageInput = useRef<HTMLTextAreaElement>(null);
+
+  const focusAfterValidation = useRef<HTMLInputElement | HTMLTextAreaElement>(null);
+
+  useEffect(() => {
+    // Wait until the error descriptions exist before moving keyboard focus.
+    focusAfterValidation.current?.focus();
+    focusAfterValidation.current = null;
+  }, [errors]);
+
+  function handleFieldChange(field: FieldName, value: string) {
+    setIsComplete(false);
+    if (errors[field]) {
+      setErrors((previous) => ({
+        ...previous,
+        [field]: validateField(field, value),
+      }));
+    }
+  }
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -38,15 +66,15 @@ export function EnquiryForm() {
     setErrors(nextErrors);
     setIsComplete(false);
     if (nextErrors.name) {
-      nameInput.current?.focus();
+      focusAfterValidation.current = nameInput.current;
       return;
     }
     if (nextErrors.email) {
-      emailInput.current?.focus();
+      focusAfterValidation.current = emailInput.current;
       return;
     }
     if (nextErrors.message) {
-      messageInput.current?.focus();
+      focusAfterValidation.current = messageInput.current;
       return;
     }
     // Keep the demo local. Clear the fields without sending or saving their values.
@@ -58,7 +86,6 @@ export function EnquiryForm() {
     <form
       className={styles.form}
       onSubmit={handleSubmit}
-      onChange={() => setIsComplete(false)}
       noValidate
       aria-label="Demo project enquiry"
     >
@@ -70,6 +97,7 @@ export function EnquiryForm() {
         <input
           ref={nameInput}
           id="enquiry-name"
+          onChange={(event) => handleFieldChange("name", event.currentTarget.value)}
           type="text"
           autoComplete="off"
           required
@@ -89,6 +117,7 @@ export function EnquiryForm() {
         <input
           ref={emailInput}
           id="enquiry-email"
+          onChange={(event) => handleFieldChange("email", event.currentTarget.value)}
           type="email"
           autoComplete="off"
           required
@@ -108,6 +137,9 @@ export function EnquiryForm() {
         <textarea
           ref={messageInput}
           id="enquiry-message"
+          onChange={(event) =>
+            handleFieldChange("message", event.currentTarget.value)
+          }
           rows={4}
           autoComplete="off"
           required
@@ -123,7 +155,7 @@ export function EnquiryForm() {
       <button type="submit" className={styles.submit}>
         Discuss your project
       </button>
-      <p className={styles.status} role="status">
+      <p className={styles.status} role="status" aria-atomic="true">
         {isComplete
           ? "Demo only — your enquiry has not been sent or saved."
           : ""}

@@ -98,7 +98,7 @@ export default function HomePage() {
   return (
     <>
       <Navigation />
-      <main id="main">
+      <main id="main" tabIndex={-1}>
         <section className={styles.hero} aria-labelledby="hero-title">
           <ConceptImage
             slot="hero"
@@ -126,6 +126,7 @@ export default function HomePage() {
         </section>
         <section
           id="projects"
+          tabIndex={-1}
           className={styles.projects}
           aria-labelledby="projects-title"
         >
@@ -162,6 +163,7 @@ export default function HomePage() {
         </section>
         <section
           id="studio"
+          tabIndex={-1}
           className={styles.studio}
           aria-labelledby="studio-title"
         >
@@ -186,6 +188,7 @@ export default function HomePage() {
         </section>
         <section
           id="services"
+          tabIndex={-1}
           className={styles.services}
           aria-labelledby="services-title"
         >
@@ -208,6 +211,7 @@ export default function HomePage() {
         </section>
         <section
           id="process"
+          tabIndex={-1}
           className={styles.process}
           aria-labelledby="process-title"
         >
@@ -233,6 +237,7 @@ export default function HomePage() {
         </section>
         <section
           id="contact"
+          tabIndex={-1}
           className={styles.contact}
           aria-labelledby="contact-title"
         >
