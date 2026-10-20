@@ -10,7 +10,7 @@ KILN е измислено студио за луксозна жилищна а�
 - [AGENTS.md](AGENTS.md) — правила за код, отделни worktrees, проверки и PR.
 - [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) — пълният план, критерии и последователност K01–K15.
 - [docs/taste-skill.md](docs/taste-skill.md) — инсталиран Taste Skill, точен commit, възпроизвеждане и употреба.
-- `DESIGN.md` ще бъде създаден в K06 и приет чрез PR; тогава ще определя точните визуални стойности.
+- [DESIGN.md](DESIGN.md) — предложената в K06 визуална система: точни стойности, композиция, изображения и движение. Приема се чрез K06 PR и се прилага в K07; [таблото за ревю](docs/k06/identity-board.html) показва палитрата и типографията.
 
 Кодът и ревютата са в [частното GitHub хранилище](https://github.com/danstoyanov/kiln-luxury-architects). Задачите са в [Linear: KILN Luxury Architects](https://linear.app/singularity-lab/project/kiln-luxury-architects-90cab307bcf0), екип Singularity Lab. Техническата основа е добавена в [SIN-33 — K02](https://linear.app/singularity-lab/issue/SIN-33/k02-nextjs-osnova).
 
