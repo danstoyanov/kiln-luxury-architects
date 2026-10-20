@@ -135,3 +135,7 @@ node scripts/check-k07.mjs http://localhost:4200
 ```
 
 Първата проверява 32-та файла през HTTP, responsive WebP/JPEG, 375/768/1440px, телефон с DPR 2, alt/disclosure, loading, layout shift и рамки при задържани image responses. Втората запазва проверките на взаимодействията и идентичността. Новите резултати по подразбиране са под `.taste-skill/checks/`; `--out <new-directory>` създава отделен комплект за ревю.
+
+## Композиция — K10
+
+[SIN-41: референции, обосновка и снимки преди/след](docs/k10/README.md) документира общата desktop ос на Projects/Services и двуколонния Woodland надпис от 1200px. Точните уточнения са в DESIGN.md; мобилната последователност и идентичността са запазени.

@@ -146,12 +146,16 @@ export default function HomePage() {
                     alt={project.alt}
                   />
                 </figure>
-                <div className={styles.projectTitle}>
-                  <h3>{project.name}</h3>
-                  <span>Concept</span>
+                <div className={styles.projectCaption}>
+                  <div className={styles.projectIdentity}>
+                    <div className={styles.projectTitle}>
+                      <h3>{project.name}</h3>
+                      <span>Concept</span>
+                    </div>
+                    <p className={styles.setting}>{project.setting}</p>
+                  </div>
+                  <p>{project.description}</p>
                 </div>
-                <p className={styles.setting}>{project.setting}</p>
-                <p>{project.description}</p>
               </article>
             ))}
           </div>
