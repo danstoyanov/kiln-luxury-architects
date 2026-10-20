@@ -123,9 +123,6 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <p className={styles.heroCredit}>
-            AI-generated concept imagery. A fictional home, imagined for KILN.
-          </p>
         </section>
         <section
           id="projects"
@@ -148,7 +145,6 @@ export default function HomePage() {
                     sizes={project.sizes}
                     alt={project.alt}
                   />
-                  <figcaption>AI-generated concept visualisation.</figcaption>
                 </figure>
                 <div className={styles.projectTitle}>
                   <h3>{project.name}</h3>

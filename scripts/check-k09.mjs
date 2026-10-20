@@ -38,8 +38,12 @@ async function imageMetrics(page) {
         sizes: image.sizes,
       };
     }),
-    disclosure: document.body.textContent.includes("AI-generated concept imagery") &&
+    disclosure: document.body.textContent.includes("AI-generated imagery") &&
       document.body.textContent.includes("Fictional projects"),
+    imageCaptions: document.querySelectorAll("figure figcaption").length,
+    titleGaps: [...document.querySelectorAll("#projects article")].map(article =>
+      article.querySelector("h3").parentElement.getBoundingClientRect().top -
+      article.querySelector("img").getBoundingClientRect().bottom),
     temporary: /temporary reference|unsplash/i.test(document.body.textContent),
   }));
 }
@@ -69,6 +73,8 @@ try {
     assert.equal(metrics.images.length, 4);
     assert.equal(metrics.disclosure, true);
     assert.equal(metrics.temporary, false);
+    assert.equal(metrics.imageCaptions, 0);
+    assert(metrics.titleGaps.every(gap => Math.abs(gap - 16) < 0.1));
     assert(metrics.layoutShift < 0.001, JSON.stringify(metrics));
     for (const [index, image] of metrics.images.entries()) {
       assert(image.loaded && image.src.endsWith(".webp"));

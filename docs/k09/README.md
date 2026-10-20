@@ -111,3 +111,22 @@ node .agents/skills/design-taste-frontend/scripts/inspect.mjs http://localhost:4
 
 PR остава за човешки review/merge. Worktree-то се запазва за поправки в същия PR; SIN-40 става Done и чатът зелен след потвърден merge и приемане.
 
+
+## Корекции след потребителско ревю — текущ изглед
+
+Премахнати са отделните AI бележки под hero и трите проекта. Заглавието/Concept вече е на 16px от изображението, следвано от 6px до setting и 12px до описанието при стандартен root. Глобалното fictional/AI обозначение остава в Projects intro и footer. Актуализиран е и DESIGN.md спрямо изричното искане.
+
+Снимките в `after/` по-горе са първата версия за ревю. **Текущите снимки** са [desktop projects](review/1440-projects.jpg), [tablet projects](review/768-projects.jpg), [phone projects](review/375-projects.jpg), [desktop fold](review/1440-fold.jpg) и [phone fold](review/375-fold.jpg).
+
+Повторно преминаха TypeScript, ESLint и production build, както и [image checks](review/image-checks.json) на самия export при 375/768/1440 и DPR 2: нула per-image captions, измерен gap 16px за трите проекта, четири заредени кадъра, без overflow/errors, CLS под 0.001 и непроменени рамки при забавени image responses. Повторната [K07 identity regression](review/regression/identity-checks.json), [targeted checks](review/regression/targeted-checks.json) и [interaction/privacy checks](review/regression/browser-checks.json) са успешни. Всички осем крайни inspector снимки са визуално прегледани. Inspector запазва същите 1 FAIL / 3 WARN от приетите проектни решения — [raw report](review/taste-report.json); Taste lint остава 0 FAIL / 0 WARN.
+
+```text
+ROUND 2 — корекция по ревю
+Seen in one second: домът и KILN, без отделен image label.
+Idea (one sentence): материалната маса на името свързва терена с обитаването.
+Live thing: меню и локална demo форма.
+Layout words by section: hero=image-name / projects=wall / studio=text / services=open-columns / process=sheet / contact=split / footer=inverse-name.
+Scores: design 7.5 · usability 8 · creativity 6 · content 8 → overall 7.4, capped at 6.0.
+Caps applied: still-page и познатата за архитектурни студиа посока.
+Top three problems / граници: native 1536px hero; по-мека Woodland растителност; позната композиционна посока. Няма нов проблем от премахването на labels или уплътняването.
+```
