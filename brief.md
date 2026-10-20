@@ -1,64 +1,65 @@
-# KILN — задание за сайта
+# KILN — website brief
 
-## Цел и аудитория
+## Goal and audience
 
-KILN Luxury Architects е измислено студио за луксозна жилищна архитектура. Създаваме една landing page на английски за портфолио, която показва убедителен клиентски дизайн с конкретна идентичност, изграден с помощта на AI.
+KILN Luxury Architects is a fictional luxury residential architecture studio. We are creating a single English-language landing page for a portfolio, demonstrating convincing client-facing design with a distinct identity, built with AI assistance.
 
-Посетителят е потенциален възложител на индивидуална къща или вила. Страницата трябва да му помогне да разбере архитектурния стил, услугите и процеса на студиото. Основното действие е **“Discuss your project”** и води до контактната секция с демо форма.
+The visitor is a potential client commissioning a bespoke house or villa. The page should help them understand the studio's architectural style, services and process. The primary action is **“Discuss your project”** and leads to the contact section with a demo form.
 
-## Съдържание на английски
+## Content in English
 
-Всички видими текстове, навигация, бутони, етикети, грешки, alt текстове и демо обозначения са на английски. Текстовете трябва да бъдат конкретни и разбираеми, без недоказуеми твърдения за реално студио.
+All visible copy, navigation, buttons, labels, errors, alt text and demo notices are in English. Copy must be specific and clear, without unsupported claims about a real studio.
 
-| Част | Задължително съдържание и поведение |
+| Section | Required content and behavior |
 | --- | --- |
-| Навигация | Връзки към секциите на същата страница; достъпно мобилно меню. |
-| Първи екран | Основно послание, голям архитектурен кадър и “Discuss your project”. |
-| Проекти | Три концептуални жилищни проекта с кратки описания и по едно финално изображение. Представянето не внушава реално изпълнени поръчки. |
-| Студио | Представяне на подхода и архитектурния характер на KILN. |
-| Услуги и процес | Разбираемо описание как студиото би работило с възложителя. |
-| Контакт | Име, имейл и съобщение; проверки и честно демо съобщение. |
-| Демо обозначение | Кратък английски текст, че студиото и проектите са демонстрационни. |
+| Navigation | Links to sections on the same page; an accessible mobile menu. |
+| First screen | Main message, a large architectural image and “Discuss your project”. |
+| Projects | Three conceptual residential projects with short descriptions and one final image each. The presentation must not imply that these are completed commissions. |
+| Studio | An introduction to KILN's approach and architectural character. |
+| Services and process | A clear description of how the studio would work with a client. |
+| Contact | Name, email and message; validation and an honest demo message. |
+| Demo notice | A short English statement that the studio and projects are for demonstration. |
 
-Не добавяме допълнителни страници, реални клиентски отзиви или измислени награди. Не представяме концепциите и генерираните кадри като доказателство за реални клиенти.
+We do not add extra pages, real client testimonials or invented awards. We do not present the concepts and generated images as evidence of real clients.
 
-## Демо форма
+## Demo form
 
-- Полета: име, имейл и съобщение; всяко е задължително и има видим етикет.
-- Празните полета и невалидният имейл показват разбираеми грешки на английски, свързани със съответните полета.
-- След валидно попълване се показва точно: **“Demo only — your enquiry has not been sent or saved.”**
-- Не се изпраща мрежова заявка с въведените данни, не се изпраща имейл и не се използва backend или външна услуга за форми.
-- Данните остават само във временното състояние на страницата. Не се записват в база данни, browser storage, cookies, URL, логове или analytics.
-- Не се показва съобщение, което внушава успешно доставено запитване.
-- Формата и менюто работят с клавиатура и имат видим фокус. Менюто се затваря предвидимо.
+- Fields: name, email and message; each is required and has a visible label.
+- Empty fields and an invalid email show clear errors in English, associated with the relevant fields.
+- After valid input, display exactly: **“Demo only — your enquiry has not been sent or saved.”**
+- No network request containing the entered data is sent, no email is sent, and no backend or external form service is used.
+- Data remains only in the page's temporary state. It is not saved in a database, browser storage, cookies, the URL, logs or analytics.
+- Do not show a message that implies an enquiry was successfully delivered.
+- The form and menu work with a keyboard and have visible focus. The menu closes predictably.
 
-## Визуална посока
+## Visual direction
 
-Съвременни къщи сред природата, естествени материали, големи архитектурни изображения и редакционна композиция. Началната палитра е топъл светъл фон, графитен текст и приглушен глинен акцент. Точните стойности, шрифтове, отстояния, композиционни правила, изображения и движение се определят в `DESIGN.md` в K06 и се приемат с PR.
+Contemporary homes in natural surroundings, natural materials, large architectural images and an editorial composition. The initial palette is a warm, light background, graphite text and a muted clay accent. Exact values, fonts, spacing, composition rules, imagery and motion are defined in `DESIGN.md` in K06 and approved through a PR.
 
-Композицията трябва да служи на архитектурното съдържание. Секциите не повтарят механично еднакви карти; типографията има ясна йерархия; изображенията имат общ характер. Движението е умерено, зачита reduced motion и не скрива съдържание.
+The composition must serve the architectural content. Sections do not mechanically repeat identical cards; typography has a clear hierarchy; images share a consistent character. Motion is restrained, respects reduced motion and does not hide content.
 
-Финалните кадри са от вградения ImageGen: един основен и три за проектите. K08 съхранява подбраните изображения и промптовете; K09 подготвя оптимизирани уеб варианти в `public/assets/`, подходящи мобилни изрязвания, размери и смислен alt текст. Изображенията под първия екран се зареждат отложено. Временните изображения от K04 се заменят; ако са външни, източникът и условията за използване се записват.
+The final images come from the built-in ImageGen: one main image and three for the projects. K08 stores the selected images and prompts; K09 prepares optimized web variants in `public/assets/`, suitable mobile crops, dimensions and meaningful alt text. Images below the first screen are lazy-loaded. Temporary images from K04 are replaced; if they come from external sources, their source and terms of use are recorded.
 
-Taste Skill подпомага началния дизайн. До три Pinterest/Awwwards референции в K10 и компоненти от 21st.dev в K11 се използват само за установена нужда. Impeccable critique, audit, поправки и polish са отделните етапи K12–K13.
+Taste Skill supports the initial design. Up to three Pinterest/Awwwards references in K10 and components from 21st.dev in K11 are used only for an identified need. Impeccable critique, audit, fixes and polish are the separate stages K12–K13.
 
-## Технически граници
+## Technical boundaries
 
-Една страница с Next.js App Router, React и TypeScript strict. npm с `package-lock.json`, CSS Modules и глобални CSS променливи. Точната поддържана версия се избира в K02 според наличния Node.
+A single page with Next.js App Router, React and TypeScript strict. npm with `package-lock.json`, CSS Modules and global CSS variables. The exact supported version is chosen in K02 based on the available Node version.
 
-GPT Sites обслужва статичния `out/`, създаден с `output: 'export'` в `next.config.ts` и `npm run build`. Менюто и формата са Client Components. Не използваме Server Actions, динамични сървърни маршрути или runtime функции, които изискват работещ Next.js сървър. Изображенията използват предварително оптимизирани файлове и `<picture>`/`<img>` с responsive варианти и размери; няма зависимост от сървърния оптимизатор на `next/image`.
+GPT Sites serves the static `out/`, created with `output: 'export'` in `next.config.ts` and `npm run build`. The menu and form are Client Components. We do not use Server Actions, dynamic server routes or runtime features that require a running Next.js server. Images use pre-optimized files and `<picture>`/`<img>` with responsive variants and dimensions; there is no dependency on the server-side `next/image` optimizer.
 
-Извън обхвата са backend, база данни, акаунти, CMS и допълнителни страници. Подготовката и публикуването в Sites не заменят GitHub remote и не заобикалят PR ревюто. Site остава частен по подразбиране; публичното споделяне е отделно решение на потребителя.
+Backend, database, accounts, CMS and extra pages are out of scope. Preparation and publishing in Sites do not replace the GitHub remote or bypass PR review. The Site remains private by default; public sharing is a separate user decision.
 
-## Приемане на крайния сайт
+## Final site acceptance
 
-- Всички секции и четирите финални ImageGen изображения са налични; няма временни изображения.
-- При 375, 768 и 1440 px няма счупена подредба, хоризонтално преливане, липсващи ресурси или грешки в конзолата.
-- Навигацията, мобилното меню и формата работят с клавиатура; проверени са видимият фокус, контрастът, заглавията и alt текстовете.
-- Проверени са празни полета, невалиден имейл и валидно попълване; няма изпращане или запис на данни.
-- Движението зачита reduced motion; изображенията не причиняват видими скокове в подредбата.
-- TypeScript, ESLint и production build минават; самият `out/` е проверен през static server с менюто, формата и изображенията.
-- Визуалният резултат е приет чрез PR ревюта; кодът е в частното GitHub хранилище.
-- GPT Sites потвърждава успешен деплой на одобрения код от `main`; отчетът съдържа URL, GitHub commit, версия/статус на деплоя и проверка на хоствания сайт.
+- All sections and all four final ImageGen images are present; there are no temporary images.
+- At 375, 768 and 1440 px, there is no broken layout, horizontal overflow, missing resources or console errors.
+- Navigation, the mobile menu and the form work with a keyboard; visible focus, contrast, headings and alt text have been checked.
+- Empty fields, an invalid email and valid input have been checked; no data is sent or saved.
+- Motion respects reduced motion; images do not cause visible layout shifts.
+- TypeScript, ESLint and the production build pass; `out/` itself has been checked through a static server, including the menu, form and images.
+- The visual result has been approved through PR reviews; the code is in the private GitHub repository.
+- GPT Sites confirms a successful deployment of the approved code from `main`; the report contains the URL, GitHub commit, deployment version/status and a check of the hosted site.
 
-Това са критерии за крайния продукт, разпределени по K01–K15, а не твърдение, че сайтът вече е реализиран. Първоначалният план и отчетите по етапи са локални архиви извън публичния source; правилата за изпълнение са в [AGENTS.md](AGENTS.md), а входът към проекта е [README.md](README.md).
+These are criteria for the final product, distributed across K01–K15, rather than a claim that the site has already been implemented. The original plan and stage reports are local archives outside the public source; execution rules are in [AGENTS.md](AGENTS.md), and the project entry point is [README.md](README.md).
+
