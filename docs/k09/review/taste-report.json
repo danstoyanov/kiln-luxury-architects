@@ -1,0 +1,1933 @@
+{
+ "url": "http://localhost:4200",
+ "at": "2026-10-20T14:09:36.375Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.86,
+    0.59,
+    0.73,
+    0.59,
+    0.81,
+    0.41,
+    0.73
+   ],
+   "motion": {
+    "elements": 2,
+    "css": 2,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5767,
+     "screens": 6.4,
+     "words": 448,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-1536.webp",
+      "courtyard-1280.webp",
+      "ridge-768.webp",
+      "woodland-1280.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "KILN",
+     "words": 1,
+     "chars": 4,
+     "lines": 1,
+     "size": 266.4,
+     "vw": 18.5,
+     "font": "Panchang",
+     "weight": 700,
+     "tracking": -0.055,
+     "leading": 0.9,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.63,
+     "top": 604,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "KILN",
+     "words": 1,
+     "lines": 1,
+     "size": 266.4,
+     "font": "Panchang"
+    },
+    "headings": [
+     {
+      "text": "KILN",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 266.4,
+      "vw": 18.5,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 604,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Living studies",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 944,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The studio",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 2902,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Considered together",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 3317,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From ground to home",
+      "words": 4,
+      "chars": 19,
+      "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 3716,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A place to begin",
+      "words": 4,
+      "chars": 16,
+      "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 4435,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "KILN",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 407.5,
+      "vw": 28.3,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 5313,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "Panchang",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      18,
+      26,
+      56,
+      266,
+      408
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 18,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 12.7
+     },
+     "measureChars": 46,
+     "max": {
+      "size": 407.5,
+      "vw": 28.3,
+      "font": "Panchang",
+      "text": "KILN"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f2f1ed",
+     "bodyBgHsl": {
+      "h": 48,
+      "s": 0.16,
+      "l": 0.94
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e3e0d8",
+       "top": 2822,
+       "hsl": {
+        "h": 44,
+        "s": 0.16,
+        "l": 0.87
+       }
+      },
+      {
+       "color": "#282b28",
+       "top": 3636,
+       "hsl": {
+        "h": 120,
+        "s": 0.04,
+        "l": 0.16
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#282b28",
+       "share": 0.85
+      },
+      {
+       "color": "#f2f1ed",
+       "share": 0.13
+      },
+      {
+       "color": "#5c605a",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#805542",
+      "hsl": {
+       "h": 18,
+       "s": 0.32,
+       "l": 0.38
+      },
+      "fg": "#f2f1ed"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 0,
+     "height": 51,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Discuss your project ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.56
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": false,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "panchang",
+     "switzer"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5767,
+    "margins": {
+     "left": 32,
+     "right": 32
+    },
+    "sections": [
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 76,
+      "height": 768,
+      "words": 12,
+      "media": 2,
+      "middle": 0,
+      "heading": null,
+      "left": 965,
+      "right": 191,
+      "textLeft": 965,
+      "textRight": 191,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#projects.E0kJGG_projects",
+      "tag": "section",
+      "top": 844,
+      "height": 1979,
+      "words": 115,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "Living studies",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#studio.E0kJGG_studio",
+      "tag": "section",
+      "top": 2822,
+      "height": 394,
+      "words": 82,
+      "media": 0,
+      "middle": 246,
+      "heading": {
+       "text": "The studio",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 71,
+      "textLeft": 32,
+      "textRight": 71,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.E0kJGG_services",
+      "tag": "section",
+      "top": 3217,
+      "height": 420,
+      "words": 69,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Considered together",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 78,
+      "textLeft": 32,
+      "textRight": 78,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#process.E0kJGG_process",
+      "tag": "section",
+      "top": 3636,
+      "height": 719,
+      "words": 84,
+      "media": 0,
+      "middle": 228,
+      "heading": {
+       "text": "From ground",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 120,
+      "textLeft": 32,
+      "textRight": 120,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.E0kJGG_contact",
+      "tag": "section",
+      "top": 4355,
+      "height": 751,
+      "words": 66,
+      "media": 0,
+      "middle": 372,
+      "heading": {
+       "text": "A place",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 153,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.E0kJGG_footer",
+      "tag": "footer",
+      "top": 5106,
+      "height": 614,
+      "words": 28,
+      "media": 0,
+      "middle": 908,
+      "heading": null,
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "KILN",
+      "size": 266,
+      "top": 604,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 28,
+      "n": 15
+     },
+     {
+      "x": 744,
+      "n": 3
+     },
+     {
+      "x": 265,
+      "n": 2
+     },
+     {
+      "x": 501,
+      "n": 2
+     },
+     {
+      "x": 523,
+      "n": 2
+     },
+     {
+      "x": 849,
+      "n": 2
+     },
+     {
+      "x": 971,
+      "n": 2
+     },
+     {
+      "x": 981,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 29,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.04,
+    "voidBox": {
+     "x": 1260,
+     "y": 600,
+     "w": 180,
+     "h": 300
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.71,
+    0.79,
+    0.66,
+    0.6,
+    0.78,
+    0.32,
+    0.48
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 6330,
+     "screens": 6.2,
+     "words": 444,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-768.webp",
+      "courtyard-768.webp",
+      "ridge-768.webp",
+      "woodland-768.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "KILN",
+     "words": 1,
+     "chars": 4,
+     "lines": 1,
+     "size": 209.7,
+     "vw": 27.3,
+     "font": "Panchang",
+     "weight": 700,
+     "tracking": -0.055,
+     "leading": 0.9,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.94,
+     "top": 510,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "KILN",
+     "words": 1,
+     "lines": 1,
+     "size": 209.7,
+     "font": "Panchang"
+    },
+    "headings": [
+     {
+      "text": "KILN",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 209.7,
+      "vw": 27.3,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 510,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Living studies",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 838,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The studio",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 3163,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Considered together",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 3569,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From ground to home",
+      "words": 4,
+      "chars": 19,
+      "lines": 2,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 4116,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A place to begin",
+      "words": 4,
+      "chars": 16,
+      "lines": 2,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 4912,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "KILN",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 217.3,
+      "vw": 28.3,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 6088,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "Panchang",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      17,
+      20,
+      32,
+      210,
+      217
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 12.7
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 217.3,
+      "vw": 28.3,
+      "font": "Panchang",
+      "text": "KILN"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f2f1ed",
+     "bodyBgHsl": {
+      "h": 48,
+      "s": 0.16,
+      "l": 0.94
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e3e0d8",
+       "top": 3099,
+       "hsl": {
+        "h": 44,
+        "s": 0.16,
+        "l": 0.87
+       }
+      },
+      {
+       "color": "#282b28",
+       "top": 4052,
+       "hsl": {
+        "h": 120,
+        "s": 0.04,
+        "l": 0.16
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#282b28",
+       "share": 0.85
+      },
+      {
+       "color": "#f2f1ed",
+       "share": 0.13
+      },
+      {
+       "color": "#5c605a",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#805542",
+      "hsl": {
+       "h": 18,
+       "s": 0.32,
+       "l": 0.38
+      },
+      "fg": "#f2f1ed"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": 0,
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Menu",
+      "Discuss your project ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.4
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": false,
+     "height": 77,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "panchang",
+     "switzer"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 6330,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 77,
+      "height": 697,
+      "words": 13,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "KILN",
+       "size": 210,
+       "tag": "h1"
+      },
+      "left": 21,
+      "right": 63,
+      "textLeft": 21,
+      "textRight": 63,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.E0kJGG_sectionIntro",
+      "tag": "div",
+      "top": 838,
+      "height": 135,
+      "words": 19,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 24,
+      "right": 337,
+      "textLeft": 24,
+      "textRight": 337,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.E0kJGG_projectWall",
+      "tag": "div",
+      "top": 1013,
+      "height": 2022,
+      "words": 94,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "Courtyard House",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#studio.E0kJGG_studio",
+      "tag": "section",
+      "top": 3099,
+      "height": 406,
+      "words": 82,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The studio",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 25,
+      "textLeft": 24,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.E0kJGG_services",
+      "tag": "section",
+      "top": 3505,
+      "height": 547,
+      "words": 69,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Considered together",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 73,
+      "textLeft": 24,
+      "textRight": 73,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#process.E0kJGG_process",
+      "tag": "section",
+      "top": 4052,
+      "height": 796,
+      "words": 84,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From ground",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 221,
+      "textLeft": 24,
+      "textRight": 221,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.E0kJGG_contact",
+      "tag": "section",
+      "top": 4848,
+      "height": 1037,
+      "words": 66,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A place",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 239,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.E0kJGG_footer",
+      "tag": "footer",
+      "top": 5884,
+      "height": 421,
+      "words": 28,
+      "media": 0,
+      "middle": 257,
+      "heading": null,
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "KILN",
+      "size": 210,
+      "top": 510,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 21,
+      "n": 26
+     },
+     {
+      "x": 400,
+      "n": 3
+     }
+    ],
+    "leftBlocks": 29,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 375,
+   "height": 812,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.8,
+    0.71,
+    0.68,
+    0.64,
+    0.93,
+    0.33,
+    0.62
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 375,
+     "h": 812
+    },
+    "page": {
+     "height": 5608,
+     "screens": 6.9,
+     "words": 444,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-480.webp",
+      "courtyard-480.webp",
+      "ridge-480.webp",
+      "woodland-480.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "KILN",
+     "words": 1,
+     "chars": 4,
+     "lines": 1,
+     "size": 102.4,
+     "vw": 27.3,
+     "font": "Panchang",
+     "weight": 700,
+     "tracking": -0.055,
+     "leading": 0.9,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 373,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "KILN",
+     "words": 1,
+     "lines": 1,
+     "size": 102.4,
+     "font": "Panchang"
+    },
+    "headings": [
+     {
+      "text": "KILN",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 102.4,
+      "vw": 27.3,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 373,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Living studies",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.5,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 649,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The studio",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.5,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 2241,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Considered together",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.5,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 2735,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From ground to home",
+      "words": 4,
+      "chars": 19,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.5,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 3376,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A place to begin",
+      "words": 4,
+      "chars": 16,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.5,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 4226,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "KILN",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 104.9,
+      "vw": 28,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 5492,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "Panchang",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      17,
+      20,
+      32,
+      102,
+      105
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 12.7
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 104.9,
+      "vw": 28,
+      "font": "Panchang",
+      "text": "KILN"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f2f1ed",
+     "bodyBgHsl": {
+      "h": 48,
+      "s": 0.16,
+      "l": 0.94
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e3e0d8",
+       "top": 2201,
+       "hsl": {
+        "h": 44,
+        "s": 0.16,
+        "l": 0.87
+       }
+      },
+      {
+       "color": "#282b28",
+       "top": 3336,
+       "hsl": {
+        "h": 120,
+        "s": 0.04,
+        "l": 0.16
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#282b28",
+       "share": 0.85
+      },
+      {
+       "color": "#f2f1ed",
+       "share": 0.13
+      },
+      {
+       "color": "#5c605a",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#805542",
+      "hsl": {
+       "h": 18,
+       "s": 0.32,
+       "l": 0.38
+      },
+      "fg": "#f2f1ed"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": 0,
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Menu",
+      "Discuss your project ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.34
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": false,
+     "height": 77,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "panchang",
+     "switzer"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 375,
+     "h": 812
+    },
+    "pageH": 5608,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 77,
+      "height": 533,
+      "words": 13,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "KILN",
+       "size": 102,
+       "tag": "h1"
+      },
+      "left": 14,
+      "right": 27,
+      "textLeft": 14,
+      "textRight": 27,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.E0kJGG_sectionIntro",
+      "tag": "div",
+      "top": 649,
+      "height": 135,
+      "words": 19,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 21,
+      "textLeft": 16,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.E0kJGG_projectWall",
+      "tag": "div",
+      "top": 816,
+      "height": 1344,
+      "words": 94,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "Courtyard House",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#studio.E0kJGG_studio",
+      "tag": "section",
+      "top": 2201,
+      "height": 494,
+      "words": 82,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The studio",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.E0kJGG_services",
+      "tag": "section",
+      "top": 2695,
+      "height": 641,
+      "words": 69,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Considered together",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 20,
+      "textLeft": 16,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#process.E0kJGG_process",
+      "tag": "section",
+      "top": 3336,
+      "height": 850,
+      "words": 84,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From ground",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 21,
+      "textLeft": 16,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.E0kJGG_contact",
+      "tag": "section",
+      "top": 4186,
+      "height": 1014,
+      "words": 66,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A place",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.E0kJGG_footer",
+      "tag": "footer",
+      "top": 5200,
+      "height": 397,
+      "words": 28,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 50,
+      "textLeft": 16,
+      "textRight": 50,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "KILN",
+      "size": 102,
+      "top": 373,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 14,
+      "n": 29
+     }
+    ],
+    "leftBlocks": 29,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #f2f1ed, text #f2f1ed).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    375
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 2 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "WARN",
+   "id": "name-only-title",
+   "width": 768,
+   "message": "The h1 is a bare name (\"KILN\") and nothing else on the first screen says what this is.",
+   "fix": "Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points.",
+   "alsoAt": [
+    375
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Dan Stoyanov\\.codex\\worktrees\\sin-40-images\\kiln-landing-page-portfolio\\.taste-skill\\k09-review-inspect\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dan Stoyanov\\.codex\\worktrees\\sin-40-images\\kiln-landing-page-portfolio\\.taste-skill\\k09-review-inspect\\desktop-page-01.jpg",
+    "C:\\Users\\Dan Stoyanov\\.codex\\worktrees\\sin-40-images\\kiln-landing-page-portfolio\\.taste-skill\\k09-review-inspect\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Dan Stoyanov\\.codex\\worktrees\\sin-40-images\\kiln-landing-page-portfolio\\.taste-skill\\k09-review-inspect\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dan Stoyanov\\.codex\\worktrees\\sin-40-images\\kiln-landing-page-portfolio\\.taste-skill\\k09-review-inspect\\tablet-page-01.jpg",
+    "C:\\Users\\Dan Stoyanov\\.codex\\worktrees\\sin-40-images\\kiln-landing-page-portfolio\\.taste-skill\\k09-review-inspect\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 375,
+   "fold": "C:\\Users\\Dan Stoyanov\\.codex\\worktrees\\sin-40-images\\kiln-landing-page-portfolio\\.taste-skill\\k09-review-inspect\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dan Stoyanov\\.codex\\worktrees\\sin-40-images\\kiln-landing-page-portfolio\\.taste-skill\\k09-review-inspect\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
