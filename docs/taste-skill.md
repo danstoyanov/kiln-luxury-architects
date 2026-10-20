@@ -1,21 +1,21 @@
-# Taste Skill за KILN
+# Taste Skill for KILN
 
-Подготовка за [SIN-34 / K03](https://linear.app/singularity-lab/issue/SIN-34/k03-podgotovka-na-taste-skill), 20 октомври 2026 г. Това е инструмент за K04; тук не се избира дизайн и не се променя страницата.
+Preparation for [SIN-34 / K03](https://linear.app/singularity-lab/issue/SIN-34/k03-podgotovka-na-taste-skill), 20 October 2026. This is a tool for K04; no design is selected and no page changes are made here.
 
-## Къде е и коя версия използваме
+## Location and pinned version
 
-- Skill: `design-taste-frontend`, вход [SKILL.md](../.agents/skills/design-taste-frontend/SKILL.md).
-- Източник: [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill).
-- Точен commit: [`63aba5f43b5056758b15bbe7d683da8c86a7a7ad`](https://github.com/Leonxlnx/taste-skill/tree/63aba5f43b5056758b15bbe7d683da8c86a7a7ad).
-- Upstream папка: `skills/taste-skill`; локална: `.agents/skills/design-taste-frontend/`.
-- Всичките 38 upstream файла са копирани без промени, включително scripts, references, library и assets. Добавен е само [MIT LICENSE](../.agents/skills/design-taste-frontend/LICENSE) от корена на същия commit.
-- [taste-skill-source.json](../taste-skill-source.json) записва източника, commit-а, инсталатора и SHA-256 за всички 39 файла. `.gitattributes` запазва байтовете им и при Windows checkout.
+- Skill: `design-taste-frontend`, entry point [SKILL.md](../.agents/skills/design-taste-frontend/SKILL.md).
+- Source: [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill).
+- Exact commit: [`63aba5f43b5056758b15bbe7d683da8c86a7a7ad`](https://github.com/Leonxlnx/taste-skill/tree/63aba5f43b5056758b15bbe7d683da8c86a7a7ad).
+- Upstream directory: `skills/taste-skill`; local directory: `.agents/skills/design-taste-frontend/`.
+- All 38 upstream files were copied without changes, including scripts, references, library and assets. The only addition is the [MIT LICENSE](../.agents/skills/design-taste-frontend/LICENSE) from the root of the same commit.
+- [taste-skill-source.json](../taste-skill-source.json) records the source, commit, installer and SHA-256 hashes for all 39 files. `.gitattributes` preserves their bytes on Windows checkout as well.
 
-Копието е в Git: следващият агент няма нужда от глобална инсталация или мрежа за прочит и draw. Codex открива проектни skills в `.agents/skills/` при следващ ход/нова сесия с това worktree като работна папка. Ако каталогът не го показва, отвори директно горния SKILL.md и свързаните файлове. Не актуализирай автоматично от `main`.
+The copy is tracked in Git: the next agent does not need a global installation or network access to read it and run draw. Codex discovers project skills in `.agents/skills/` on the next turn or in a new session with this worktree as the working directory. If the catalog does not list it, open the SKILL.md linked above and its related files directly. Do not update automatically from `main`.
 
-## Инсталация и възпроизвеждане
+## Installation and reproduction
 
-Използван е вграденият Codex `skill-installer`, Python 3.14 и download методът. Командата е изпълнена от корена на worktree с празна целева папка (PowerShell):
+The bundled Codex `skill-installer`, Python 3.14 and the download method were used. The command was run from the worktree root with an empty destination directory (PowerShell):
 
 ```powershell
 $codexRoot = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { Join-Path $env:USERPROFILE '.codex' }
@@ -25,9 +25,9 @@ Invoke-WebRequest 'https://raw.githubusercontent.com/Leonxlnx/taste-skill/63aba5
 node scripts/verify-taste-skill.mjs
 ```
 
-Инсталаторът отказва да презаписва съществуваща папка. Той не създава `skills-lock.json`; такъв файл не е генериран или премахван. `taste-skill-source.json` е отделен provenance manifest, а не lockfile на `npx skills`. Няма npm зависимости за skill-а.
+The installer refuses to overwrite an existing directory. It does not create `skills-lock.json`; no such file was generated or removed. `taste-skill-source.json` is a separate provenance manifest, not an `npx skills` lockfile. The skill has no npm dependencies.
 
-Независимо възпроизвеждане без Codex installer: изтегли същия Git commit в нова временна папка, копирай upstream папката и лиценза и сравни с manifest-а. Изпълни от корена на проекта; изисква Git, Node и мрежа. Всяко изпълнение създава нова папка и не презаписва инсталираното копие:
+To reproduce the copy independently without the Codex installer, download the same Git commit into a new temporary directory, copy the upstream directory and license, and compare them with the manifest. Run from the project root; Git, Node and network access are required. Each run creates a new directory and does not overwrite the installed copy:
 
 ```powershell
 $ErrorActionPreference = 'Stop'
@@ -45,51 +45,51 @@ node scripts/verify-taste-skill.mjs $skillPath
 if ($LASTEXITCODE -ne 0) { throw 'Verification failed' }
 ```
 
-При нужда от възстановяване използвай провереното копие в нов checkout. Не изтривай локални промени. При умишлен upgrade прегледай новите инструкции, обнови commit-а и хешовете с отделен PR.
+If recovery is needed, use the verified copy in a new checkout. Do not delete local changes. For an intentional upgrade, review the new instructions and update the commit and hashes in a separate PR.
 
-## Употреба в K04
+## Use in K04
 
-1. Прочети Linear задачата, `AGENTS.md`, `brief.md` и `DESIGN.md`, ако вече съществува. Първоначалният план и архивите по етапи се пазят само локално и не са задължителни за нов clone. После прочети целия SKILL.md и необходимите references.
-2. От корена на worktree изпълни `node scripts/verify-taste-skill.mjs` и използвай skill-а за аргумент, текстове и композиция на KILN. При изрично посочване в промпт: „Използвай $design-taste-frontend за SIN-35, според docs/taste-skill.md и ограниченията на KILN.“
-3. Пример за разглеждане на три посоки (не избира посока и не създава сайт):
+1. Read the Linear issue, `AGENTS.md`, `brief.md` and `DESIGN.md`, if it already exists. The original plan and stage archives are kept locally only and are not required for a new clone. Then read the full SKILL.md and the necessary references.
+2. From the worktree root, run `node scripts/verify-taste-skill.mjs` and use the skill for KILN's rationale, copy and composition. To invoke it explicitly in a prompt: “Use $design-taste-frontend for SIN-35, following docs/taste-skill.md and KILN's constraints.”
+3. Example for exploring three directions (does not select a direction or create a site):
 
 ```sh
 node .agents/skills/design-taste-frontend/scripts/draw.mjs --list sectors
 node .agents/skills/design-taste-frontend/scripts/draw.mjs --sector architecture --brief "KILN fictional residential architecture studio" --sections work,about,features,how-it-works,contact,footer --tone luxury --keep palette --options 3 --seed 34
 ```
 
-Избери подходяща посока според brief-а; изпълни същата команда без `--options 3`, с `--direction <chosen-id>`. Запиши seed, посока и обосновка в отчета на K04. `--keep palette` запазва началната проектна палитра; след K06 използвай `--keep palette,type` за приетата идентичност. Не твърди наличие на собствени фотографии чрез `--have photography`, преди да има такива.
+Choose a suitable direction based on the brief; run the same command without `--options 3`, adding `--direction <chosen-id>`. Record the seed, direction and rationale in the K04 report. `--keep palette` preserves the initial project palette; after K06, use `--keep palette,type` for the approved identity. Do not claim to have original photography through `--have photography` before it exists.
 
-Локалните direction sheets, downloads и screenshots са в игнорираната `.taste-skill/`. Предай избраните решения и нужните доказателства в Git документите на съответния етап; не разчитай следващо worktree да наследи игнорирани файлове.
+Local direction sheets, downloads and screenshots are stored in the ignored `.taste-skill/` directory. Hand over the selected decisions and necessary evidence in the Git documents for the relevant stage; do not rely on the next worktree inheriting ignored files.
 
-## Правила на KILN с предимство
+## KILN rules that take precedence
 
-- Next.js App Router, strict TypeScript, CSS Modules, глобални CSS променливи и static export. Не копирай автоматично JS/CSS helpers и не добавяй друга framework/styling зависимост.
-- Финалните изображения са точно четирите ImageGen кадъра в K08–K09. Външните колекции, допълнителното видео и минимумът от повече изображения в skill-а не са изискване на KILN. Временни кадри в K04 имат документиран източник и лиценз и после се заменят.
-- Запази топлия светъл фон, графитния текст и приглушения глинен акцент от brief-а, после приетия DESIGN.md. Забрана на подобна палитра в house rules не отменя проекта.
-- CTA е “Discuss your project” към демо формата. Няма `mailto:`, изпращане или запазване. Точното съобщение остава “Demo only — your enquiry has not been sent or saved.”
-- Няма нова функционалност само за изискването на skill-а за „one live thing“. Менюто и демо формата изпълняват договорените взаимодействия.
-- Умерено движение с reduced-motion и видимо съдържание има предимство пред motion квоти, задължителни scroll scenes и moving pictures. Не добавяй анимации за удовлетворяване на брояч.
-- Не измисляй клиенти, реални поръчки, награди, отзиви или статистики. Студиото и трите проекта са ясно обозначени като демонстрационни.
-- Етапите остават отделни: K03 подготвя; K04 изгражда; K06 определя идентичността; K08 генерира изображения; K12–K13 правят Impeccable оценката и поправките.
+- Next.js App Router, strict TypeScript, CSS Modules, global CSS custom properties and static export. Do not automatically copy JS/CSS helpers or add another framework or styling dependency.
+- The final images are exactly the four ImageGen images from K08–K09. External collections, additional video and the skill's higher minimum image count are not KILN requirements. Temporary images in K04 have a documented source and license and are replaced later.
+- Preserve the warm light background, graphite text and muted clay accent from the brief, then follow the approved DESIGN.md. A ban on a similar palette in the house rules does not override the project.
+- The CTA is “Discuss your project” and leads to the demo form. There is no `mailto:`, sending or saving. The exact message remains “Demo only — your enquiry has not been sent or saved.”
+- Do not add functionality solely to meet the skill's “one live thing” requirement. The menu and demo form provide the agreed interactions.
+- Moderate motion with reduced-motion support and visible content takes precedence over motion quotas, mandatory scroll scenes and moving pictures. Do not add animations to meet a count.
+- Do not invent clients, real commissions, awards, testimonials or statistics. The studio and the three projects are clearly labeled as demonstrations.
+- The stages remain separate: K03 prepares; K04 builds; K06 defines the identity; K08 generates images; K12–K13 cover the Impeccable assessment and fixes.
 
-Ако taste inspector възрази срещу договорено проектно решение, запиши конкретната находка и причината в отчета. Не променяй upstream копието и не отчитай негов FAIL като PASS.
+If the taste inspector flags an agreed project decision, record the specific finding and the reason in the report. Do not modify the upstream copy or report its FAIL as PASS.
 
-## Инструменти, проверки и ограничения
+## Tools, checks and limitations
 
-Използвай Node 22.21.0 и npm 10.9.4 от README. Draw и проверката на хешовете не изискват npm install. `inspect.mjs` изисква инсталиран Chrome, Edge или Chromium, достъпен за процеса; търсенето на изображения изисква мрежа. При ограничения използвай наличния разрешен browser tool и опиши неизпълнените проверки.
+Use Node 22.21.0 and npm 10.9.4 from the README. Draw and hash verification do not require npm install. `inspect.mjs` requires an installed Chrome, Edge or Chromium accessible to the process; image search requires network access. If there are restrictions, use the available permitted browser tool and describe any checks that were not performed.
 
-За K04 и следващи визуални етапи стартирай preview според README, после:
+For K04 and subsequent visual stages, start the preview according to the README, then run:
 
 ```sh
 node .agents/skills/design-taste-frontend/scripts/lint.mjs app
 node .agents/skills/design-taste-frontend/scripts/inspect.mjs http://localhost:4173 --widths 1440,768,375
 ```
 
-Портът трябва да съвпада с активния preview. Skill-ът по подразбиране проверява 390 px; KILN изисква **375, 768 и 1440 px**. Taste lint не заменя `npm run typecheck`, `npm run lint`, `npm run build`, прегледа на снимките и проверките на взаимодействията.
+The port must match the active preview. The skill checks 390 px by default; KILN requires **375, 768 and 1440 px**. Taste lint does not replace `npm run typecheck`, `npm run lint`, `npm run build`, screenshot review or interaction checks.
 
-В този upstream commit `references/scenes.md` споменава `library/scenes.json` и отделни scene assets/demo, които не са включени в upstream skill папката. Копието тук е пълно спрямо нея; не разчитай на тези липсващи ресурси. KILN не изисква scroll scenes. Не са добавяни файлове от друга версия.
+In this upstream commit, `references/scenes.md` mentions `library/scenes.json` and separate scene assets/demo that are not included in the upstream skill directory. The copy here is complete relative to that directory; do not rely on these missing resources. KILN does not require scroll scenes. No files from another version were added.
 
-Проверки в K03: SHA-256 и точен списък на файловете; независимо възпроизвеждане от фиксирания Git commit; `draw --list sectors` и примерната команда с три посоки; проектните TypeScript, ESLint и build проверки. Няма визуални промени и K03 не оценява началната страница с taste inspector; снимки и оценка започват в K04.
+Checks in K03: SHA-256 and the exact file list; independent reproduction from the pinned Git commit; `draw --list sectors` and the example command with three directions; the project's TypeScript, ESLint and build checks. There are no visual changes, and K03 does not assess the initial page with the taste inspector; screenshots and assessment begin in K04.
 
-Резултат от подготовката на 20 октомври 2026 г.: 39/39 файла съвпадат и в инсталираното, и в независимо възпроизведеното копие; draw командите минават; `npm run typecheck`, `npm run lint` и `npm run build` минават; `out/index.html` е създаден. `git diff --check` е чист. Browser inspector не е изпълняван в K03, защото няма визуални промени.
+Preparation results on 20 October 2026: 39/39 files match in both the installed and independently reproduced copies; the draw commands pass; `npm run typecheck`, `npm run lint` and `npm run build` pass; `out/index.html` was created. `git diff --check` is clean. The browser inspector was not run in K03 because there were no visual changes.
