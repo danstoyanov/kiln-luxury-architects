@@ -1,0 +1,792 @@
+{
+  "timestamp": "2026-10-20T13:12:54.273Z",
+  "url": "http://localhost:4197",
+  "sourceCommit": "a9178e2ffb5392a522f4162a5234fab5cdf13fc3",
+  "workingTreeDirty": true,
+  "sourceSha256": "8a44ab51bcf3bb957f648d826591019d9dd0e2ef4bc106afbec43a2b05e93bf3",
+  "exportHtmlSha256": "8f7a3e8ce62f7bb2e46e18a7d1ec54488e0f76f777819c35912efa3faf6a04c5",
+  "results": [
+    {
+      "width": 375,
+      "identity": {
+        "overflow": false,
+        "background": "rgb(242, 241, 237)",
+        "text": "rgb(40, 43, 40)",
+        "bodySize": "17px",
+        "fonts": [
+          {
+            "family": "Panchang",
+            "weight": "700",
+            "status": "loaded"
+          },
+          {
+            "family": "Switzer",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Switzer",
+            "weight": "500",
+            "status": "loaded"
+          }
+        ],
+        "preloads": [
+          "/fonts/panchang-bold.woff2",
+          "/fonts/switzer-regular.woff2"
+        ],
+        "headings": [
+          {
+            "text": "Living studies",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Courtyard House",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Ridge House",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Woodland Retreat",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "The studio",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Considered together",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Architecture",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Interiors",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Landscape",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "From groundto home",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Listen",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Explore",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Resolve",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Realise",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "A placeto begin",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          }
+        ],
+        "sectionPadding": "16px",
+        "sections": [
+          {
+            "id": "projects",
+            "left": "16px",
+            "right": "16px"
+          },
+          {
+            "id": "studio",
+            "left": "16px",
+            "right": "16px"
+          },
+          {
+            "id": "services",
+            "left": "16px",
+            "right": "16px"
+          },
+          {
+            "id": "process",
+            "left": "16px",
+            "right": "16px"
+          },
+          {
+            "id": "contact",
+            "left": "16px",
+            "right": "16px"
+          }
+        ],
+        "projects": [
+          {
+            "x": 16,
+            "top": 873.03125,
+            "width": 343,
+            "ratio": 1.5000683340166736,
+            "loading": "lazy"
+          },
+          {
+            "x": 16,
+            "top": 1383.484375,
+            "width": 343,
+            "ratio": 1.5000683340166736,
+            "loading": "lazy"
+          },
+          {
+            "x": 16,
+            "top": 1893.9375,
+            "width": 343,
+            "ratio": 1.5000683340166736,
+            "loading": "lazy"
+          }
+        ],
+        "name": {
+          "left": 14.375,
+          "right": 359,
+          "width": 344.625,
+          "height": 92.125,
+          "client": 345,
+          "scroll": 345
+        },
+        "footerName": {
+          "left": 16,
+          "right": 359,
+          "width": 343,
+          "height": 104.890625,
+          "client": 343,
+          "scroll": 343
+        },
+        "identityLink": {
+          "left": 16,
+          "right": 152.15625,
+          "width": 136.15625,
+          "height": 44
+        },
+        "processFocus": "#f2f1ed",
+        "sheetFocus": "#282b28",
+        "footerFocus": "#f2f1ed",
+        "reduced": true,
+        "layoutShift": 0.000009156828605401734
+      }
+    },
+    {
+      "width": 768,
+      "identity": {
+        "overflow": false,
+        "background": "rgb(242, 241, 237)",
+        "text": "rgb(40, 43, 40)",
+        "bodySize": "17px",
+        "fonts": [
+          {
+            "family": "Panchang",
+            "weight": "700",
+            "status": "loaded"
+          },
+          {
+            "family": "Switzer",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Switzer",
+            "weight": "500",
+            "status": "loaded"
+          }
+        ],
+        "preloads": [
+          "/fonts/panchang-bold.woff2",
+          "/fonts/switzer-regular.woff2"
+        ],
+        "headings": [
+          {
+            "text": "Living studies",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Courtyard House",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Ridge House",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Woodland Retreat",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "The studio",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Considered together",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Architecture",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Interiors",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Landscape",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "From groundto home",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Listen",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Explore",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Resolve",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Realise",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "A placeto begin",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          }
+        ],
+        "sectionPadding": "24px",
+        "sections": [
+          {
+            "id": "projects",
+            "left": "24px",
+            "right": "24px"
+          },
+          {
+            "id": "studio",
+            "left": "24px",
+            "right": "24px"
+          },
+          {
+            "id": "services",
+            "left": "24px",
+            "right": "24px"
+          },
+          {
+            "id": "process",
+            "left": "24px",
+            "right": "24px"
+          },
+          {
+            "id": "contact",
+            "left": "24px",
+            "right": "24px"
+          }
+        ],
+        "projects": [
+          {
+            "x": 24,
+            "top": 1023.8125,
+            "width": 720,
+            "ratio": 1.5,
+            "loading": "lazy"
+          },
+          {
+            "x": 24,
+            "top": 1760.109375,
+            "width": 720,
+            "ratio": 1.5,
+            "loading": "lazy"
+          },
+          {
+            "x": 24,
+            "top": 2496.40625,
+            "width": 720,
+            "ratio": 1.5,
+            "loading": "lazy"
+          }
+        ],
+        "name": {
+          "left": 20.65625,
+          "right": 744,
+          "width": 723.34375,
+          "height": 188.6875,
+          "client": 723,
+          "scroll": 723
+        },
+        "footerName": {
+          "left": 24,
+          "right": 744,
+          "width": 720,
+          "height": 217.34375,
+          "client": 720,
+          "scroll": 720
+        },
+        "identityLink": {
+          "left": 24,
+          "right": 160.15625,
+          "width": 136.15625,
+          "height": 44
+        },
+        "processFocus": "#f2f1ed",
+        "sheetFocus": "#282b28",
+        "footerFocus": "#f2f1ed",
+        "reduced": true,
+        "layoutShift": 0
+      }
+    },
+    {
+      "width": 1440,
+      "identity": {
+        "overflow": false,
+        "background": "rgb(242, 241, 237)",
+        "text": "rgb(40, 43, 40)",
+        "bodySize": "18px",
+        "fonts": [
+          {
+            "family": "Panchang",
+            "weight": "700",
+            "status": "loaded"
+          },
+          {
+            "family": "Switzer",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Switzer",
+            "weight": "500",
+            "status": "loaded"
+          }
+        ],
+        "preloads": [
+          "/fonts/panchang-bold.woff2",
+          "/fonts/switzer-regular.woff2"
+        ],
+        "headings": [
+          {
+            "text": "Living studies",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Courtyard House",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Ridge House",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Woodland Retreat",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "The studio",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Considered together",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Architecture",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Interiors",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Landscape",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "From groundto home",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Listen",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Explore",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Resolve",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Realise",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "A placeto begin",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          }
+        ],
+        "sectionPadding": "32px",
+        "sections": [
+          {
+            "id": "projects",
+            "left": "32px",
+            "right": "32px"
+          },
+          {
+            "id": "studio",
+            "left": "32px",
+            "right": "32px"
+          },
+          {
+            "id": "services",
+            "left": "32px",
+            "right": "32px"
+          },
+          {
+            "id": "process",
+            "left": "32px",
+            "right": "32px"
+          },
+          {
+            "id": "contact",
+            "left": "32px",
+            "right": "32px"
+          }
+        ],
+        "projects": [
+          {
+            "x": 32,
+            "top": 1137.96875,
+            "width": 792.65625,
+            "ratio": 1.5,
+            "loading": "lazy"
+          },
+          {
+            "x": 848.65625,
+            "top": 1233.96875,
+            "width": 559.328125,
+            "ratio": 1.5000419041233657,
+            "loading": "lazy"
+          },
+          {
+            "x": 265.328125,
+            "top": 1936.390625,
+            "width": 1142.65625,
+            "ratio": 1.5000102557791315,
+            "loading": "lazy"
+          }
+        ],
+        "name": {
+          "left": 27.75,
+          "right": 941.328125,
+          "width": 913.578125,
+          "height": 239.765625,
+          "client": 914,
+          "scroll": 914
+        },
+        "footerName": {
+          "left": 32,
+          "right": 1408,
+          "width": 1376,
+          "height": 407.515625,
+          "client": 1376,
+          "scroll": 1376
+        },
+        "identityLink": {
+          "left": 32,
+          "right": 176.171875,
+          "width": 144.171875,
+          "height": 44
+        },
+        "processFocus": "#f2f1ed",
+        "sheetFocus": "#282b28",
+        "footerFocus": "#f2f1ed",
+        "reduced": true,
+        "layoutShift": 0
+      }
+    },
+    {
+      "width": 2560,
+      "identity": {
+        "overflow": false,
+        "background": "rgb(242, 241, 237)",
+        "text": "rgb(40, 43, 40)",
+        "bodySize": "18px",
+        "fonts": [
+          {
+            "family": "Panchang",
+            "weight": "700",
+            "status": "loaded"
+          },
+          {
+            "family": "Switzer",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Switzer",
+            "weight": "500",
+            "status": "loaded"
+          }
+        ],
+        "preloads": [
+          "/fonts/panchang-bold.woff2",
+          "/fonts/switzer-regular.woff2"
+        ],
+        "headings": [
+          {
+            "text": "Living studies",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Courtyard House",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Ridge House",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Woodland Retreat",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "The studio",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Considered together",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Architecture",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Interiors",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Landscape",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "From groundto home",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          },
+          {
+            "text": "Listen",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Explore",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Resolve",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "Realise",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "500"
+          },
+          {
+            "text": "A placeto begin",
+            "family": "Switzer, Arial, Helvetica, sans-serif",
+            "weight": "400"
+          }
+        ],
+        "sectionPadding": "352px",
+        "sections": [
+          {
+            "id": "projects",
+            "left": "352px",
+            "right": "352px"
+          },
+          {
+            "id": "studio",
+            "left": "352px",
+            "right": "352px"
+          },
+          {
+            "id": "services",
+            "left": "352px",
+            "right": "352px"
+          },
+          {
+            "id": "process",
+            "left": "352px",
+            "right": "352px"
+          },
+          {
+            "id": "contact",
+            "left": "352px",
+            "right": "352px"
+          }
+        ],
+        "projects": [
+          {
+            "x": 352,
+            "top": 1098.1875,
+            "width": 1072.65625,
+            "ratio": 1.5000218502818687,
+            "loading": "lazy"
+          },
+          {
+            "x": 1448.65625,
+            "top": 1194.1875,
+            "width": 759.34375,
+            "ratio": 1.5000308661028459,
+            "loading": "lazy"
+          },
+          {
+            "x": 665.328125,
+            "top": 2083.375,
+            "width": 1542.671875,
+            "ratio": 1.500015192950471,
+            "loading": "lazy"
+          }
+        ],
+        "name": {
+          "left": 346.328125,
+          "right": 1581.328125,
+          "width": 1235,
+          "height": 319.671875,
+          "client": 1235,
+          "scroll": 1235
+        },
+        "footerName": {
+          "left": 352,
+          "right": 2208,
+          "width": 1856,
+          "height": 543.359375,
+          "client": 1856,
+          "scroll": 1856
+        },
+        "identityLink": {
+          "left": 352,
+          "right": 496.171875,
+          "width": 144.171875,
+          "height": 44
+        },
+        "processFocus": "#f2f1ed",
+        "sheetFocus": "#282b28",
+        "footerFocus": "#f2f1ed",
+        "reduced": true,
+        "layoutShift": 4.0729762986302374e-7
+      }
+    },
+    {
+      "selector": "main a[href='#contact']",
+      "hover": {
+        "color": "rgb(104, 67, 51)",
+        "transform": "none"
+      },
+      "active": "matrix(1, 0, 0, 1, 0, 1)"
+    },
+    {
+      "selector": "button[type='submit']",
+      "hover": {
+        "color": "rgb(104, 67, 51)",
+        "transform": "none"
+      },
+      "active": "matrix(1, 0, 0, 1, 0, 1)"
+    },
+    {
+      "motion": {
+        "name": {
+          "animation": "E0kJGG_settle",
+          "duration": "0.48s",
+          "opacity": "1"
+        },
+        "image": {
+          "animation": "E0kJGG_imageSettle",
+          "duration": "0.8s"
+        },
+        "controls": [
+          {
+            "background": "rgb(128, 85, 66)",
+            "weight": "500",
+            "transition": "0.18s, 0.12s"
+          },
+          {
+            "background": "rgb(128, 85, 66)",
+            "weight": "500",
+            "transition": "0.18s, 0.12s"
+          }
+        ],
+        "lowerAnimations": 0
+      }
+    }
+  ]
+}

@@ -100,7 +100,7 @@ export default function HomePage() {
       <Navigation />
       <main id="main">
         <section className={styles.hero} aria-labelledby="hero-title">
-          <picture>
+          <picture className={styles.heroFrame}>
             <source
               media="(max-width: 600px)"
               srcSet="/assets/temporary/hero-small.jpg"
