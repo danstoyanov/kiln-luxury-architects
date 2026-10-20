@@ -164,8 +164,12 @@ export function Navigation() {
       }}
       onBlur={(event) => {
         if (!event.currentTarget.contains(event.relatedTarget)) {
-          // Keep only focus lost because a breakpoint hid the current control.
-          if (event.target.getClientRects().length > 0 || event.relatedTarget) {
+          // A hidden drawer still has layout boxes. Keep its last focused link
+          // until the media handler can move focus to the visible Menu button.
+          const isHidden = event.target.getClientRects().length === 0 ||
+            getComputedStyle(event.target).visibility === "hidden" ||
+            event.target.closest("[inert]") !== null;
+          if (!isHidden || event.relatedTarget) {
             focusedControl.current = null;
           }
           setIsOpen(false);
