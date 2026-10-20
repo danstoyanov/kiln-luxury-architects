@@ -100,3 +100,7 @@ The site serves its fonts locally. Manrope and the included Bodoni Moda font ret
 ## Hosting
 
 The live demo is hosted on GPT Sites. `.openai/hosting.json` declares `out` as the static directory. GitHub is the source and review location; documentation changes do not require a website deployment.
+
+## License
+
+Original project source code is licensed under the [MIT License](LICENSE). Third-party fonts and the pinned Taste Skill retain their own licenses, as documented above.
