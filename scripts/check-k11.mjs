@@ -7,6 +7,7 @@ import { prepareRun } from "./qa-output.mjs";
 const { url, output, metadata } = prepareRun("k11", "http://localhost:4220");
 const browser = await Browser.launch();
 const results = [];
+const responsiveFailures = [];
 const toggle = "button[aria-controls]";
 const submit = "button[type=submit]";
 
@@ -106,12 +107,15 @@ try {
       await focus(page, toggle);
       await press(page, " ");
       await press(page, "Tab");
-      await expectFocus(page, 'nav a[href="#projects"]');
+      // The current compact drawer has a home link before Projects.
+      await expectFocus(page, 'nav a[href="#main"]');
       await capture(page, width, "menu-focus", "header");
       await press(page, "Escape");
       await expectFocus(page, toggle);
       await expectClosed(page);
       await press(page, "Enter");
+      await press(page, "Tab");
+      await expectFocus(page, 'nav a[href="#main"]');
       for (const section of ["projects", "studio", "services", "process", "contact"]) {
         await press(page, "Tab");
         await expectFocus(page, 'nav a[href="#' + section + '"]');
@@ -121,9 +125,7 @@ try {
       await expectClosed(page);
       await activate(page, toggle);
       await press(page, "Tab", true);
-      await expectFocus(page, 'header a[aria-label="Luxury Architects — KILN home"]');
-      await press(page, "Tab", true);
-      await press(page, "Tab", true);
+      await expectFocus(page, 'a[href="#main"]:not(header a)');
       await expectClosed(page);
       await activate(page, toggle);
       await press(page, "Tab");
@@ -226,22 +228,28 @@ try {
     results.push({ width, height, requestsDuringForm: requests.length - baseline, privacy, errorFocus, reduced, errors });
 
     if (width === 375) {
-      for (let iteration = 0; iteration < 5; iteration++) {
-        await focus(page, toggle);
-        await page.setViewport({ width: 900, height: 900 });
+      // Keep checking the other export widths when a breakpoint regression fails.
+      try {
+        for (let iteration = 0; iteration < 5; iteration++) {
+          await focus(page, toggle);
+          await page.setViewport({ width: 900, height: 900 });
+          await sleep(150);
+          await expectFocus(page, 'nav a[href="#projects"]');
+          await focus(page, 'nav a[href="#studio"]');
+          await page.setViewport({ width: 899, height: 900 });
+          await sleep(150);
+          await expectFocus(page, toggle);
+          await expectClosed(page);
+        }
+        await focus(page, "#enquiry-name");
+        await page.setViewport({ width: 1440, height: 900 });
         await sleep(150);
-        await expectFocus(page, 'nav a[href="#projects"]');
-        await focus(page, 'nav a[href="#studio"]');
-        await page.setViewport({ width: 899, height: 900 });
-        await sleep(150);
-        await expectFocus(page, toggle);
-        await expectClosed(page);
+        await expectFocus(page, "#enquiry-name");
+        results.push({ responsiveFocus: "5 boundary round trips at 899/900; unrelated field focus preserved" });
+      } catch (error) {
+        const active = await page.eval(() => ({ tag: document.activeElement.tagName, id: document.activeElement.id }));
+        responsiveFailures.push({ check: "899/900 focus recovery", error: String(error), active });
       }
-      await focus(page, "#enquiry-name");
-      await page.setViewport({ width: 1440, height: 900 });
-      await sleep(150);
-      await expectFocus(page, "#enquiry-name");
-      results.push({ responsiveFocus: "5 boundary round trips at 899/900; unrelated field focus preserved" });
     }
     await page.close();
   }
@@ -280,7 +288,8 @@ try {
   assert.equal(runtimeReduced, true);
   results.push({ feedback, invalidFocus, runtimeReduced });
   await page.close();
-  writeFileSync(join(output, "interaction-checks.json"), JSON.stringify({ ...metadata, results }, null, 2) + "\n");
+  writeFileSync(join(output, "interaction-checks.json"), JSON.stringify({ ...metadata, results, responsiveFailures }, null, 2) + "\n");
+  assert.deepEqual(responsiveFailures, [], "Responsive focus failures; see interaction-checks.json");
   console.log("PASS: K11 keyboard, focus recovery, error correction, repeat demo, privacy and reduced motion. " + output);
 } finally {
   await browser.close();
