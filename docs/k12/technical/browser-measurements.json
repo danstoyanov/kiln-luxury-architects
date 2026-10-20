@@ -1,0 +1,589 @@
+[
+  {
+    "client": 360,
+    "controls": [
+      {
+        "h": 57.5,
+        "text": "Skip to content",
+        "w": 145
+      },
+      {
+        "h": 44,
+        "text": "Luxury Architects",
+        "w": 136.16250610351562
+      },
+      {
+        "h": 44.70000076293945,
+        "text": "Menu",
+        "w": 76.17500305175781
+      },
+      {
+        "h": 49.5,
+        "text": "Discuss your project ↗",
+        "w": 242.5375061035156
+      },
+      {
+        "h": 51.10000228881836,
+        "text": "enquiry-name",
+        "w": 328
+      },
+      {
+        "h": 51.10000228881836,
+        "text": "enquiry-email",
+        "w": 328
+      },
+      {
+        "h": 128,
+        "text": "enquiry-message",
+        "w": 328
+      },
+      {
+        "h": 49.5,
+        "text": "Discuss your project",
+        "w": 206.08750915527344
+      },
+      {
+        "h": 44,
+        "text": "Back to top",
+        "w": 84.9749984741211
+      }
+    ],
+    "form": [
+      {
+        "id": "enquiry-name",
+        "labels": [
+          "Name (required)"
+        ],
+        "required": true
+      },
+      {
+        "id": "enquiry-email",
+        "labels": [
+          "Email (required)"
+        ],
+        "required": true
+      },
+      {
+        "id": "enquiry-message",
+        "labels": [
+          "Tell us about your project (required)"
+        ],
+        "required": true
+      }
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "KILN"
+      },
+      {
+        "tag": "H2",
+        "text": "Living studies"
+      },
+      {
+        "tag": "H3",
+        "text": "Courtyard House"
+      },
+      {
+        "tag": "H3",
+        "text": "Ridge House"
+      },
+      {
+        "tag": "H3",
+        "text": "Woodland Retreat"
+      },
+      {
+        "tag": "H2",
+        "text": "The studio"
+      },
+      {
+        "tag": "H2",
+        "text": "Considered together"
+      },
+      {
+        "tag": "H3",
+        "text": "Architecture"
+      },
+      {
+        "tag": "H3",
+        "text": "Interiors"
+      },
+      {
+        "tag": "H3",
+        "text": "Landscape"
+      },
+      {
+        "tag": "H2",
+        "text": "From groundto home"
+      },
+      {
+        "tag": "H3",
+        "text": "Listen"
+      },
+      {
+        "tag": "H3",
+        "text": "Explore"
+      },
+      {
+        "tag": "H3",
+        "text": "Resolve"
+      },
+      {
+        "tag": "H3",
+        "text": "Realise"
+      },
+      {
+        "tag": "H2",
+        "text": "A placeto begin"
+      }
+    ],
+    "images": [
+      {
+        "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+        "complete": true,
+        "height": 306,
+        "heightAttribute": "1024",
+        "loading": "eager",
+        "natural": 375,
+        "src": "http://localhost:4230/assets/hero-1536.webp",
+        "width": 360,
+        "widthAttribute": "1536"
+      },
+      {
+        "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+        "complete": true,
+        "height": 219,
+        "heightAttribute": "1024",
+        "loading": "lazy",
+        "natural": 343,
+        "src": "http://localhost:4230/assets/courtyard-1280.webp",
+        "width": 328,
+        "widthAttribute": "1536"
+      },
+      {
+        "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+        "complete": true,
+        "height": 219,
+        "heightAttribute": "1024",
+        "loading": "lazy",
+        "natural": 343,
+        "src": "http://localhost:4230/assets/ridge-768.webp",
+        "width": 328,
+        "widthAttribute": "1536"
+      },
+      {
+        "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+        "complete": true,
+        "height": 219,
+        "heightAttribute": "1024",
+        "loading": "lazy",
+        "natural": 343,
+        "src": "http://localhost:4230/assets/woodland-1280.webp",
+        "width": 328,
+        "widthAttribute": "1536"
+      }
+    ],
+    "mobileMedia": true,
+    "scroll": 360,
+    "status": "Demo only — your enquiry has not been sent or saved.",
+    "width": 375
+  },
+  {
+    "client": 753,
+    "controls": [
+      {
+        "h": 57.5,
+        "text": "Skip to content",
+        "w": 145
+      },
+      {
+        "h": 44,
+        "text": "Luxury Architects",
+        "w": 136.16250610351562
+      },
+      {
+        "h": 44.70000076293945,
+        "text": "Menu",
+        "w": 76.17500305175781
+      },
+      {
+        "h": 49.5,
+        "text": "Discuss your project ↗",
+        "w": 242.5375061035156
+      },
+      {
+        "h": 51.10000228881836,
+        "text": "enquiry-name",
+        "w": 704.7999877929688
+      },
+      {
+        "h": 51.10000228881836,
+        "text": "enquiry-email",
+        "w": 704.7999877929688
+      },
+      {
+        "h": 128,
+        "text": "enquiry-message",
+        "w": 704.7999877929688
+      },
+      {
+        "h": 49.5,
+        "text": "Discuss your project",
+        "w": 206.08750915527344
+      },
+      {
+        "h": 44,
+        "text": "Back to top",
+        "w": 84.9749984741211
+      }
+    ],
+    "form": [
+      {
+        "id": "enquiry-name",
+        "labels": [
+          "Name (required)"
+        ],
+        "required": true
+      },
+      {
+        "id": "enquiry-email",
+        "labels": [
+          "Email (required)"
+        ],
+        "required": true
+      },
+      {
+        "id": "enquiry-message",
+        "labels": [
+          "Tell us about your project (required)"
+        ],
+        "required": true
+      }
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "KILN"
+      },
+      {
+        "tag": "H2",
+        "text": "Living studies"
+      },
+      {
+        "tag": "H3",
+        "text": "Courtyard House"
+      },
+      {
+        "tag": "H3",
+        "text": "Ridge House"
+      },
+      {
+        "tag": "H3",
+        "text": "Woodland Retreat"
+      },
+      {
+        "tag": "H2",
+        "text": "The studio"
+      },
+      {
+        "tag": "H2",
+        "text": "Considered together"
+      },
+      {
+        "tag": "H3",
+        "text": "Architecture"
+      },
+      {
+        "tag": "H3",
+        "text": "Interiors"
+      },
+      {
+        "tag": "H3",
+        "text": "Landscape"
+      },
+      {
+        "tag": "H2",
+        "text": "From groundto home"
+      },
+      {
+        "tag": "H3",
+        "text": "Listen"
+      },
+      {
+        "tag": "H3",
+        "text": "Explore"
+      },
+      {
+        "tag": "H3",
+        "text": "Resolve"
+      },
+      {
+        "tag": "H3",
+        "text": "Realise"
+      },
+      {
+        "tag": "H2",
+        "text": "A placeto begin"
+      }
+    ],
+    "images": [
+      {
+        "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+        "complete": true,
+        "height": 360,
+        "heightAttribute": "1024",
+        "loading": "eager",
+        "natural": 768,
+        "src": "http://localhost:4230/assets/hero-1536.webp",
+        "width": 753,
+        "widthAttribute": "1536"
+      },
+      {
+        "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+        "complete": true,
+        "height": 470,
+        "heightAttribute": "1024",
+        "loading": "lazy",
+        "natural": 720,
+        "src": "http://localhost:4230/assets/courtyard-1280.webp",
+        "width": 705,
+        "widthAttribute": "1536"
+      },
+      {
+        "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+        "complete": true,
+        "height": 470,
+        "heightAttribute": "1024",
+        "loading": "lazy",
+        "natural": 719,
+        "src": "http://localhost:4230/assets/ridge-768.webp",
+        "width": 705,
+        "widthAttribute": "1536"
+      },
+      {
+        "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+        "complete": true,
+        "height": 470,
+        "heightAttribute": "1024",
+        "loading": "lazy",
+        "natural": 720,
+        "src": "http://localhost:4230/assets/woodland-1280.webp",
+        "width": 705,
+        "widthAttribute": "1536"
+      }
+    ],
+    "mobileMedia": true,
+    "scroll": 753,
+    "status": "Demo only — your enquiry has not been sent or saved.",
+    "width": 768
+  },
+  {
+    "client": 1425,
+    "controls": [
+      {
+        "h": 59,
+        "text": "Skip to content",
+        "w": 151.65000915527344
+      },
+      {
+        "h": 44,
+        "text": "Luxury Architects",
+        "w": 144.16250610351562
+      },
+      {
+        "h": 44,
+        "text": "Projects",
+        "w": 66.70000457763672
+      },
+      {
+        "h": 44,
+        "text": "Studio",
+        "w": 51.23749923706055
+      },
+      {
+        "h": 44,
+        "text": "Services",
+        "w": 70.7249984741211
+      },
+      {
+        "h": 44,
+        "text": "Process",
+        "w": 66.45000457763672
+      },
+      {
+        "h": 44,
+        "text": "Contact",
+        "w": 63.92499923706055
+      },
+      {
+        "h": 51,
+        "text": "Discuss your project ↗",
+        "w": 252.5625
+      },
+      {
+        "h": 52.60000228881836,
+        "text": "enquiry-name",
+        "w": 648.4000244140625
+      },
+      {
+        "h": 52.60000228881836,
+        "text": "enquiry-email",
+        "w": 648.4000244140625
+      },
+      {
+        "h": 133.60000610351562,
+        "text": "enquiry-message",
+        "w": 648.4000244140625
+      },
+      {
+        "h": 51,
+        "text": "Discuss your project",
+        "w": 215.3874969482422
+      },
+      {
+        "h": 44,
+        "text": "Back to top",
+        "w": 89.9749984741211
+      }
+    ],
+    "form": [
+      {
+        "id": "enquiry-name",
+        "labels": [
+          "Name (required)"
+        ],
+        "required": true
+      },
+      {
+        "id": "enquiry-email",
+        "labels": [
+          "Email (required)"
+        ],
+        "required": true
+      },
+      {
+        "id": "enquiry-message",
+        "labels": [
+          "Tell us about your project (required)"
+        ],
+        "required": true
+      }
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "KILN"
+      },
+      {
+        "tag": "H2",
+        "text": "Living studies"
+      },
+      {
+        "tag": "H3",
+        "text": "Courtyard House"
+      },
+      {
+        "tag": "H3",
+        "text": "Ridge House"
+      },
+      {
+        "tag": "H3",
+        "text": "Woodland Retreat"
+      },
+      {
+        "tag": "H2",
+        "text": "The studio"
+      },
+      {
+        "tag": "H2",
+        "text": "Considered together"
+      },
+      {
+        "tag": "H3",
+        "text": "Architecture"
+      },
+      {
+        "tag": "H3",
+        "text": "Interiors"
+      },
+      {
+        "tag": "H3",
+        "text": "Landscape"
+      },
+      {
+        "tag": "H2",
+        "text": "From groundto home"
+      },
+      {
+        "tag": "H3",
+        "text": "Listen"
+      },
+      {
+        "tag": "H3",
+        "text": "Explore"
+      },
+      {
+        "tag": "H3",
+        "text": "Resolve"
+      },
+      {
+        "tag": "H3",
+        "text": "Realise"
+      },
+      {
+        "tag": "H2",
+        "text": "A placeto begin"
+      }
+    ],
+    "images": [
+      {
+        "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+        "complete": true,
+        "height": 504,
+        "heightAttribute": "1024",
+        "loading": "eager",
+        "natural": 1439,
+        "src": "http://localhost:4230/assets/hero-1536.webp",
+        "width": 1425,
+        "widthAttribute": "1536"
+      },
+      {
+        "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+        "complete": true,
+        "height": 523,
+        "heightAttribute": "1024",
+        "loading": "lazy",
+        "natural": 792,
+        "src": "http://localhost:4230/assets/courtyard-1280.webp",
+        "width": 784,
+        "widthAttribute": "1536"
+      },
+      {
+        "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+        "complete": true,
+        "height": 369,
+        "heightAttribute": "1024",
+        "loading": "lazy",
+        "natural": 559,
+        "src": "http://localhost:4230/assets/ridge-768.webp",
+        "width": 553,
+        "widthAttribute": "1536"
+      },
+      {
+        "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+        "complete": true,
+        "height": 753,
+        "heightAttribute": "1024",
+        "loading": "lazy",
+        "natural": 1142,
+        "src": "http://localhost:4230/assets/woodland-1280.webp",
+        "width": 1130,
+        "widthAttribute": "1536"
+      }
+    ],
+    "mobileMedia": false,
+    "scroll": 1425,
+    "status": "Demo only — your enquiry has not been sent or saved.",
+    "width": 1440
+  }
+]
