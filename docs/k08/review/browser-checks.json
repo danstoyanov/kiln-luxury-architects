@@ -1,0 +1,157 @@
+{
+  "checks": [
+    {
+      "images": [
+        {
+          "height": 504,
+          "loaded": true,
+          "position": "50% 55%",
+          "slot": "originals/hero.png",
+          "width": 1440
+        },
+        {
+          "height": 528.4375,
+          "loaded": true,
+          "position": "50% 50%",
+          "slot": "originals/courtyard.png",
+          "width": 792.6625366210938
+        },
+        {
+          "height": 372.8875122070313,
+          "loaded": true,
+          "position": "50% 55%",
+          "slot": "originals/ridge.png",
+          "width": 559.3375244140625
+        },
+        {
+          "height": 761.7750244140625,
+          "loaded": true,
+          "position": "50% 50%",
+          "slot": "originals/woodland.png",
+          "width": 1142.675048828125
+        }
+      ],
+      "overflow": false,
+      "scenario": "1440 × 900 CSS px scenario; hero 1440 × 504.00; projects 3:2. Image crop study; not a screenshot of the integrated KILN page.",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "images": [
+        {
+          "height": 276.07501220703125,
+          "loaded": true,
+          "position": "58% 50%",
+          "slot": "originals/hero.png",
+          "width": 375
+        },
+        {
+          "height": 228.6625061035156,
+          "loaded": true,
+          "position": "50% 50%",
+          "slot": "originals/courtyard.png",
+          "width": 343
+        },
+        {
+          "height": 228.6625061035156,
+          "loaded": true,
+          "position": "50% 55%",
+          "slot": "originals/ridge.png",
+          "width": 343
+        },
+        {
+          "height": 228.6625061035156,
+          "loaded": true,
+          "position": "50% 50%",
+          "slot": "originals/woodland.png",
+          "width": 343
+        }
+      ],
+      "overflow": false,
+      "scenario": "375 × 812 CSS px scenario; hero 375 × 276.08; projects 3:2. Image crop study; not a screenshot of the integrated KILN page.",
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "images": [
+        {
+          "height": 409.6000061035156,
+          "loaded": true,
+          "position": "50% 55%",
+          "slot": "originals/hero.png",
+          "width": 768
+        },
+        {
+          "height": 480,
+          "loaded": true,
+          "position": "50% 50%",
+          "slot": "originals/courtyard.png",
+          "width": 720
+        },
+        {
+          "height": 480,
+          "loaded": true,
+          "position": "50% 55%",
+          "slot": "originals/ridge.png",
+          "width": 720
+        },
+        {
+          "height": 480,
+          "loaded": true,
+          "position": "50% 50%",
+          "slot": "originals/woodland.png",
+          "width": 720
+        }
+      ],
+      "overflow": false,
+      "scenario": "768 × 1024 CSS px scenario; hero 768 × 409.60; projects 3:2. Image crop study; not a screenshot of the integrated KILN page.",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "images": [
+        {
+          "height": 396.5500183105469,
+          "loaded": true,
+          "position": "50% 55%",
+          "slot": "originals/hero.png",
+          "width": 1366
+        },
+        {
+          "height": 499.6625061035156,
+          "loaded": true,
+          "position": "50% 50%",
+          "slot": "originals/courtyard.png",
+          "width": 749.5
+        },
+        {
+          "height": 352.32501220703125,
+          "loaded": true,
+          "position": "50% 55%",
+          "slot": "originals/ridge.png",
+          "width": 528.5
+        },
+        {
+          "height": 720.6625366210938,
+          "loaded": true,
+          "position": "50% 50%",
+          "slot": "originals/woodland.png",
+          "width": 1081
+        }
+      ],
+      "overflow": false,
+      "scenario": "1366 × 768 CSS px scenario; hero 1366 × 396.56; projects 3:2. Image crop study; not a screenshot of the integrated KILN page.",
+      "viewport": {
+        "height": 768,
+        "width": 1366
+      }
+    }
+  ],
+  "logs": []
+}
