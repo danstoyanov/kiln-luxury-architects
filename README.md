@@ -6,6 +6,7 @@ KILN е измислено студио за луксозна жилищна а�
 
 ## Контекст и документи
 
+- [docs/sin47/README.md](docs/sin47/README.md) — потребителско дизайн ревю: glass навигация, Bodoni Moda, икони и композиция на Studio/Services/Process, снимки преди/след.
 - [docs/k13/README.md](docs/k13/README.md) — поправки по Impeccable, финални снимки, сравнение с K04 и конкретни ограничения.
 - [docs/k12/README.md](docs/k12/README.md) — финална Impeccable оценка, доказателства и две конкретни поправки за K13.
 - [brief.md](brief.md) — аудитория, съдържание, поведение, визуална посока и ограничения.

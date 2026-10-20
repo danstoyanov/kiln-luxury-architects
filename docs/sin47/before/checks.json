@@ -1,0 +1,414 @@
+{
+  "url": "http://localhost:3000",
+  "baseline": true,
+  "results": [
+    {
+      "width": 375,
+      "height": 812,
+      "viewport": 375,
+      "documentWidth": 375,
+      "headings": [
+        {
+          "text": "Living studies",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "32px",
+          "clipped": false
+        },
+        {
+          "text": "Courtyard House",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Ridge House",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Woodland Retreat",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "The studio",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "32px",
+          "clipped": false
+        },
+        {
+          "text": "Considered together",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "32px",
+          "clipped": false
+        },
+        {
+          "text": "Architecture",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Interiors",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Landscape",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "From groundto home",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "32px",
+          "clipped": false
+        },
+        {
+          "text": "Listen",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Explore",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Resolve",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Realise",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "A placeto begin",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "32px",
+          "clipped": false
+        }
+      ],
+      "identityFont": "Switzer, Arial, Helvetica, sans-serif",
+      "iconCount": 0,
+      "glass": "none",
+      "brokenImages": 0
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "documentWidth": 768,
+      "headings": [
+        {
+          "text": "Living studies",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "32px",
+          "clipped": false
+        },
+        {
+          "text": "Courtyard House",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Ridge House",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Woodland Retreat",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "The studio",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "32px",
+          "clipped": false
+        },
+        {
+          "text": "Considered together",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "32px",
+          "clipped": false
+        },
+        {
+          "text": "Architecture",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Interiors",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Landscape",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "From groundto home",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "32px",
+          "clipped": false
+        },
+        {
+          "text": "Listen",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Explore",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Resolve",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Realise",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "A placeto begin",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "32px",
+          "clipped": false
+        }
+      ],
+      "identityFont": "Switzer, Arial, Helvetica, sans-serif",
+      "iconCount": 0,
+      "glass": "none",
+      "brokenImages": 0
+    },
+    {
+      "width": 1063,
+      "height": 738,
+      "viewport": 1063,
+      "documentWidth": 1063,
+      "headings": [
+        {
+          "text": "Living studies",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "42.52px",
+          "clipped": false
+        },
+        {
+          "text": "Courtyard House",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Ridge House",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Woodland Retreat",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "The studio",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "42.52px",
+          "clipped": false
+        },
+        {
+          "text": "Considered together",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "42.52px",
+          "clipped": false
+        },
+        {
+          "text": "Architecture",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Interiors",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Landscape",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "From groundto home",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "42.52px",
+          "clipped": false
+        },
+        {
+          "text": "Listen",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Explore",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Resolve",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "Realise",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "20px",
+          "clipped": false
+        },
+        {
+          "text": "A placeto begin",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "42.52px",
+          "clipped": false
+        }
+      ],
+      "identityFont": "Switzer, Arial, Helvetica, sans-serif",
+      "iconCount": 0,
+      "glass": "none",
+      "brokenImages": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "headings": [
+        {
+          "text": "Living studies",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "56px",
+          "clipped": false
+        },
+        {
+          "text": "Courtyard House",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "25.92px",
+          "clipped": false
+        },
+        {
+          "text": "Ridge House",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "25.92px",
+          "clipped": false
+        },
+        {
+          "text": "Woodland Retreat",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "25.92px",
+          "clipped": false
+        },
+        {
+          "text": "The studio",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "56px",
+          "clipped": false
+        },
+        {
+          "text": "Considered together",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "56px",
+          "clipped": false
+        },
+        {
+          "text": "Architecture",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "25.92px",
+          "clipped": false
+        },
+        {
+          "text": "Interiors",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "25.92px",
+          "clipped": false
+        },
+        {
+          "text": "Landscape",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "25.92px",
+          "clipped": false
+        },
+        {
+          "text": "From groundto home",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "56px",
+          "clipped": false
+        },
+        {
+          "text": "Listen",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "25.92px",
+          "clipped": false
+        },
+        {
+          "text": "Explore",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "25.92px",
+          "clipped": false
+        },
+        {
+          "text": "Resolve",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "25.92px",
+          "clipped": false
+        },
+        {
+          "text": "Realise",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "25.92px",
+          "clipped": false
+        },
+        {
+          "text": "A placeto begin",
+          "font": "Switzer, Arial, Helvetica, sans-serif",
+          "size": "56px",
+          "clipped": false
+        }
+      ],
+      "identityFont": "Switzer, Arial, Helvetica, sans-serif",
+      "iconCount": 0,
+      "glass": "none",
+      "brokenImages": 0
+    }
+  ]
+}

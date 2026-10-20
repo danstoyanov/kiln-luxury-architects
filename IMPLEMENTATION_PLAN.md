@@ -127,7 +127,8 @@ After the user merges the PR and the acceptance criteria are met, mark the issue
 | K11 | [SIN-42](https://linear.app/singularity-lab/issue/SIN-42/k11-komponenti-i-vzaimodejstviya) | SIN-41 |
 | K12 | [SIN-43](https://linear.app/singularity-lab/issue/SIN-43/k12-finalna-ocenka-s-impeccable) | SIN-42 |
 | K13 | [SIN-44](https://linear.app/singularity-lab/issue/SIN-44/k13-popravki-i-polish-s-impeccable) | SIN-43 |
-| K14 | [SIN-45](https://linear.app/singularity-lab/issue/SIN-45/k14-podgotovka-za-gpt-sites) | SIN-44 |
+| Допълнително дизайн ревю | [SIN-47](https://linear.app/singularity-lab/issue/SIN-47/dizajn-revyu-glass-navigaciya-tipografiya-i-sekcii) | SIN-44 |
+| K14 | [SIN-45](https://linear.app/singularity-lab/issue/SIN-45/k14-podgotovka-za-gpt-sites) | SIN-47 |
 | K15 | [SIN-46](https://linear.app/singularity-lab/issue/SIN-46/k15-deploj-v-gpt-sites-i-predavane) | SIN-45 |
 
 ### Последователни задачи

@@ -2,7 +2,7 @@
 
 Визуален договор за [SIN-37 / K06](https://linear.app/singularity-lab/issue/SIN-37/k06-designmd-za-kiln), 20 октомври 2026 г.
 
-**Статус:** приета система чрез [K06 PR #7](https://github.com/danstoyanov/kiln-luxury-architects/pull/7), слят на 20 октомври 2026 г.; приложена в K07. Посоката е „Материална архитектура“ със запазено геометрично KILN. Проверената адаптация за увеличен текст е описана в раздел 9.
+**Статус:** приета система чрез [K06 PR #7](https://github.com/danstoyanov/kiln-luxury-architects/pull/7), слят на 20 октомври 2026 г.; приложена в K07. Посоката е „Материална архитектура“ със запазено геометрично KILN. Проверената адаптация за увеличен текст е описана в раздел 9. Поисканите от потребителя промени за SIN-47 са описани в раздел 13; той заменя старите правила за навигацията, serif типографията и трите засегнати секции.
 
 [Визуално табло](docs/k06/identity-board.html) · [desktop](docs/k06/identity-1440.jpg) · [tablet](docs/k06/identity-768.jpg) · [phone](docs/k06/identity-375.jpg). Таблото показва палитра, шрифтове и състояния, а не финален layout. Временната фотография в него не е финален кадър.
 
@@ -261,3 +261,27 @@ K07 проверява засегнатите секции в реален бр�
 [SIN-44 отчетът](docs/k13/README.md) затваря двете приети K12 находки. Home връзката запазва видимото „Luxury Architects“ и href="#main", а достъпното ѝ име е „Luxury Architects — KILN home“. След render на грешките формата фокусира първото невалидно поле с preventScroll и позиционира целия field wrapper с scrollIntoView({ behavior: "instant", block: "nearest" }); wrapper-ът има 1rem scroll margin отгоре и отдолу. Label, поле и грешка остават заедно, когато се побират във viewport. Няма нова анимация.
 
 При едновременно 200% root текст и увеличено letter-spacing: .12em принудителният nowrap на KILN причинява 409px document width при 375px viewport. Hero и footer знаците вече позволяват нормално пренасяне чрез съществуващия overflow-wrap: anywhere. Стандартните размери, tracking, шрифтове и едноредов вид са запазени. Това е изключение за потребителско разширяване на текста: не намалява шрифта и не скрива букви. Нормалните финални снимки и техническите stress-test кадри са ясно разделени в отчета.
+
+## 13. SIN-47 — потребителско дизайн ревю преди деплой
+
+Основание: четири конкретни бележки в браузъра — Apple Liquid Glass навигация, премиум заглавия и по-ясна структура с икони в Studio, Services и Process. Тези решения заменят ограниченията в раздели 3 и 5 за съответните елементи; палитрата, четирите изображения, съдържанието и редът на секциите остават основа.
+
+### Типография
+
+- Локален **Bodoni Moda 400–600**, Latin variable WOFF2, optical sizing auto: всички h2/h3 и „Luxury Architects“. `--font-editorial` е ролята; heading 400, подзаглавия и identity 500.
+- h2: `clamp(2.5rem, 4.8vw, 4.5rem)`, leading 1.06, tracking -0.03em. h3: `clamp(1.75rem, 2.6vw, 2.5rem)`, leading 1.15, tracking -0.025em.
+- Identity: `clamp(1.375rem, 2.2vw, 1.75rem)`, leading 1.1. KILN запазва Panchang 700; текстът, навигационните връзки и формата запазват Switzer. Panchang е отделен брандов знак, а Bodoni/Switzer са двете съдържателни семейства.
+- Новият файл се preload-ва, използва font-display swap и е self-hosted. Няма runtime заявка към Google Fonts. [Произход и OFL лиценз](docs/sin47/README.md#font).
+
+### Навигация
+
+Плаващият glass панел има 1rem отстояние от горния край и общите page gutters. Височината започва от 4.25rem; 0.625rem/1.5rem padding, 2.25rem radius (1.75rem под 900px), светъл ръб и мека сянка. `--color-glass` е mineral ground с 86% opacity; blur 22px и saturation 140%. Панелът застъпва само hero изображението, остава в нормалния поток и расте при увеличен текст или отворено меню. Не е fixed/sticky и не закрива anchor цели или грешки във формата при скрол.
+
+Без backdrop-filter и при prefers-reduced-transparency фонът е плътен mineral ground. Forced colors запазва системен контур. Менюто, Escape, външният клик, фокусът и breakpoint поведението се запазват. Glass ефектът и новите икони са изрични потребителски изключения от Taste Skill правилата за glass и ornaments.
+
+### Studio, Services, Process
+
+- Studio: две области 1:1 с 5rem gap на desktop. Heading и съществуващото statement са вляво; вдясно два смислови блока — „A sense of place“ и „Material & light“, с икона и съществуващия текст. На tablet блоковете са две колони под intro, на телефон — една последователност.
+- Services: семантичен списък с три отворени реда — икона, heading и описание. На телефон описанието е под heading. Няма cards, badge фонове или декоративни рамки.
+- Process: graphite поле без предишния светъл лист. Intro/list са 5:7; четирите етапа са семантичен ol в решетка 2×2, а на телефон — една колона. Етапите имат икони за разговор, посока, разрешаване на детайла и дом. Подредбата следва естествения DOM ред.
+- Девет малки authored outline SVG икони (32px viewBox, stroke 1.4, currentColor); декоративни и скрити от accessibility tree. Значението винаги е и в текста. Иконите нямат анимации или отделна библиотечна зависимост.

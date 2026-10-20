@@ -1,13 +1,27 @@
 .header {
   position: relative;
-  z-index: 2;
+  z-index: 10;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem var(--frame-gutter);
+  gap: 0.5rem 1.5rem;
+  min-height: 4.25rem;
+  margin: 1rem var(--frame-gutter) -5.25rem;
+  padding: 0.625rem 1.5rem;
+  border: 1px solid var(--color-glass-edge);
+  border-radius: 2.25rem;
   background: var(--color-background);
+  box-shadow: var(--shadow-glass);
+  /* Stay in the document flow so enlarged text and the open menu can grow. */
+  isolation: isolate;
+}
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+  .header {
+    background: var(--color-glass);
+    -webkit-backdrop-filter: blur(22px) saturate(140%);
+    backdrop-filter: blur(22px) saturate(140%);
+  }
 }
 .identity {
   display: inline-flex;
@@ -15,31 +29,39 @@
   min-height: 44px;
   min-width: 0;
   text-decoration: none;
+  font-family: var(--font-editorial);
+  font-optical-sizing: auto;
+  font-size: clamp(1.375rem, 2.2vw, 1.75rem);
   font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
 }
 .navigation {
   min-width: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: clamp(1rem, 2.6vw, 3rem);
+  gap: clamp(0.25rem, 1.1vw, 1rem);
 }
 .navigation a {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
-  padding-block: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
   text-decoration: none;
 }
 .identity:hover,
-.identity:focus-visible,
+.identity:focus-visible {
+  text-decoration: underline;
+}
 .navigation a:hover,
 .navigation a:focus-visible {
-  text-decoration: underline;
+  background: var(--color-background);
 }
 .toggle {
   display: none;
   border: 0;
-  border-radius: 0;
+  border-radius: 999px;
   min-width: 44px;
   min-height: 44px;
   font-weight: 500;
@@ -63,6 +85,10 @@
   z-index: 3;
 }
 @media (max-width: 899px) {
+  .header {
+    padding-inline: 1.125rem;
+    border-radius: 1.75rem;
+  }
   .toggle {
     display: block;
     min-height: 44px;
@@ -78,6 +104,20 @@
     gap: 0;
   }
   .navigation a {
-    padding: 0.75rem 0;
+    padding: 0.75rem 1rem;
+  }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .header {
+    background: var(--color-background);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+@media (forced-colors: active) {
+  .header {
+    border: 1px solid CanvasText;
+    background: Canvas;
+    box-shadow: none;
   }
 }

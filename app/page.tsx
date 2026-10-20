@@ -1,6 +1,7 @@
 import { ConceptImage, type ImageSlot } from "@/components/ConceptImage";
 import { Navigation } from "@/components/Navigation";
 import { EnquiryForm } from "@/components/EnquiryForm";
+import { OutlineIcon, type IconName } from "@/components/OutlineIcon";
 import styles from "./page.module.css";
 
 type ConceptProject = {
@@ -53,42 +54,51 @@ const projects: ConceptProject[] = [
   },
 ];
 
-const services = [
+type Service = { name: string; description: string; icon: IconName };
+
+const services: Service[] = [
   {
     name: "Architecture",
+    icon: "architecture",
     description:
       "Site studies, spatial planning and a residential concept shaped around the way you live.",
   },
   {
     name: "Interiors",
+    icon: "interiors",
     description:
       "Room layouts, built-in furniture and a restrained material palette, considered alongside the architecture.",
   },
   {
     name: "Landscape",
+    icon: "landscape",
     description:
       "Courtyards, terraces and planted thresholds that connect the home to its surroundings.",
   },
 ];
 
-const stages = [
+const stages: Service[] = [
   {
     name: "Listen",
+    icon: "listen",
     description:
       "Begin with your daily routines, the site, your priorities and a realistic budget.",
   },
   {
     name: "Explore",
+    icon: "explore",
     description:
       "Test the position of the home, the quality of light and the connections between rooms.",
   },
   {
     name: "Resolve",
+    icon: "resolve",
     description:
       "Develop the chosen direction through materials, details and coordinated drawings.",
   },
   {
     name: "Realise",
+    icon: "realise",
     description:
       "Plan the route to construction with the right specialists and a clear scope of work.",
   },
@@ -167,23 +177,37 @@ export default function HomePage() {
           className={styles.studio}
           aria-labelledby="studio-title"
         >
-          <h2 id="studio-title">The studio</h2>
-          <div className={styles.studioBody}>
+          <div className={styles.studioIntro}>
+            <h2 id="studio-title">The studio</h2>
             <p className={styles.statement}>
               Like clay in a kiln, a home takes its character from the material,
               the conditions and the care that shapes it.
             </p>
-            <p>
-              KILN is a fictional architecture practice exploring contemporary
-              homes in natural settings. The starting point is the ground
-              beneath the building: its slope, its light and the places where
-              you want to pause.
-            </p>
-            <p>
-              Stone, timber and mineral surfaces give each concept a tactile
-              character. Generous openings and sheltered edges make room for
-              life between indoors and out.
-            </p>
+          </div>
+          <div className={styles.studioBody}>
+            <div className={styles.studioNote}>
+              <OutlineIcon name="site" className={styles.sectionIcon} />
+              <div>
+                <h3>A sense of place</h3>
+                <p>
+                  KILN is a fictional architecture practice exploring contemporary
+                  homes in natural settings. The starting point is the ground
+                  beneath the building: its slope, its light and the places where
+                  you want to pause.
+                </p>
+              </div>
+            </div>
+            <div className={styles.studioNote}>
+              <OutlineIcon name="material" className={styles.sectionIcon} />
+              <div>
+                <h3>Material &amp; light</h3>
+                <p>
+                  Stone, timber and mineral surfaces give each concept a tactile
+                  character. Generous openings and sheltered edges make room for
+                  life between indoors and out.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
         <section
@@ -200,14 +224,15 @@ export default function HomePage() {
               practice.
             </p>
           </div>
-          <div className={styles.serviceColumns}>
+          <ul className={styles.serviceColumns}>
             {services.map((service) => (
-              <div key={service.name}>
+              <li key={service.name}>
+                <OutlineIcon name={service.icon} className={styles.sectionIcon} />
                 <h3>{service.name}</h3>
                 <p>{service.description}</p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
         <section
           id="process"
@@ -229,7 +254,10 @@ export default function HomePage() {
           <ol className={styles.processList}>
             {stages.map((stage) => (
               <li key={stage.name}>
-                <h3>{stage.name}</h3>
+                <div className={styles.stageHeading}>
+                  <OutlineIcon name={stage.icon} className={styles.sectionIcon} />
+                  <h3>{stage.name}</h3>
+                </div>
                 <p>{stage.description}</p>
               </li>
             ))}
