@@ -1,6 +1,6 @@
 # KILN Luxury Architects
 
-<img src=".github/assets/kiln-banner.png" alt="KILN wordmark banner" width="659" />
+<img src=".github/assets/kiln-banner.png" alt="KILN wordmark banner" width="50%" />
 
 A residential architecture portfolio concept built with Next.js, React and TypeScript. KILN is a fictional studio, and the homes shown are demonstration concepts illustrated with AI-generated imagery.
 
