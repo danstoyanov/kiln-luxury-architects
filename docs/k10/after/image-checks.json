@@ -1,0 +1,1545 @@
+{
+  "timestamp": "2026-10-20T14:31:50.364Z",
+  "url": "http://localhost:4210",
+  "sourceCommit": "7de41fdf1515d389d7188659257612baf1539654",
+  "workingTreeDirty": true,
+  "sourceSha256": "51007f71d050fe06b310c1ca361cbed9f28e6333d86b9d1f115c0c2964f901bc",
+  "exportHtmlSha256": "dd6f75083c29397eb027a07ba768370889972954ccb99bd1a167f4914868d9ff",
+  "filesVerified": 32,
+  "results": [
+    {
+      "width": 375,
+      "height": 812,
+      "dsf": 1,
+      "initial": {
+        "overflow": false,
+        "layoutShift": 0.000009156828605401734,
+        "images": [
+          {
+            "src": "/assets/hero-480.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+            "loading": "eager",
+            "priority": "high",
+            "width": 375,
+            "height": 276,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 0,
+              "top": 76.6875,
+              "width": 375,
+              "height": 276.078125
+            },
+            "focal": "58% 50%",
+            "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+            "sizes": "100vw"
+          },
+          {
+            "src": "/assets/courtyard-480.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 816.4375,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 50%",
+            "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+          },
+          {
+            "src": "/assets/ridge-480.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 1280.59375,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 55%",
+            "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+          },
+          {
+            "src": "/assets/woodland-480.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 1744.75,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 50%",
+            "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+          }
+        ],
+        "disclosure": true,
+        "imageCaptions": 0,
+        "titleGaps": [
+          16,
+          16,
+          16
+        ],
+        "temporary": false
+      },
+      "metrics": {
+        "overflow": false,
+        "layoutShift": 0.000009156828605401734,
+        "images": [
+          {
+            "src": "/assets/hero-480.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+            "loading": "eager",
+            "priority": "high",
+            "width": 375,
+            "height": 276,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 0,
+              "top": 76.6875,
+              "width": 375,
+              "height": 276.078125
+            },
+            "focal": "58% 50%",
+            "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+            "sizes": "100vw"
+          },
+          {
+            "src": "/assets/courtyard-480.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 816.4375,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 50%",
+            "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+          },
+          {
+            "src": "/assets/ridge-480.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 1280.59375,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 55%",
+            "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+          },
+          {
+            "src": "/assets/woodland-480.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 1744.75,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 50%",
+            "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+          }
+        ],
+        "disclosure": true,
+        "imageCaptions": 0,
+        "titleGaps": [
+          16,
+          16,
+          16
+        ],
+        "temporary": false
+      },
+      "fallback": {
+        "overflow": false,
+        "layoutShift": 0.000009156828605401734,
+        "images": [
+          {
+            "src": "/assets/hero-480.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+            "loading": "eager",
+            "priority": "high",
+            "width": 375,
+            "height": 276,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 0,
+              "top": 76.6875,
+              "width": 375,
+              "height": 276.078125
+            },
+            "focal": "58% 50%",
+            "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+            "sizes": "100vw"
+          },
+          {
+            "src": "/assets/courtyard-480.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 816.4375,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 50%",
+            "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+          },
+          {
+            "src": "/assets/ridge-480.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 1280.59375,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 55%",
+            "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+          },
+          {
+            "src": "/assets/woodland-480.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 1744.75,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 50%",
+            "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+          }
+        ],
+        "disclosure": true,
+        "imageCaptions": 0,
+        "titleGaps": [
+          16,
+          16,
+          16
+        ],
+        "temporary": false
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "dsf": 1,
+      "initial": {
+        "overflow": false,
+        "layoutShift": 0,
+        "images": [
+          {
+            "src": "/assets/hero-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+            "loading": "eager",
+            "priority": "high",
+            "width": 768,
+            "height": 410,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 0,
+              "top": 76.6875,
+              "width": 768,
+              "height": 409.59375
+            },
+            "focal": "50% 55%",
+            "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+            "sizes": "100vw"
+          },
+          {
+            "src": "/assets/courtyard-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 720,
+            "height": 480,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 24,
+              "top": 1013.015625,
+              "width": 720,
+              "height": 480
+            },
+            "focal": "50% 50%",
+            "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+          },
+          {
+            "src": "/assets/ridge-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 720,
+            "height": 480,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 24,
+              "top": 1703.015625,
+              "width": 720,
+              "height": 480
+            },
+            "focal": "50% 55%",
+            "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+          },
+          {
+            "src": "/assets/woodland-1536.jpg",
+            "loaded": false,
+            "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 720,
+            "height": 480,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 24,
+              "top": 2393.015625,
+              "width": 720,
+              "height": 480
+            },
+            "focal": "50% 50%",
+            "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+          }
+        ],
+        "disclosure": true,
+        "imageCaptions": 0,
+        "titleGaps": [
+          16,
+          16,
+          16
+        ],
+        "temporary": false
+      },
+      "metrics": {
+        "overflow": false,
+        "layoutShift": 0,
+        "images": [
+          {
+            "src": "/assets/hero-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+            "loading": "eager",
+            "priority": "high",
+            "width": 768,
+            "height": 410,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 0,
+              "top": 76.6875,
+              "width": 768,
+              "height": 409.59375
+            },
+            "focal": "50% 55%",
+            "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+            "sizes": "100vw"
+          },
+          {
+            "src": "/assets/courtyard-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 720,
+            "height": 480,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 24,
+              "top": 1013.015625,
+              "width": 720,
+              "height": 480
+            },
+            "focal": "50% 50%",
+            "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+          },
+          {
+            "src": "/assets/ridge-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 720,
+            "height": 480,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 24,
+              "top": 1703.015625,
+              "width": 720,
+              "height": 480
+            },
+            "focal": "50% 55%",
+            "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+          },
+          {
+            "src": "/assets/woodland-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 720,
+            "height": 480,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 24,
+              "top": 2393.015625,
+              "width": 720,
+              "height": 480
+            },
+            "focal": "50% 50%",
+            "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+          }
+        ],
+        "disclosure": true,
+        "imageCaptions": 0,
+        "titleGaps": [
+          16,
+          16,
+          16
+        ],
+        "temporary": false
+      },
+      "fallback": {
+        "overflow": false,
+        "layoutShift": 0,
+        "images": [
+          {
+            "src": "/assets/hero-768.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+            "loading": "eager",
+            "priority": "high",
+            "width": 768,
+            "height": 410,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 0,
+              "top": 76.6875,
+              "width": 768,
+              "height": 409.59375
+            },
+            "focal": "50% 55%",
+            "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+            "sizes": "100vw"
+          },
+          {
+            "src": "/assets/courtyard-768.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 720,
+            "height": 480,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 24,
+              "top": 1013.015625,
+              "width": 720,
+              "height": 480
+            },
+            "focal": "50% 50%",
+            "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+          },
+          {
+            "src": "/assets/ridge-768.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 720,
+            "height": 480,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 24,
+              "top": 1703.015625,
+              "width": 720,
+              "height": 480
+            },
+            "focal": "50% 55%",
+            "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+          },
+          {
+            "src": "/assets/woodland-768.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 720,
+            "height": 480,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 24,
+              "top": 2393.015625,
+              "width": 720,
+              "height": 480
+            },
+            "focal": "50% 50%",
+            "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+          }
+        ],
+        "disclosure": true,
+        "imageCaptions": 0,
+        "titleGaps": [
+          16,
+          16,
+          16
+        ],
+        "temporary": false
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "dsf": 1,
+      "initial": {
+        "overflow": false,
+        "layoutShift": 0,
+        "images": [
+          {
+            "src": "/assets/hero-1536.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+            "loading": "eager",
+            "priority": "high",
+            "width": 1440,
+            "height": 504,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 0,
+              "top": 76,
+              "width": 1440,
+              "height": 504
+            },
+            "focal": "50% 55%",
+            "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+            "sizes": "100vw"
+          },
+          {
+            "src": "/assets/courtyard-1280.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 793,
+            "height": 528,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 32,
+              "top": 1052.765625,
+              "width": 792.65625,
+              "height": 528.4375
+            },
+            "focal": "50% 50%",
+            "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+          },
+          {
+            "src": "/assets/ridge-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 559,
+            "height": 373,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 848.65625,
+              "top": 1148.765625,
+              "width": 559.328125,
+              "height": 372.875
+            },
+            "focal": "50% 55%",
+            "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+          },
+          {
+            "src": "/assets/woodland-1280.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 1143,
+            "height": 762,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 265.328125,
+              "top": 1804.890625,
+              "width": 1142.65625,
+              "height": 761.765625
+            },
+            "focal": "50% 50%",
+            "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+          }
+        ],
+        "disclosure": true,
+        "imageCaptions": 0,
+        "titleGaps": [
+          16,
+          16,
+          16
+        ],
+        "temporary": false
+      },
+      "metrics": {
+        "overflow": false,
+        "layoutShift": 0,
+        "images": [
+          {
+            "src": "/assets/hero-1536.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+            "loading": "eager",
+            "priority": "high",
+            "width": 1440,
+            "height": 504,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 0,
+              "top": 76,
+              "width": 1440,
+              "height": 504
+            },
+            "focal": "50% 55%",
+            "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+            "sizes": "100vw"
+          },
+          {
+            "src": "/assets/courtyard-1280.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 793,
+            "height": 528,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 32,
+              "top": 1052.765625,
+              "width": 792.65625,
+              "height": 528.4375
+            },
+            "focal": "50% 50%",
+            "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+          },
+          {
+            "src": "/assets/ridge-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 559,
+            "height": 373,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 848.65625,
+              "top": 1148.765625,
+              "width": 559.328125,
+              "height": 372.875
+            },
+            "focal": "50% 55%",
+            "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+          },
+          {
+            "src": "/assets/woodland-1280.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 1143,
+            "height": 762,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 265.328125,
+              "top": 1804.890625,
+              "width": 1142.65625,
+              "height": 761.765625
+            },
+            "focal": "50% 50%",
+            "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+          }
+        ],
+        "disclosure": true,
+        "imageCaptions": 0,
+        "titleGaps": [
+          16,
+          16,
+          16
+        ],
+        "temporary": false
+      },
+      "fallback": {
+        "overflow": false,
+        "layoutShift": 0,
+        "images": [
+          {
+            "src": "/assets/hero-1536.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+            "loading": "eager",
+            "priority": "high",
+            "width": 1440,
+            "height": 504,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 0,
+              "top": 76,
+              "width": 1440,
+              "height": 504
+            },
+            "focal": "50% 55%",
+            "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+            "sizes": "100vw"
+          },
+          {
+            "src": "/assets/courtyard-1280.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 793,
+            "height": 528,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 32,
+              "top": 1052.765625,
+              "width": 792.65625,
+              "height": 528.4375
+            },
+            "focal": "50% 50%",
+            "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+          },
+          {
+            "src": "/assets/ridge-768.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 559,
+            "height": 373,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 848.65625,
+              "top": 1148.765625,
+              "width": 559.328125,
+              "height": 372.875
+            },
+            "focal": "50% 55%",
+            "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+          },
+          {
+            "src": "/assets/woodland-1280.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 1143,
+            "height": 762,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 265.328125,
+              "top": 1804.890625,
+              "width": 1142.65625,
+              "height": 761.765625
+            },
+            "focal": "50% 50%",
+            "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+          }
+        ],
+        "disclosure": true,
+        "imageCaptions": 0,
+        "titleGaps": [
+          16,
+          16,
+          16
+        ],
+        "temporary": false
+      },
+      "errors": []
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "dsf": 2,
+      "initial": {
+        "overflow": false,
+        "layoutShift": 0.000009156828605401734,
+        "images": [
+          {
+            "src": "/assets/hero-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+            "loading": "eager",
+            "priority": "high",
+            "width": 375,
+            "height": 276,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 0,
+              "top": 76.6875,
+              "width": 375,
+              "height": 276.078125
+            },
+            "focal": "58% 50%",
+            "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+            "sizes": "100vw"
+          },
+          {
+            "src": "/assets/courtyard-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 816.4375,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 50%",
+            "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+          },
+          {
+            "src": "/assets/ridge-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 1280.59375,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 55%",
+            "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+          },
+          {
+            "src": "/assets/woodland-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 1744.75,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 50%",
+            "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+          }
+        ],
+        "disclosure": true,
+        "imageCaptions": 0,
+        "titleGaps": [
+          16,
+          16,
+          16
+        ],
+        "temporary": false
+      },
+      "metrics": {
+        "overflow": false,
+        "layoutShift": 0.000009156828605401734,
+        "images": [
+          {
+            "src": "/assets/hero-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+            "loading": "eager",
+            "priority": "high",
+            "width": 375,
+            "height": 276,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 0,
+              "top": 76.6875,
+              "width": 375,
+              "height": 276.078125
+            },
+            "focal": "58% 50%",
+            "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+            "sizes": "100vw"
+          },
+          {
+            "src": "/assets/courtyard-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 816.4375,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 50%",
+            "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+          },
+          {
+            "src": "/assets/ridge-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 1280.59375,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 55%",
+            "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+          },
+          {
+            "src": "/assets/woodland-768.webp",
+            "loaded": true,
+            "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 1744.75,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 50%",
+            "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+          }
+        ],
+        "disclosure": true,
+        "imageCaptions": 0,
+        "titleGaps": [
+          16,
+          16,
+          16
+        ],
+        "temporary": false
+      },
+      "fallback": {
+        "overflow": false,
+        "layoutShift": 0.000009156828605401734,
+        "images": [
+          {
+            "src": "/assets/hero-768.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+            "loading": "eager",
+            "priority": "high",
+            "width": 375,
+            "height": 276,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 0,
+              "top": 76.6875,
+              "width": 375,
+              "height": 276.078125
+            },
+            "focal": "58% 50%",
+            "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+            "sizes": "100vw"
+          },
+          {
+            "src": "/assets/courtyard-768.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 816.4375,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 50%",
+            "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+          },
+          {
+            "src": "/assets/ridge-768.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 1280.59375,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 55%",
+            "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+          },
+          {
+            "src": "/assets/woodland-768.jpg",
+            "loaded": true,
+            "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+            "loading": "lazy",
+            "priority": "auto",
+            "width": 343,
+            "height": 229,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "frame": {
+              "x": 16,
+              "top": 1744.75,
+              "width": 343,
+              "height": 228.65625
+            },
+            "focal": "50% 50%",
+            "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+            "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+          }
+        ],
+        "disclosure": true,
+        "imageCaptions": 0,
+        "titleGaps": [
+          16,
+          16,
+          16
+        ],
+        "temporary": false
+      },
+      "errors": []
+    },
+    {
+      "width": 375,
+      "delayedImages": {
+        "before": {
+          "overflow": false,
+          "images": [
+            {
+              "src": "/assets/hero-1536.jpg",
+              "loaded": false,
+              "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+              "loading": "eager",
+              "priority": "high",
+              "width": 375,
+              "height": 276,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 0,
+                "top": 76.6875,
+                "width": 375,
+                "height": 276.078125
+              },
+              "focal": "58% 50%",
+              "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+              "sizes": "100vw"
+            },
+            {
+              "src": "/assets/courtyard-1536.jpg",
+              "loaded": false,
+              "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+              "loading": "lazy",
+              "priority": "auto",
+              "width": 343,
+              "height": 229,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 16,
+                "top": 816.4375,
+                "width": 343,
+                "height": 228.65625
+              },
+              "focal": "50% 50%",
+              "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+              "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+            },
+            {
+              "src": "/assets/ridge-1536.jpg",
+              "loaded": false,
+              "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+              "loading": "lazy",
+              "priority": "auto",
+              "width": 343,
+              "height": 229,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 16,
+                "top": 1280.59375,
+                "width": 343,
+                "height": 228.65625
+              },
+              "focal": "50% 55%",
+              "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+              "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+            },
+            {
+              "src": "/assets/woodland-1536.jpg",
+              "loaded": false,
+              "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+              "loading": "lazy",
+              "priority": "auto",
+              "width": 343,
+              "height": 229,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 16,
+                "top": 1744.75,
+                "width": 343,
+                "height": 228.65625
+              },
+              "focal": "50% 50%",
+              "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+              "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+            }
+          ],
+          "disclosure": true,
+          "imageCaptions": 0,
+          "titleGaps": [
+            16,
+            16,
+            16
+          ],
+          "temporary": false
+        },
+        "after": {
+          "overflow": false,
+          "images": [
+            {
+              "src": "/assets/hero-480.webp",
+              "loaded": true,
+              "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+              "loading": "eager",
+              "priority": "high",
+              "width": 375,
+              "height": 276,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 0,
+                "top": 76.6875,
+                "width": 375,
+                "height": 276.078125
+              },
+              "focal": "58% 50%",
+              "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+              "sizes": "100vw"
+            },
+            {
+              "src": "/assets/courtyard-480.webp",
+              "loaded": true,
+              "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+              "loading": "lazy",
+              "priority": "auto",
+              "width": 343,
+              "height": 229,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 16,
+                "top": 816.4375,
+                "width": 343,
+                "height": 228.65625
+              },
+              "focal": "50% 50%",
+              "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+              "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+            },
+            {
+              "src": "/assets/ridge-480.webp",
+              "loaded": true,
+              "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+              "loading": "lazy",
+              "priority": "auto",
+              "width": 343,
+              "height": 229,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 16,
+                "top": 1280.59375,
+                "width": 343,
+                "height": 228.65625
+              },
+              "focal": "50% 55%",
+              "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+              "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+            },
+            {
+              "src": "/assets/woodland-480.webp",
+              "loaded": true,
+              "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+              "loading": "lazy",
+              "priority": "auto",
+              "width": 343,
+              "height": 229,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 16,
+                "top": 1744.75,
+                "width": 343,
+                "height": 228.65625
+              },
+              "focal": "50% 50%",
+              "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+              "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+            }
+          ],
+          "disclosure": true,
+          "imageCaptions": 0,
+          "titleGaps": [
+            16,
+            16,
+            16
+          ],
+          "temporary": false
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "delayedImages": {
+        "before": {
+          "overflow": false,
+          "images": [
+            {
+              "src": "/assets/hero-1536.jpg",
+              "loaded": false,
+              "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+              "loading": "eager",
+              "priority": "high",
+              "width": 1440,
+              "height": 504,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 0,
+                "top": 76,
+                "width": 1440,
+                "height": 504
+              },
+              "focal": "50% 55%",
+              "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+              "sizes": "100vw"
+            },
+            {
+              "src": "/assets/courtyard-1536.jpg",
+              "loaded": false,
+              "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+              "loading": "lazy",
+              "priority": "auto",
+              "width": 793,
+              "height": 528,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 32,
+                "top": 1052.765625,
+                "width": 792.65625,
+                "height": 528.4375
+              },
+              "focal": "50% 50%",
+              "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+              "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+            },
+            {
+              "src": "/assets/ridge-1536.jpg",
+              "loaded": false,
+              "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+              "loading": "lazy",
+              "priority": "auto",
+              "width": 559,
+              "height": 373,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 848.65625,
+                "top": 1148.765625,
+                "width": 559.328125,
+                "height": 372.875
+              },
+              "focal": "50% 55%",
+              "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+              "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+            },
+            {
+              "src": "/assets/woodland-1536.jpg",
+              "loaded": false,
+              "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+              "loading": "lazy",
+              "priority": "auto",
+              "width": 1143,
+              "height": 762,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 265.328125,
+                "top": 1804.890625,
+                "width": 1142.65625,
+                "height": 761.765625
+              },
+              "focal": "50% 50%",
+              "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+              "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+            }
+          ],
+          "disclosure": true,
+          "imageCaptions": 0,
+          "titleGaps": [
+            16,
+            16,
+            16
+          ],
+          "temporary": false
+        },
+        "after": {
+          "overflow": false,
+          "images": [
+            {
+              "src": "/assets/hero-1536.webp",
+              "loaded": true,
+              "alt": "Concept visualisation: a low mineral home with a timber canopy, an open living space and a stone path through a planted garden.",
+              "loading": "eager",
+              "priority": "high",
+              "width": 1440,
+              "height": 504,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 0,
+                "top": 76,
+                "width": 1440,
+                "height": 504
+              },
+              "focal": "50% 55%",
+              "source": "/assets/hero-480.webp 480w, /assets/hero-768.webp 768w, /assets/hero-1280.webp 1280w, /assets/hero-1536.webp 1536w",
+              "sizes": "100vw"
+            },
+            {
+              "src": "/assets/courtyard-1280.webp",
+              "loaded": true,
+              "alt": "Concept visualisation: a planted courtyard enclosed by pale walls and timber eaves, opening into a living room.",
+              "loading": "lazy",
+              "priority": "auto",
+              "width": 793,
+              "height": 528,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 32,
+                "top": 1052.765625,
+                "width": 792.65625,
+                "height": 528.4375
+              },
+              "focal": "50% 50%",
+              "source": "/assets/courtyard-480.webp 480w, /assets/courtyard-768.webp 768w, /assets/courtyard-1280.webp 1280w, /assets/courtyard-1536.webp 1536w",
+              "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 7 / 12 + 144px)"
+            },
+            {
+              "src": "/assets/ridge-768.webp",
+              "loaded": true,
+              "alt": "Concept visualisation: a low stone house on a planted slope, with a deep timber eave and views across distant hills.",
+              "loading": "lazy",
+              "priority": "auto",
+              "width": 559,
+              "height": 373,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 848.65625,
+                "top": 1148.765625,
+                "width": 559.328125,
+                "height": 372.875
+              },
+              "focal": "50% 55%",
+              "source": "/assets/ridge-480.webp 480w, /assets/ridge-768.webp 768w, /assets/ridge-1280.webp 1280w, /assets/ridge-1536.webp 1536w",
+              "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 5 / 12 + 96px)"
+            },
+            {
+              "src": "/assets/woodland-1280.webp",
+              "loaded": true,
+              "alt": "Concept visualisation: a compact timber home among trees, with a sheltered entrance and a shared table visible inside.",
+              "loading": "lazy",
+              "priority": "auto",
+              "width": 1143,
+              "height": 762,
+              "intrinsicWidth": "1536",
+              "intrinsicHeight": "1024",
+              "frame": {
+                "x": 265.328125,
+                "top": 1804.890625,
+                "width": 1142.65625,
+                "height": 761.765625
+              },
+              "focal": "50% 50%",
+              "source": "/assets/woodland-480.webp 480w, /assets/woodland-768.webp 768w, /assets/woodland-1280.webp 1280w, /assets/woodland-1536.webp 1536w",
+              "sizes": "(max-width: 599px) calc(100vw - 32px), (max-width: 899px) calc(100vw - 48px), calc((min(100vw, 1920px) - 64px - 264px) * 10 / 12 + 216px)"
+            }
+          ],
+          "disclosure": true,
+          "imageCaptions": 0,
+          "titleGaps": [
+            16,
+            16,
+            16
+          ],
+          "temporary": false
+        }
+      }
+    }
+  ]
+}
