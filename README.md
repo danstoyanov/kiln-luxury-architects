@@ -31,6 +31,22 @@ The production output is plain HTML, CSS, JavaScript and assets in `out/`. Hosti
 
 Use **Node.js 22.21.0** and **npm 10.9.4**. The supported ranges are recorded in `package.json`; `.nvmrc` pins Node.js.
 
+### Font setup
+
+Panchang and Switzer are free to use under the ITF Free Font License, but their font files cannot be redistributed through this repository. Obtain your own copies directly from [Fontshare](https://www.fontshare.com), subject to its [FFL terms](https://www.fontshare.com/licenses/itf-ffl), before running or building the site.
+
+Download the official [Panchang](https://www.fontshare.com/fonts/panchang) and [Switzer](https://www.fontshare.com/fonts/switzer) webfont packages. Copy the unmodified WOFF2 files into these local paths:
+
+| Official family and style | Local destination |
+| --- | --- |
+| Panchang Bold | `public/fonts/panchang-bold.woff2` |
+| Switzer Regular | `public/fonts/switzer-regular.woff2` |
+| Switzer Medium | `public/fonts/switzer-medium.woff2` |
+
+These three files are ignored by Git. Keep them unmodified and do not commit or redistribute them. Without them, the page uses fallback fonts. The deployed demo already has its fonts; this repository change does not update that deployment.
+
+### Install and run
+
 ```sh
 npm ci
 npm run dev
@@ -79,7 +95,7 @@ Implementation plans, stage reports, screenshots, image-generation originals and
 
 The four architectural images were created with ImageGen for this fictional project. Their optimized variants are included in `public/assets/`; they do not represent completed commissions or real clients.
 
-Manrope, Panchang and Switzer are served locally. Font licenses are included in [public/fonts](public/fonts/). The pinned third-party Taste Skill retains its [MIT license](.agents/skills/design-taste-frontend/LICENSE) and [source manifest](taste-skill-source.json).
+The site serves its fonts locally. Manrope and the included Bodoni Moda font retain their SIL Open Font License notices in [public/fonts](public/fonts/). Panchang and Switzer are local-only files obtained directly from Fontshare under the ITF Free Font License; they are not included in this repository. The pinned third-party Taste Skill retains its [MIT license](.agents/skills/design-taste-frontend/LICENSE) and [source manifest](taste-skill-source.json).
 
 ## Hosting
 
