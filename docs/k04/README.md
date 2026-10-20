@@ -106,3 +106,7 @@ These are initial comparison artifacts for K05 and later stages, captured from t
 Worktree and branch remain available for review and requested fixes. The user reviews and merges the PR. SIN-35 stays In Review and the chat stays red until confirmed merge and accepted criteria. No K05 agent or task has been started.
 
 Existing dependency limitations from K02 remain: npm ci reports five development-only high findings in the known ESLint dependency chain. No dependency versions were changed by K04.
+
+## Саморевю след merge
+
+По заявка на потребителя е извършено допълнително [SIN-35-Self-Review](self-review/SIN-35-Self-Review.md). Документът съдържа шест констатации, измервания и снимки; кратките насоки са предадени в SIN-36. Саморевюто не променя приложението или първоначалните снимки по-горе.

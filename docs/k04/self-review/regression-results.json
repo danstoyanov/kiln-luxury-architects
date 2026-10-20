@@ -1,0 +1,341 @@
+{
+  "url": "http://localhost:4184",
+  "results": [
+    {
+      "width": 1440,
+      "layout": {
+        "overflow": false,
+        "headings": [
+          {
+            "text": "KILN",
+            "lines": 1
+          },
+          {
+            "text": "Living studies",
+            "lines": 1
+          },
+          {
+            "text": "Courtyard House",
+            "lines": 1
+          },
+          {
+            "text": "Ridge House",
+            "lines": 1
+          },
+          {
+            "text": "Woodland Retreat",
+            "lines": 1
+          },
+          {
+            "text": "The studio",
+            "lines": 1
+          },
+          {
+            "text": "Considered together",
+            "lines": 1
+          },
+          {
+            "text": "Architecture",
+            "lines": 1
+          },
+          {
+            "text": "Interiors",
+            "lines": 1
+          },
+          {
+            "text": "Landscape",
+            "lines": 1
+          },
+          {
+            "text": "From groundto home",
+            "lines": 2
+          },
+          {
+            "text": "Listen",
+            "lines": 1
+          },
+          {
+            "text": "Explore",
+            "lines": 1
+          },
+          {
+            "text": "Resolve",
+            "lines": 1
+          },
+          {
+            "text": "Realise",
+            "lines": 1
+          },
+          {
+            "text": "A placeto begin",
+            "lines": 2
+          }
+        ],
+        "images": [
+          {
+            "src": "/assets/temporary/hero.jpg",
+            "loaded": true,
+            "alt": "Temporary architectural reference: a contemporary stone and concrete house opens onto a planted garden."
+          },
+          {
+            "src": "/assets/temporary/courtyard.jpg",
+            "loaded": true,
+            "alt": "Temporary reference: a narrow opening in a pale wall frames a white staircase."
+          },
+          {
+            "src": "/assets/temporary/ridge.jpg",
+            "loaded": true,
+            "alt": "Temporary reference: stepped white architecture seen against a clear blue sky."
+          },
+          {
+            "src": "/assets/temporary/woodland.jpg",
+            "loaded": true,
+            "alt": "Temporary material reference: a carved timber door set within an aged stone facade."
+          }
+        ],
+        "animation": false
+      },
+      "checks": [
+        "resources",
+        "no overflow",
+        "headings",
+        "navigation",
+        "keyboard menu",
+        "empty fields",
+        "invalid email",
+        "valid demo",
+        "field reset",
+        "visible focus",
+        "no form requests",
+        "no storage/cookies/databases",
+        "reduced motion",
+        "no console errors"
+      ],
+      "requestsDuringForm": 0
+    },
+    {
+      "width": 768,
+      "layout": {
+        "overflow": false,
+        "headings": [
+          {
+            "text": "KILN",
+            "lines": 1
+          },
+          {
+            "text": "Living studies",
+            "lines": 1
+          },
+          {
+            "text": "Courtyard House",
+            "lines": 1
+          },
+          {
+            "text": "Ridge House",
+            "lines": 1
+          },
+          {
+            "text": "Woodland Retreat",
+            "lines": 1
+          },
+          {
+            "text": "The studio",
+            "lines": 1
+          },
+          {
+            "text": "Considered together",
+            "lines": 1
+          },
+          {
+            "text": "Architecture",
+            "lines": 1
+          },
+          {
+            "text": "Interiors",
+            "lines": 1
+          },
+          {
+            "text": "Landscape",
+            "lines": 1
+          },
+          {
+            "text": "From groundto home",
+            "lines": 2
+          },
+          {
+            "text": "Listen",
+            "lines": 1
+          },
+          {
+            "text": "Explore",
+            "lines": 1
+          },
+          {
+            "text": "Resolve",
+            "lines": 1
+          },
+          {
+            "text": "Realise",
+            "lines": 1
+          },
+          {
+            "text": "A placeto begin",
+            "lines": 2
+          }
+        ],
+        "images": [
+          {
+            "src": "/assets/temporary/hero.jpg",
+            "loaded": true,
+            "alt": "Temporary architectural reference: a contemporary stone and concrete house opens onto a planted garden."
+          },
+          {
+            "src": "/assets/temporary/courtyard.jpg",
+            "loaded": true,
+            "alt": "Temporary reference: a narrow opening in a pale wall frames a white staircase."
+          },
+          {
+            "src": "/assets/temporary/ridge.jpg",
+            "loaded": true,
+            "alt": "Temporary reference: stepped white architecture seen against a clear blue sky."
+          },
+          {
+            "src": "/assets/temporary/woodland.jpg",
+            "loaded": true,
+            "alt": "Temporary material reference: a carved timber door set within an aged stone facade."
+          }
+        ],
+        "animation": false
+      },
+      "checks": [
+        "resources",
+        "no overflow",
+        "headings",
+        "navigation",
+        "keyboard menu",
+        "empty fields",
+        "invalid email",
+        "valid demo",
+        "field reset",
+        "visible focus",
+        "no form requests",
+        "no storage/cookies/databases",
+        "reduced motion",
+        "no console errors"
+      ],
+      "requestsDuringForm": 0
+    },
+    {
+      "width": 375,
+      "layout": {
+        "overflow": false,
+        "headings": [
+          {
+            "text": "KILN",
+            "lines": 1
+          },
+          {
+            "text": "Living studies",
+            "lines": 1
+          },
+          {
+            "text": "Courtyard House",
+            "lines": 1
+          },
+          {
+            "text": "Ridge House",
+            "lines": 1
+          },
+          {
+            "text": "Woodland Retreat",
+            "lines": 1
+          },
+          {
+            "text": "The studio",
+            "lines": 1
+          },
+          {
+            "text": "Considered together",
+            "lines": 1
+          },
+          {
+            "text": "Architecture",
+            "lines": 1
+          },
+          {
+            "text": "Interiors",
+            "lines": 1
+          },
+          {
+            "text": "Landscape",
+            "lines": 1
+          },
+          {
+            "text": "From groundto home",
+            "lines": 2
+          },
+          {
+            "text": "Listen",
+            "lines": 1
+          },
+          {
+            "text": "Explore",
+            "lines": 1
+          },
+          {
+            "text": "Resolve",
+            "lines": 1
+          },
+          {
+            "text": "Realise",
+            "lines": 1
+          },
+          {
+            "text": "A placeto begin",
+            "lines": 2
+          }
+        ],
+        "images": [
+          {
+            "src": "/assets/temporary/hero.jpg",
+            "loaded": true,
+            "alt": "Temporary architectural reference: a contemporary stone and concrete house opens onto a planted garden."
+          },
+          {
+            "src": "/assets/temporary/courtyard.jpg",
+            "loaded": true,
+            "alt": "Temporary reference: a narrow opening in a pale wall frames a white staircase."
+          },
+          {
+            "src": "/assets/temporary/ridge.jpg",
+            "loaded": true,
+            "alt": "Temporary reference: stepped white architecture seen against a clear blue sky."
+          },
+          {
+            "src": "/assets/temporary/woodland.jpg",
+            "loaded": true,
+            "alt": "Temporary material reference: a carved timber door set within an aged stone facade."
+          }
+        ],
+        "animation": false
+      },
+      "checks": [
+        "resources",
+        "no overflow",
+        "headings",
+        "navigation",
+        "keyboard menu",
+        "empty fields",
+        "invalid email",
+        "valid demo",
+        "field reset",
+        "visible focus",
+        "no form requests",
+        "no storage/cookies/databases",
+        "reduced motion",
+        "no console errors"
+      ],
+      "requestsDuringForm": 0
+    }
+  ]
+}
