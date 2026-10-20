@@ -11,7 +11,7 @@ KILN е измислено студио за луксозна жилищна а�
 - [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) — пълният план, критерии и последователност K01–K15.
 - `DESIGN.md` ще бъде създаден в K06 и приет чрез PR; тогава ще определя точните визуални стойности.
 
-Кодът и ревютата са в [частното GitHub хранилище](https://github.com/danstoyanov/kiln-luxury-architects). Задачите са в [Linear: KILN Luxury Architects](https://linear.app/singularity-lab/project/kiln-luxury-architects-90cab307bcf0), екип Singularity Lab. Настоящата задача е [SIN-32 — K01](https://linear.app/singularity-lab/issue/SIN-32/k01-zadanie-i-pravila).
+Кодът и ревютата са в [частното GitHub хранилище](https://github.com/danstoyanov/kiln-luxury-architects). Задачите са в [Linear: KILN Luxury Architects](https://linear.app/singularity-lab/project/kiln-luxury-architects-90cab307bcf0), екип Singularity Lab. Техническата основа е добавена в [SIN-33 — K02](https://linear.app/singularity-lab/issue/SIN-33/k02-nextjs-osnova).
 
 ## Какво включва сайтът
 
@@ -27,9 +27,35 @@ KILN е измислено студио за луксозна жилищна а�
 
 ## Техническа основа и локална работа
 
-Избрани са Next.js App Router, React, TypeScript strict, npm, CSS Modules и глобални CSS променливи. K02 ще избере поддържана стабилна версия на Next.js, съвместима с наличния Node, и ще запази `package-lock.json`.
+Next.js 16.4.2 с App Router, React 19.3.1, TypeScript strict, npm, CSS Modules и глобални CSS променливи. Зависимостите са фиксирани в package.json и package-lock.json. Използвай Node 22.21.0 (записан и в .nvmrc) и npm 10.9.4; engines допуска Node 22 от 22.21.0 и npm 10.
 
-**На етап K01 има само документация.** Все още няма `package.json`, приложение, npm команди или работещ preview. [SIN-33 — K02](https://linear.app/singularity-lab/issue/SIN-33/k02-nextjs-osnova) ще добави точните инструкции за инсталиране, development, TypeScript, ESLint и build.
+K02 предоставя минимална начална страница. Пълните секции, навигацията, формата, изображенията и визуалната идентичност се добавят в следващите етапи.
+
+От директорията на своето worktree:
+
+~~~sh
+npm ci
+npm run dev
+~~~
+
+Отвори http://localhost:3000. При зает порт: npm run dev -- --port 3001. Спри dev сървъра с Ctrl+C преди production build.
+
+Проверки и export:
+
+~~~sh
+npm run typecheck
+npm run lint
+npm run build
+npm run preview
+~~~
+
+typecheck генерира Next.js типовете преди tsc --noEmit и работи и преди първия build. lint изпълнява ESLint с Next.js Core Web Vitals и TypeScript правилата без допустими предупреждения. build създава out/index.html и статичните ресурси. preview обслужва само out/ на http://localhost:4173; изисква предварителен build. Спира се с Ctrl+C. Не използвай next start за статичния export и не отваряй HTML директно през file://.
+
+Началната страница използва системни шрифтове и не изисква външни услуги при build. Цветовете и отстоянията в app/globals.css са временна основа до приемането на DESIGN.md в K06. Стиловете на страницата са в app/page.module.css.
+
+Генерираните node_modules/, .next/, .next-dev/, out/, next-env.d.ts и *.tsbuildinfo са игнорирани от Git. package-lock.json се commit-ва; за възпроизводима инсталация използвай npm ci.
+
+Технически справки: [Next.js installation](https://nextjs.org/docs/app/getting-started/installation), [Static exports](https://nextjs.org/docs/app/guides/static-exports), [ESLint](https://nextjs.org/docs/app/api-reference/config/eslint).
 
 Предвидена структура: `app/` за страницата и layout-а, `components/` за секции и взаимодействия, `public/assets/` за финалните уеб изображения; `lib/` и `scripts/` само при реална нужда. Phosphor се използва само където помага.
 
@@ -48,3 +74,11 @@ KILN е измислено студио за луксозна жилищна а�
 Документацията се проверява за пълнота и връзки. При промени по кода се изпълняват TypeScript, ESLint и production build; визуалните промени се проверяват на 375, 768 и 1440 px, със снимки за компютър и телефон в PR. Преди деплой се проверява самият `out/` през static server.
 
 Крайното предаване включва код в частното GitHub хранилище, четирите финални ImageGen изображения, проверен мобилен изглед и потвърден успешен GPT Sites деплой. В K14 се подготвя частен Site; K15 публикува одобрения код от `main`. Публичното споделяне е отделно решение на потребителя. Подробните критерии са в [плана](IMPLEMENTATION_PLAN.md).
+
+## Ограничения на инструментите в K02
+
+ESLint 9.39.5 е последната версия, допускана от eslint-plugin-react в текущата Next.js конфигурация; npm я отбелязва като неподдържана. Миграцията към ESLint 10 изисква съвместима версия на този plugin.
+
+npm audit отчита пет high записа по една транзитивна верига само за development: eslint-config-next → @next/eslint-plugin-next → fast-glob → micromatch → braces. Към 20 октомври 2026 г. последната braces 3.0.3 е засегната от [GHSA-vfj7-8cjw-p6xm](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm) и няма публикувана поправена версия. Тези инструменти не се включват в статичния export. npm audit --omit=dev не отчита уязвимости. Не използвай audit fix --force: предложеното понижаване до Next.js ESLint конфигурация 14 не е съвместимо решение за тази основа.
+
+overrides.compression фиксира 1.8.2 за локалния serve preview поради [GHSA-vc2v-76pw-4v95](https://github.com/advisories/GHSA-vc2v-76pw-4v95). Премахни override-а, когато serve включи поправката в собствените си зависимости.
