@@ -30,7 +30,7 @@ KILN е измислено студио за луксозна жилищна а�
 
 Next.js 16.4.2 с App Router, React 19.3.1, TypeScript strict, npm, CSS Modules и глобални CSS променливи. Зависимостите са фиксирани в package.json и package-lock.json. Използвай Node 22.21.0 (записан и в .nvmrc) и npm 10.9.4; engines допуска Node 22 от 22.21.0 и npm 10.
 
-K02 предоставя минимална начална страница. Пълните секции, навигацията, формата, изображенията и визуалната идентичност се добавят в следващите етапи.
+K04 / SIN-35 добавя първата цялостна страница: hero, три концептуални проекта, студио, услуги, процес и демо контактна форма. Мобилното меню и формата са Client Components. Изображенията са временни референции с видими кредити; финалните ImageGen кадри и приетата идентичност предстоят по плана. Виж [отчета на K04](docs/k04/README.md) и [източниците на ресурсите](docs/temporary-assets.md).
 
 От директорията на своето worktree:
 
@@ -52,7 +52,7 @@ npm run preview
 
 typecheck генерира Next.js типовете преди tsc --noEmit и работи и преди първия build. lint изпълнява ESLint с Next.js Core Web Vitals и TypeScript правилата без допустими предупреждения. build създава out/index.html и статичните ресурси. preview обслужва само out/ на http://localhost:4173; изисква предварителен build. Спира се с Ctrl+C. Не използвай next start за статичния export и не отваряй HTML директно през file://.
 
-Началната страница използва системни шрифтове и не изисква външни услуги при build. Цветовете и отстоянията в app/globals.css са временна основа до приемането на DESIGN.md в K06. Стиловете на страницата са в app/page.module.css.
+Страницата използва локални Panchang и Switzer шрифтове и локални изображения; build и разглеждането не изискват външни услуги. Цветовете, шрифтовете и отстоянията са временни до приемането на DESIGN.md в K06. Глобалните стойности са в app/globals.css, стиловете на страницата — в app/page.module.css, а взаимодействията — в components/.
 
 Генерираните node_modules/, .next/, .next-dev/, out/, next-env.d.ts и *.tsbuildinfo са игнорирани от Git. package-lock.json се commit-ва; за възпроизводима инсталация използвай npm ci.
 
@@ -83,3 +83,14 @@ ESLint 9.39.5 е последната версия, допускана от esli
 npm audit отчита пет high записа по една транзитивна верига само за development: eslint-config-next → @next/eslint-plugin-next → fast-glob → micromatch → braces. Към 20 октомври 2026 г. последната braces 3.0.3 е засегната от [GHSA-vfj7-8cjw-p6xm](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm) и няма публикувана поправена версия. Тези инструменти не се включват в статичния export. npm audit --omit=dev не отчита уязвимости. Не използвай audit fix --force: предложеното понижаване до Next.js ESLint конфигурация 14 не е съвместимо решение за тази основа.
 
 overrides.compression фиксира 1.8.2 за локалния serve preview поради [GHSA-vc2v-76pw-4v95](https://github.com/advisories/GHSA-vc2v-76pw-4v95). Премахни override-а, когато serve включи поправката в собствените си зависимости.
+
+## Повторение на браузърните проверки на K04
+
+След production build стартирай static preview. За отделен порт, без порта по подразбиране:
+
+~~~sh
+npm exec -- serve out --listen 4174
+node scripts/check-k04.mjs http://localhost:4174
+~~~
+
+Проверката изисква Node 22 и инсталиран Chrome, Edge или Chromium (или CHROME_PATH към executable). Използва CDP помощника от фиксираното Taste Skill копие и записва снимки и JSON отчет в docs/k04/. Проверява 1440, 768 и 375 px, навигация, клавиатура, формата, ресурсите, reduced motion и липсата на заявки/съхранение при попълване. Не изпраща данни; използва само примерни стойности.
