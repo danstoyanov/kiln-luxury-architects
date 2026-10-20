@@ -24,3 +24,8 @@ Thumbs.db
 /scripts/check-*.mjs
 /scripts/prepare-k09-images.py
 /scripts/qa-output.mjs
+
+# Fontshare FFL files: obtain directly from Fontshare for local use
+/public/fonts/panchang-bold.woff2
+/public/fonts/switzer-regular.woff2
+/public/fonts/switzer-medium.woff2
