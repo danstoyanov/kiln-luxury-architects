@@ -14,7 +14,7 @@ type RootLayoutProps = Readonly<{
 }>;
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  preload("/fonts/bodoni-moda-latin-variable.woff2", {
+  preload("/fonts/manrope-latin-variable.woff2", {
     as: "font",
     type: "font/woff2",
     crossOrigin: "anonymous",

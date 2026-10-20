@@ -1,5 +1,13 @@
 # SIN-47 — потребителско дизайн ревю
 
+## Текуща ревизия — по-четим шрифт и по-прозрачно стъкло
+
+След второто потребителско ревю: Manrope 500–600 заменя Bodoni Moda за всички заглавия и identity. Glass opacity намалява от 86% на 64%, blur от 22px на 16px. Проверени `typecheck`, `lint` и production build. Потребителят изрично поиска директно локално ревю без нови скрийншоти; снимките и browser отчетите по-долу са от първата ревизия и не представят новия шрифт като проверен. Актуалните стойности са в DESIGN.md, раздел 13.
+
+Новият self-hosted Manrope Latin WOFF2 е 24,836 bytes, SHA-256 `a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972`. [Официален asset](https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2), [локален OFL лиценз](../../public/fonts/Manrope-OFL.txt). Старият Bodoni asset и лиценз остават като произход за първото ревю; не се preload-ват и не се използват в CSS.
+
+## Първа ревизия — исторически доказателства
+
 [Linear задача](https://linear.app/singularity-lab/issue/SIN-47/dizajn-revyu-glass-navigaciya-tipografiya-i-sekcii). Основа: `cd5ea20`, слетият PR #14 за SIN-44. Отделно worktree и клон `codex/sin-47-design-review`.
 
 ## Какво се промени

@@ -10,10 +10,10 @@
   --color-error: #983d32;
   --font-body: "Switzer", Arial, Helvetica, sans-serif;
   --font-heading: "Panchang", Arial, Helvetica, sans-serif;
-  --font-editorial: "Bodoni Moda", "Bodoni MT", Georgia, serif;
-  --color-glass: rgb(242 241 237 / 86%);
-  --color-glass-edge: rgb(255 255 255 / 75%);
-  --shadow-glass: 0 8px 32px rgb(25 30 25 / 14%), inset 0 1px 0 rgb(255 255 255 / 90%);
+  --font-editorial: "Manrope", Arial, Helvetica, sans-serif;
+  --color-glass: rgb(242 241 237 / 64%);
+  --color-glass-edge: rgb(255 255 255 / 55%);
+  --shadow-glass: 0 8px 32px rgb(25 30 25 / 10%), inset 0 1px 0 rgb(255 255 255 / 75%);
   --page-gutter: 2rem;
   --grid-gap: 1.5rem;
   /* Keep the inner frame centred while section backgrounds stay full width. */
@@ -22,13 +22,13 @@
   --step-small: 0.875rem;
   --step-body: 1.125rem;
   --step-lead: clamp(1.25rem, 1.8vw, 1.625rem);
-  --step-head: clamp(2.5rem, 4.8vw, 4.5rem);
+  --step-head: clamp(2.25rem, 4.4vw, 4rem);
 }
 @font-face {
-  font-family: "Bodoni Moda";
-  src: url("/fonts/bodoni-moda-latin-variable.woff2") format("woff2");
+  font-family: "Manrope";
+  src: url("/fonts/manrope-latin-variable.woff2") format("woff2");
   font-style: normal;
-  font-weight: 400 600;
+  font-weight: 500 600;
   font-display: swap;
 }
 @font-face {

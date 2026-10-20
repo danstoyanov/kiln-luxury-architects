@@ -88,9 +88,9 @@
 .contact h2 {
   font-family: var(--font-editorial);
   font-size: var(--step-head);
-  line-height: 1.06;
+  line-height: 1.12;
   letter-spacing: -0.03em;
-  font-weight: 400;
+  font-weight: 500;
 }
 .projectWall {
   display: grid;
@@ -134,9 +134,9 @@
 .serviceColumns h3,
 .processList h3,
 .studioNote h3 {
-  font-size: clamp(1.75rem, 2.6vw, 2.5rem);
-  font-weight: 500;
-  line-height: 1.15;
+  font-size: clamp(1.5rem, 2.1vw, 2rem);
+  font-weight: 600;
+  line-height: 1.25;
   letter-spacing: -0.025em;
 }
 .projectTitle span {

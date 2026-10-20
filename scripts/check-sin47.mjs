@@ -45,8 +45,8 @@ try {
     assert(state.headings.every(heading => !heading.clipped));
     if (!baseline) {
       assert.equal(state.iconCount, 9);
-      assert(state.headings.every(heading => heading.font.includes("Bodoni Moda")));
-      assert(state.identityFont.includes("Bodoni Moda"));
+      assert(state.headings.every(heading => heading.font.includes("Manrope")));
+      assert(state.identityFont.includes("Manrope"));
       assert(state.glass.includes("blur"));
     }
     assert.deepEqual(page.consoleErrors, []);
