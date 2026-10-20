@@ -47,6 +47,10 @@
   color: var(--color-background);
   padding: 0.6rem 1rem;
 }
+.toggle:hover,
+.toggle:focus-visible {
+  text-decoration: underline;
+}
 .skip {
   position: absolute;
   left: var(--page-gutter);

@@ -15,6 +15,28 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
   const header = useRef<HTMLElement>(null);
+  const navigation = useRef<HTMLElement>(null);
+  const focusedControl = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const desktop = window.matchMedia("(min-width: 900px)");
+    function closeOnResize() {
+      // CSS may hide the control before this media event and move focus to body.
+      const activeControl = document.activeElement === document.body
+        ? focusedControl.current
+        : document.activeElement;
+      if (desktop.matches && activeControl === menuButton.current) {
+        navigation.current
+          ?.querySelector<HTMLAnchorElement>("a")
+          ?.focus({ preventScroll: true });
+      } else if (!desktop.matches && navigation.current?.contains(activeControl)) {
+        menuButton.current?.focus({ preventScroll: true });
+      }
+      setIsOpen(false);
+    }
+    desktop.addEventListener("change", closeOnResize);
+    return () => desktop.removeEventListener("change", closeOnResize);
+  }, []);
 
   useEffect(() => {
     if (!isOpen) {
@@ -31,22 +53,18 @@ export function Navigation() {
         event.target instanceof Node &&
         !header.current?.contains(event.target)
       ) {
-        setIsOpen(false);
-      }
-    }
-    const desktop = window.matchMedia("(min-width: 900px)");
-    function closeOnDesktop() {
-      if (desktop.matches) {
+        // A click on plain content must not leave focus in the hidden navigation.
+        if (navigation.current?.contains(document.activeElement)) {
+          menuButton.current?.focus({ preventScroll: true });
+        }
         setIsOpen(false);
       }
     }
     document.addEventListener("keydown", closeOnEscape);
     document.addEventListener("pointerdown", closeOutside);
-    desktop.addEventListener("change", closeOnDesktop);
     return () => {
       document.removeEventListener("keydown", closeOnEscape);
       document.removeEventListener("pointerdown", closeOutside);
-      desktop.removeEventListener("change", closeOnDesktop);
     };
   }, [isOpen]);
 
@@ -54,8 +72,17 @@ export function Navigation() {
     <header
       ref={header}
       className={styles.header}
+      onFocusCapture={(event) => {
+        if (event.target instanceof HTMLElement) {
+          focusedControl.current = event.target;
+        }
+      }}
       onBlur={(event) => {
         if (!event.currentTarget.contains(event.relatedTarget)) {
+          // Keep only focus lost because a breakpoint hid the current control.
+          if (event.target.getClientRects().length > 0 || event.relatedTarget) {
+            focusedControl.current = null;
+          }
           setIsOpen(false);
         }
       }}
@@ -72,11 +99,12 @@ export function Navigation() {
         type="button"
         aria-expanded={isOpen}
         aria-controls="main-navigation"
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setIsOpen((open) => !open)}
       >
         {isOpen ? "Close" : "Menu"}
       </button>
       <nav
+        ref={navigation}
         id="main-navigation"
         aria-label="Main navigation"
         className={styles.navigation + (isOpen ? " " + styles.open : "")}
