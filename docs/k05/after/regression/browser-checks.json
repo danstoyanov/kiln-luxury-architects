@@ -1,0 +1,350 @@
+{
+  "timestamp": "2026-10-20T10:34:18.718Z",
+  "url": "http://localhost:4186",
+  "sourceCommit": "81add9cabe5920e90d540ded2ccfd06a6c9680ee",
+  "workingTreeDirty": true,
+  "sourceSha256": "a9a9e2bd5f9c60927a5ca90756e44800507e28ccc36901ce9258909cf2edef75",
+  "exportHtmlSha256": "40ae33846f3b6596032e8961a95fde293ab7ab7a3f8e9f4aa24f156b9df3b981",
+  "motion": "reduced",
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "layout": {
+        "overflow": false,
+        "headings": [
+          {
+            "text": "KILN",
+            "lines": 1
+          },
+          {
+            "text": "Living studies",
+            "lines": 1
+          },
+          {
+            "text": "Courtyard House",
+            "lines": 1
+          },
+          {
+            "text": "Ridge House",
+            "lines": 1
+          },
+          {
+            "text": "Woodland Retreat",
+            "lines": 1
+          },
+          {
+            "text": "The studio",
+            "lines": 1
+          },
+          {
+            "text": "Considered together",
+            "lines": 1
+          },
+          {
+            "text": "Architecture",
+            "lines": 1
+          },
+          {
+            "text": "Interiors",
+            "lines": 1
+          },
+          {
+            "text": "Landscape",
+            "lines": 1
+          },
+          {
+            "text": "From groundto home",
+            "lines": 2
+          },
+          {
+            "text": "Listen",
+            "lines": 1
+          },
+          {
+            "text": "Explore",
+            "lines": 1
+          },
+          {
+            "text": "Resolve",
+            "lines": 1
+          },
+          {
+            "text": "Realise",
+            "lines": 1
+          },
+          {
+            "text": "A placeto begin",
+            "lines": 2
+          }
+        ],
+        "images": [
+          {
+            "src": "/assets/temporary/hero.jpg",
+            "loaded": true,
+            "alt": "Temporary architectural reference: a contemporary stone and concrete house opens onto a planted garden."
+          },
+          {
+            "src": "/assets/temporary/courtyard.jpg",
+            "loaded": true,
+            "alt": "Temporary residential reference: a planted courtyard beside a pale living room and timber screens."
+          },
+          {
+            "src": "/assets/temporary/ridge.jpg",
+            "loaded": true,
+            "alt": "Temporary residential reference: a low glass-fronted house with a deep roof overhang above a planted slope."
+          },
+          {
+            "src": "/assets/temporary/woodland.jpg",
+            "loaded": true,
+            "alt": "Temporary residential reference: a timber and glass A-frame cabin among pine trees."
+          }
+        ],
+        "animation": false
+      },
+      "checks": [
+        "resources",
+        "no overflow",
+        "headings",
+        "navigation",
+        "keyboard menu",
+        "empty fields",
+        "invalid email",
+        "valid demo",
+        "field reset",
+        "visible focus",
+        "no form requests",
+        "no storage/cookies/databases",
+        "reduced motion",
+        "no console errors"
+      ],
+      "requestsDuringForm": 0
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "layout": {
+        "overflow": false,
+        "headings": [
+          {
+            "text": "KILN",
+            "lines": 1
+          },
+          {
+            "text": "Living studies",
+            "lines": 1
+          },
+          {
+            "text": "Courtyard House",
+            "lines": 1
+          },
+          {
+            "text": "Ridge House",
+            "lines": 1
+          },
+          {
+            "text": "Woodland Retreat",
+            "lines": 1
+          },
+          {
+            "text": "The studio",
+            "lines": 1
+          },
+          {
+            "text": "Considered together",
+            "lines": 1
+          },
+          {
+            "text": "Architecture",
+            "lines": 1
+          },
+          {
+            "text": "Interiors",
+            "lines": 1
+          },
+          {
+            "text": "Landscape",
+            "lines": 1
+          },
+          {
+            "text": "From groundto home",
+            "lines": 2
+          },
+          {
+            "text": "Listen",
+            "lines": 1
+          },
+          {
+            "text": "Explore",
+            "lines": 1
+          },
+          {
+            "text": "Resolve",
+            "lines": 1
+          },
+          {
+            "text": "Realise",
+            "lines": 1
+          },
+          {
+            "text": "A placeto begin",
+            "lines": 2
+          }
+        ],
+        "images": [
+          {
+            "src": "/assets/temporary/hero.jpg",
+            "loaded": true,
+            "alt": "Temporary architectural reference: a contemporary stone and concrete house opens onto a planted garden."
+          },
+          {
+            "src": "/assets/temporary/courtyard.jpg",
+            "loaded": true,
+            "alt": "Temporary residential reference: a planted courtyard beside a pale living room and timber screens."
+          },
+          {
+            "src": "/assets/temporary/ridge.jpg",
+            "loaded": true,
+            "alt": "Temporary residential reference: a low glass-fronted house with a deep roof overhang above a planted slope."
+          },
+          {
+            "src": "/assets/temporary/woodland.jpg",
+            "loaded": true,
+            "alt": "Temporary residential reference: a timber and glass A-frame cabin among pine trees."
+          }
+        ],
+        "animation": false
+      },
+      "checks": [
+        "resources",
+        "no overflow",
+        "headings",
+        "navigation",
+        "keyboard menu",
+        "empty fields",
+        "invalid email",
+        "valid demo",
+        "field reset",
+        "visible focus",
+        "no form requests",
+        "no storage/cookies/databases",
+        "reduced motion",
+        "no console errors"
+      ],
+      "requestsDuringForm": 0
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "layout": {
+        "overflow": false,
+        "headings": [
+          {
+            "text": "KILN",
+            "lines": 1
+          },
+          {
+            "text": "Living studies",
+            "lines": 1
+          },
+          {
+            "text": "Courtyard House",
+            "lines": 1
+          },
+          {
+            "text": "Ridge House",
+            "lines": 1
+          },
+          {
+            "text": "Woodland Retreat",
+            "lines": 1
+          },
+          {
+            "text": "The studio",
+            "lines": 1
+          },
+          {
+            "text": "Considered together",
+            "lines": 1
+          },
+          {
+            "text": "Architecture",
+            "lines": 1
+          },
+          {
+            "text": "Interiors",
+            "lines": 1
+          },
+          {
+            "text": "Landscape",
+            "lines": 1
+          },
+          {
+            "text": "From groundto home",
+            "lines": 2
+          },
+          {
+            "text": "Listen",
+            "lines": 1
+          },
+          {
+            "text": "Explore",
+            "lines": 1
+          },
+          {
+            "text": "Resolve",
+            "lines": 1
+          },
+          {
+            "text": "Realise",
+            "lines": 1
+          },
+          {
+            "text": "A placeto begin",
+            "lines": 2
+          }
+        ],
+        "images": [
+          {
+            "src": "/assets/temporary/hero.jpg",
+            "loaded": true,
+            "alt": "Temporary architectural reference: a contemporary stone and concrete house opens onto a planted garden."
+          },
+          {
+            "src": "/assets/temporary/courtyard.jpg",
+            "loaded": true,
+            "alt": "Temporary residential reference: a planted courtyard beside a pale living room and timber screens."
+          },
+          {
+            "src": "/assets/temporary/ridge.jpg",
+            "loaded": true,
+            "alt": "Temporary residential reference: a low glass-fronted house with a deep roof overhang above a planted slope."
+          },
+          {
+            "src": "/assets/temporary/woodland.jpg",
+            "loaded": true,
+            "alt": "Temporary residential reference: a timber and glass A-frame cabin among pine trees."
+          }
+        ],
+        "animation": false
+      },
+      "checks": [
+        "resources",
+        "no overflow",
+        "headings",
+        "navigation",
+        "keyboard menu",
+        "empty fields",
+        "invalid email",
+        "valid demo",
+        "field reset",
+        "visible focus",
+        "no form requests",
+        "no storage/cookies/databases",
+        "reduced motion",
+        "no console errors"
+      ],
+      "requestsDuringForm": 0
+    }
+  ]
+}
