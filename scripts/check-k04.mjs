@@ -86,7 +86,7 @@ try {
     await activate(page, 'main a[href="#contact"]');
     assert.equal(await page.eval(() => location.hash), "#contact");
 
-    
+
     const baseline = requests.length;
     const beforeStorage = await page.eval(async () => ({ local: { ...localStorage }, session: { ...sessionStorage }, cookie: document.cookie, databases: (await indexedDB.databases()).map((database) => database.name) }));
     await activate(page, 'button[type="submit"]');
