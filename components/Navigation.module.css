@@ -1,0 +1,15 @@
+.header { position: absolute; z-index: 2; inset: 0 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem var(--page-gutter); background: var(--color-background); }
+.identity { text-decoration: none; font-weight: 500; }
+.navigation { display: flex; gap: clamp(1rem, 2.6vw, 3rem); }
+.navigation a { padding-block: 0.5rem; text-decoration: none; }
+.navigation a:hover { text-decoration: underline; }
+.toggle { display: none; border: 0; background: var(--color-text); color: var(--color-background); padding: 0.6rem 1rem; }
+.skip { position: absolute; left: var(--page-gutter); top: -6rem; background: var(--color-background); padding: 1rem; }
+.skip:focus { top: 0.5rem; z-index: 3; }
+@media (max-width: 899px) {
+  .header { flex-wrap: wrap; }
+  .toggle { display: block; min-height: 44px; }
+  .navigation { display: none; width: 100%; padding-block: 0.5rem; }
+  .open { display: flex; flex-direction: column; gap: 0; }
+  .navigation a { padding: 0.75rem 0; }
+}

@@ -4,45 +4,35 @@
   --color-text: #292925;
   --color-muted: #605e57;
   --color-accent: #89563f;
-  --color-border: #d1ccc2;
-  --font-body: Arial, Helvetica, sans-serif;
-  --font-heading: Georgia, "Times New Roman", serif;
-  --space-1: 0.5rem;
-  --space-2: 1rem;
-  --space-3: 1.5rem;
-  --space-4: 2rem;
-  --space-5: 4rem;
-  --page-gutter: clamp(1.5rem, 5vw, 5rem);
-  --content-width: 90rem;
+  --color-surface: #e8e4dc;
+  --color-error: #9b3027;
+  --font-body: "Switzer", Arial, Helvetica, sans-serif;
+  --font-heading: "Panchang", Arial, Helvetica, sans-serif;
+  --page-gutter: clamp(1rem, 2.2vw, 2rem);
+  --space-section: clamp(5rem, 10vw, 10rem);
+  --step-small: 0.875rem;
+  --step-body: 1.0625rem;
+  --step-lead: clamp(1.25rem, 1.8vw, 1.625rem);
+  --step-head: clamp(2rem, 4vw, 3.5rem);
 }
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background: var(--color-background);
-  color: var(--color-text);
-  font-family: var(--font-body);
-  line-height: 1.6;
-}
-
-h1,
-p {
-  margin: 0;
-}
-
-a {
-  color: inherit;
-}
-
-:focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 4px;
-}
-
-::selection {
-  background: var(--color-accent);
-  color: var(--color-background);
+@font-face { font-family: "Panchang"; src: url("/fonts/panchang-bold.woff2") format("woff2"); font-style: normal; font-weight: 700; font-display: swap; }
+@font-face { font-family: "Switzer"; src: url("/fonts/switzer-regular.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "Switzer"; src: url("/fonts/switzer-medium.woff2") format("woff2"); font-style: normal; font-weight: 500; font-display: swap; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--color-background); color: var(--color-text); font-family: var(--font-body); font-size: var(--step-body); line-height: 1.5; }
+h1, h2, h3, p, figure { margin: 0; }
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+a { color: inherit; text-underline-offset: 0.25em; }
+button, input, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+img { display: block; width: 100%; height: auto; }
+section[id], main[id] { scroll-margin-top: 1.5rem; }
+:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 5px; }
+::selection { background: var(--color-accent); color: var(--color-background); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
 }
