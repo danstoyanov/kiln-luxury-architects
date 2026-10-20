@@ -49,7 +49,7 @@ if ($LASTEXITCODE -ne 0) { throw 'Verification failed' }
 
 ## Употреба в K04
 
-1. Прочети Linear задачата, `IMPLEMENTATION_PLAN.md`, `AGENTS.md`, `brief.md` и `DESIGN.md`, ако вече съществува. После прочети целия SKILL.md и необходимите references.
+1. Прочети Linear задачата, `AGENTS.md`, `brief.md` и `DESIGN.md`, ако вече съществува. Първоначалният план и архивите по етапи се пазят само локално и не са задължителни за нов clone. После прочети целия SKILL.md и необходимите references.
 2. От корена на worktree изпълни `node scripts/verify-taste-skill.mjs` и използвай skill-а за аргумент, текстове и композиция на KILN. При изрично посочване в промпт: „Използвай $design-taste-frontend за SIN-35, според docs/taste-skill.md и ограниченията на KILN.“
 3. Пример за разглеждане на три посоки (не избира посока и не създава сайт):
 

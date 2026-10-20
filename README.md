@@ -1,186 +1,82 @@
 # KILN Luxury Architects
 
-KILN е измислено студио за луксозна жилищна архитектура. Проектът е една завършена landing page на английски за портфолио, която показва как AI може да изгради убедителен клиентски дизайн с конкретна идентичност.
+A residential architecture portfolio concept built with Next.js, React and TypeScript. KILN is a fictional studio, and the homes shown are demonstration concepts illustrated with AI-generated imagery.
 
-Страницата е за потенциални възложители на индивидуална къща или вила. Тя представя стила на студиото, начина му на работа и основното действие **“Discuss your project”**, което води към демонстрационна контактна форма.
+[View the live demo](https://kiln-luxury-architects.stoyanov-dann.chatgpt.site)
 
-## Контекст и документи
+## Features
 
-- [docs/k15/README.md](docs/k15/README.md) — успешен частен GPT Sites деплой, версия 1, произход и hosted проверки без нови снимки.
+- A single page with projects, studio, services, process and contact sections.
+- Responsive architecture imagery in WebP and JPEG formats.
+- An accessible navigation menu and keyboard focus states.
+- Local fonts, CSS Modules and reduced-motion support.
+- A demonstration enquiry form with required-field and email validation.
 
-- [docs/k14/README.md](docs/k14/README.md) — частен непубликуван Site, static hosting конфигурация за out/ и процедура за K15 след merge.
+The form displays **“Demo only — your enquiry has not been sent or saved.”** after valid input. It does not send or store enquiries. There is no backend, database, CMS or account system.
 
-- [docs/sin47/README.md](docs/sin47/README.md) — потребителско дизайн ревю: glass навигация, Manrope, икони и композиция на Studio/Services/Process; история и проверки.
-- [docs/k13/README.md](docs/k13/README.md) — поправки по Impeccable, финални снимки, сравнение с K04 и конкретни ограничения.
-- [docs/k12/README.md](docs/k12/README.md) — финална Impeccable оценка, доказателства и две конкретни поправки за K13.
-- [brief.md](brief.md) — аудитория, съдържание, поведение, визуална посока и ограничения.
-- [AGENTS.md](AGENTS.md) — правила за код, отделни worktrees, проверки и PR.
-- [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) — пълният план, критерии и последователност K01–K15.
-- [docs/taste-skill.md](docs/taste-skill.md) — инсталиран Taste Skill, точен commit, възпроизвеждане и употреба.
-- [DESIGN.md](DESIGN.md) — приетата чрез K06 PR визуална система, приложена в K07: точни стойности, композиция, изображения и движение; [таблото за ревю](docs/k06/identity-board.html) показва палитрата и типографията.
+## Technology
 
-Кодът и ревютата са в [частното GitHub хранилище](https://github.com/danstoyanov/kiln-luxury-architects). Задачите са в [Linear: KILN Luxury Architects](https://linear.app/singularity-lab/project/kiln-luxury-architects-90cab307bcf0), екип Singularity Lab. Техническата основа е добавена в [SIN-33 — K02](https://linear.app/singularity-lab/issue/SIN-33/k02-nextjs-osnova).
+- Next.js 16.4.2 with the App Router and static export.
+- React 19.3.1 and TypeScript in strict mode.
+- CSS Modules and shared CSS custom properties.
+- npm with a committed lockfile.
 
-## Какво включва сайтът
+The production output is plain HTML, CSS, JavaScript and assets in `out/`. Hosting the built site does not require a Node.js or Next.js server.
 
-- Навигация към секциите и достъпно мобилно меню.
-- Основно послание, архитектурно изображение и “Discuss your project”.
-- Три концептуални жилищни проекта с кратки описания.
-- Представяне на студиото, услугите и процеса.
-- Контактна форма с име, имейл и съобщение и кратко обозначение за демонстрационния характер на студиото и проектите.
+## Getting started
 
-Формата проверява задължителните полета и имейла. Валидното попълване показва точно **“Demo only — your enquiry has not been sent or saved.”** Не изпраща заявки и не запазва въведени данни.
+Use **Node.js 22.21.0** and **npm 10.9.4**. The supported ranges are recorded in `package.json`; `.nvmrc` pins Node.js.
 
-Няма backend, база данни, акаунти, CMS, допълнителни страници, реални клиентски отзиви или измислени награди.
-
-## Техническа основа и локална работа
-
-Next.js 16.4.2 с App Router, React 19.3.1, TypeScript strict, npm, CSS Modules и глобални CSS променливи. Зависимостите са фиксирани в package.json и package-lock.json. Използвай Node 22.21.0 (записан и в .nvmrc) и npm 10.9.4; engines допуска Node 22 от 22.21.0 и npm 10.
-
-K04 / SIN-35 добавя първата цялостна страница: hero, три концептуални проекта, студио, услуги, процес и демо контактна форма. Мобилното меню и формата са Client Components. K07 / SIN-38 прилага приетата идентичност от DESIGN.md. K08 / SIN-39 добавя [четирите ImageGen оригинала, точните промптове и crop прегледа](docs/k08/README.md); K09 / SIN-40 ги интегрира с responsive WebP/JPEG варианти, конкретни alt текстове и общо fictional/AI обозначение. Виж [K09 проверките, размерите и снимките преди/след](docs/k09/README.md). Виж [K07 проверките и сравнението преди/след](docs/k07/README.md). Виж [отчета на K04](docs/k04/README.md) и [източниците на ресурсите](docs/temporary-assets.md).
-
-От директорията на своето worktree:
-
-~~~sh
+```sh
 npm ci
 npm run dev
-~~~
+```
 
-Отвори http://localhost:3000. При зает порт: npm run dev -- --port 3001. Спри dev сървъра с Ctrl+C преди production build.
+Open [localhost:3000](http://localhost:3000). To choose another port, run `npm run dev -- --port 3001`.
 
-Проверки и export:
+## Commands
 
-~~~sh
-npm run typecheck
-npm run lint
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the local development server. |
+| `npm run typecheck` | Generate Next.js types and check TypeScript. |
+| `npm run lint` | Run ESLint without allowing warnings. |
+| `npm run build` | Create the production static export in `out/`. |
+| `npm run preview` | Serve the existing `out/` directory on port 4173. |
+
+Stop the development server before building. To build and view the static site:
+
+```sh
 npm run build
 npm run preview
-~~~
-
-typecheck генерира Next.js типовете преди tsc --noEmit и работи и преди първия build. lint изпълнява ESLint с Next.js Core Web Vitals и TypeScript правилата без допустими предупреждения. build създава out/index.html и статичните ресурси. preview обслужва само out/ на http://localhost:4173; изисква предварителен build. Спира се с Ctrl+C. Не използвай next start за статичния export и не отваряй HTML директно през file://.
-
-Страницата използва локални Panchang и Switzer шрифтове и локални изображения; build и разглеждането не изискват външни услуги. Цветовете, шрифтовете, отстоянията, responsive композицията и умереното движение следват приетия DESIGN.md след K07. Глобалните стойности са в app/globals.css, стиловете на страницата — в app/page.module.css, а взаимодействията — в components/.
-
-Генерираните node_modules/, .next/, .next-dev/, out/, next-env.d.ts и *.tsbuildinfo са игнорирани от Git. package-lock.json се commit-ва; за възпроизводима инсталация използвай npm ci.
-
-Технически справки: [Next.js installation](https://nextjs.org/docs/app/getting-started/installation), [Static exports](https://nextjs.org/docs/app/guides/static-exports), [ESLint](https://nextjs.org/docs/app/api-reference/config/eslint).
-
-Предвидена структура: `app/` за страницата и layout-а, `components/` за секции и взаимодействия, `public/assets/` за финалните уеб изображения; `lib/` и `scripts/` само при реална нужда. Phosphor се използва само където помага.
-
-Публикуването в GPT Sites използва Next.js static export: `output: 'export'` в `next.config.ts`, `npm run build` и генерирания `out/`. Менюто и формата са Client Components. Няма Server Actions, динамични сървърни маршрути или функции, изискващи Next.js сървър. Изображенията се оптимизират предварително и се показват с `<picture>`/`<img>`, responsive варианти и зададени размери, без сървърния оптимизатор на `next/image`.
-
-## Дизайн и изображения
-
-Началната посока е архитектура сред природата, естествени материали, големи изображения и редакционна композиция: топъл светъл фон, графитен текст и приглушен глинен акцент. Точните цветове, шрифтове и правила са приети с `DESIGN.md` в K06 и приложени в K07.
-
-Планът предвижда Taste Skill в K03–K04, четири оригинални кадъра от вградения ImageGen в K08 (един основен и три проектни), интеграция в K09, обосновани референции в K10 и финална оценка и polish с Impeccable в K12–K13. Временните изображения вече са заменени в K09; историческият им произход и условия остават в docs/temporary-assets.md. Финалните уеб файлове са в public/assets/, а непроменените оригинали и промптове са извън public/ в docs/k08/.
-
-## Ред за работа и приемане
-
-Задачите се изпълняват ръчно и последователно. Всяка започва след слят PR на предходната, в ново управлявано Codex worktree и клон `codex/<linear-id>-<описание>` от актуалния `origin/main`. Агентът изпълнява своята задача, прави проверките и отваря PR с ID и Linear линк. Потребителят прави ревю и merge; агентът не слива и не стартира следващ агент.
-
-Документацията се проверява за пълнота и връзки. При промени по кода се изпълняват TypeScript, ESLint и production build; визуалните промени се проверяват на 375, 768 и 1440 px, със снимки за компютър и телефон в PR. Преди деплой се проверява самият `out/` през static server.
-
-Крайното предаване включва код в частното GitHub хранилище, четирите финални ImageGen изображения, проверен мобилен изглед и потвърден успешен GPT Sites деплой. В K14 се подготвя частен Site; K15 публикува одобрения код от `main`. Публичното споделяне е отделно решение на потребителя. Подробните критерии са в [плана](IMPLEMENTATION_PLAN.md).
-
-## Ограничения на инструментите в K02
-
-ESLint 9.39.5 е последната версия, допускана от eslint-plugin-react в текущата Next.js конфигурация; npm я отбелязва като неподдържана. Миграцията към ESLint 10 изисква съвместима версия на този plugin.
-
-npm audit отчита пет high записа по една транзитивна верига само за development: eslint-config-next → @next/eslint-plugin-next → fast-glob → micromatch → braces. Към 20 октомври 2026 г. последната braces 3.0.3 е засегната от [GHSA-vfj7-8cjw-p6xm](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm) и няма публикувана поправена версия. Тези инструменти не се включват в статичния export. npm audit --omit=dev не отчита уязвимости. Не използвай audit fix --force: предложеното понижаване до Next.js ESLint конфигурация 14 не е съвместимо решение за тази основа.
-
-overrides.compression фиксира 1.8.2 за локалния serve preview поради [GHSA-vc2v-76pw-4v95](https://github.com/advisories/GHSA-vc2v-76pw-4v95). Премахни override-а, когато serve включи поправката в собствените си зависимости.
-
-## Повторение на браузърните проверки на K04
-
-След production build стартирай static preview. За отделен порт, без порта по подразбиране:
-
-~~~sh
-npm exec -- serve out --listen 4174
-node scripts/check-k04.mjs http://localhost:4174
-~~~
-
-Проверката изисква Node 22 и инсталиран Chrome, Edge или Chromium (или CHROME_PATH към executable). Използва CDP помощника от фиксираното Taste Skill копие и записва снимки и JSON отчет в docs/k04/. Проверява 1440, 768 и 375 px, навигация, клавиатура, формата, ресурсите, reduced motion и липсата на заявки/съхранение при попълване. Не изпраща данни; използва само примерни стойности.
-
-## Повторение на браузърните проверки на K07
-
-След `npm ci` и `npm run build`, стартирай export-а в отделен терминал:
-
-```sh
-npm exec -- serve out --listen 4197
 ```
 
-После:
+Open [localhost:4173](http://localhost:4173). Generated output and dependencies are not committed. Building the site does not require Python, image generation or the local development archives.
 
-```sh
-node scripts/check-k07.mjs http://localhost:4197
+## Project structure
+
+```text
+app/             Page, layout, global styles and metadata
+components/      Sections, imagery, navigation and demo form
+public/assets/   Optimized architecture images
+public/fonts/    Self-hosted fonts and their licenses
+scripts/         Pinned design-tool source verification
+.openai/         Static hosting configuration for GPT Sites
 ```
 
-Командата използва същия Node/Chrome или Edge CDP помощник като K04–K05. По подразбиране записва нова папка с timestamp под `.taste-skill/checks/k07/`; за нов комплект за ревю добави `--out docs/k07/<new-run>`. Проверява договорените ширини, ниския desktop, 200% основен текст, взаимодействията и локалната форма; допълнително — 2560px рамка, шрифтове, 3:2 проектни кадри, контекстен фокус, hover/press и reduced motion. Историческите K04–K06 резултати се запазват.
+- [Project brief](brief.md) describes the audience, content and demo constraints.
+- [Design notes](DESIGN.md) record the visual system and its revisions.
+- [Contribution and agent instructions](AGENTS.md) describe the repository workflow.
+- [Design tooling](docs/taste-skill.md) records the pinned Taste Skill source and usage.
 
-## Изображения и проверки на K09
+Implementation plans, stage reports, screenshots, image-generation originals and stage QA helpers are local working materials excluded from the tracked source.
 
-Готовите WebP/JPEG варианти са commit-нати; обичайните `npm ci` и `npm run build` не изискват Python или генериране на изображения. За възпроизвеждане от K08 оригиналите е нужен Python 3 с Pillow 12.0.0:
+## Assets and attribution
 
-```sh
-python scripts/prepare-k09-images.py
-```
+The four architectural images were created with ImageGen for this fictional project. Their optimized variants are included in `public/assets/`; they do not represent completed commissions or real clients.
 
-Скриптът проверява SHA-256 на оригиналите спрямо K08 manifest-а, генерира 480/768/1280/1536px файлове и обновява `docs/k09/assets.json`. Не увеличава оригиналите и не променя композицията или цветовете. Виж [K09 отчета](docs/k09/README.md) за избраната компресия и ограниченията.
+Manrope, Panchang and Switzer are served locally. Font licenses are included in [public/fonts](public/fonts/). The pinned third-party Taste Skill retains its [MIT license](.agents/skills/design-taste-frontend/LICENSE) and [source manifest](taste-skill-source.json).
 
-След production build стартирай самия export в отделен терминал:
+## Hosting
 
-```sh
-npm exec -- serve out --listen 4200
-```
-
-После:
-
-```sh
-node scripts/check-k09.mjs http://localhost:4200
-node scripts/check-k07.mjs http://localhost:4200
-```
-
-Първата проверява 32-та файла през HTTP, responsive WebP/JPEG, 375/768/1440px, телефон с DPR 2, alt/disclosure, loading, layout shift и рамки при задържани image responses. Втората запазва проверките на взаимодействията и идентичността. Новите резултати по подразбиране са под `.taste-skill/checks/`; `--out <new-directory>` създава отделен комплект за ревю.
-
-## Композиция — K10
-
-[SIN-41: референции, обосновка и снимки преди/след](docs/k10/README.md) документира общата desktop ос на Projects/Services и двуколонния Woodland надпис от 1200px. Точните уточнения са в DESIGN.md; мобилната последователност и идентичността са запазени.
-
-
-## K11 — компоненти и взаимодействия
-
-[SIN-42: отчет, снимки и проверки](docs/k11/README.md) описва фокуса при навигация и responsive преходи, корекцията на грешки във формата и проверената липса на заявки/записи. Няма нови зависимости. За повторение след `npm run build`:
-
-```sh
-npm exec -- serve out --listen 4220 --no-clipboard
-```
-
-В друг терминал:
-
-```sh
-node scripts/check-k11.mjs http://localhost:4220
-```
-
-Скриптът използва наличния Chrome/Edge CDP помощник и синтетични примерни данни. По подразбиране създава нова timestamp папка под `.taste-skill/checks/k11/`; `--out <new-directory>` запазва отделен комплект за ревю. Проверява 375/768/1440px, реални клавиатурни събития, меню и responsive focus при 899/900px, формата, hover/error focus, reduced motion и опити за съхранение. Историческите резултати остават непроменени.
-
-
-## K13 — поправки и финален polish
-
-[SIN-44: резултати по находки и финални снимки](docs/k13/README.md). Home връзката има име, съответстващо на видимия текст; първата грешка във формата запазва label–поле–error в екрана. Знакът KILN допуска reflow при увеличено потребителско spacing. При стандартни настройки приетият дизайн е запазен.
-
-След production build стартирай static server в отделен терминал:
-
-~~~sh
-npm exec -- serve out --listen 4240 --no-clipboard
-~~~
-
-После:
-
-~~~sh
-node scripts/check-k13.mjs http://localhost:4240
-node scripts/check-k11.mjs http://localhost:4240
-node scripts/check-k09.mjs http://localhost:4240
-~~~
-
-K13 проверява DOM/AX името и keyboard home навигацията, действителната позиция след фокус към всяка грешка при нормално/reduced motion, намален viewport 375×420 и 200% root текст със spacing. K11 проверява менюто, формата и runtime липсата на заявки/опити за запис; K09 — export ресурсите и responsive изображенията. Изискват Node 22 и локален Chrome/Edge; новите резултати са под .taste-skill/checks/. За отделен комплект добави --out <new-directory>. Намаленият viewport е симулация, не тест с физически телефон и системна клавиатура.
+The live demo is hosted on GPT Sites. `.openai/hosting.json` declares `out` as the static directory. GitHub is the source and review location; documentation changes do not require a website deployment.
