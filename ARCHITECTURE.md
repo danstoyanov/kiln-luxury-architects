@@ -10,6 +10,10 @@ KILN is a single English-language portfolio page for a fictional residential arc
 
 ## Boundary and data flow
 
+![KILN static site architecture](docs/architecture.svg)
+
+The authored SVG uses distinct colors for the release, hosting, browser and transient-form boundaries. The Mermaid source below remains the compact, editable representation of the same architecture.
+
 ```mermaid
 flowchart TB
   subgraph authoring[Authoring and release boundary]

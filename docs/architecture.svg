@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050" role="img" aria-labelledby="title description">
+  <title id="title">KILN static site architecture</title>
+  <desc id="description">Architecture diagram showing the GitHub review and static build release flow into GPT Sites, then the visitor browser runtime with local navigation, imagery, wordmark fitting, and a demo form that does not send or store data.</desc>
+  <defs>
+    <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f3ea"/>
+      <stop offset="1" stop-color="#eee6d9"/>
+    </linearGradient>
+    <linearGradient id="release" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff4dd"/>
+      <stop offset="1" stop-color="#f7dec2"/>
+    </linearGradient>
+    <linearGradient id="browser" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef7f4"/>
+      <stop offset="1" stop-color="#dcece9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#282b28" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow-navy" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#365a73"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#b45f3f"/>
+    </marker>
+    <marker id="arrow-teal" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#277a72"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#765894"/>
+    </marker>
+    <style>
+      .title { font: 700 44px Arial, sans-serif; fill: #282b28; letter-spacing: -1px; }
+      .subtitle { font: 400 20px Arial, sans-serif; fill: #5c605a; }
+      .boundary-title { font: 700 17px Arial, sans-serif; letter-spacing: 1.6px; text-transform: uppercase; }
+      .node-title { font: 700 22px Arial, sans-serif; fill: #282b28; }
+      .node-copy { font: 400 16px Arial, sans-serif; fill: #4e554f; }
+      .small { font: 600 14px Arial, sans-serif; fill: #5c605a; }
+      .arrow-label { font: 600 14px Arial, sans-serif; }
+      .pill { font: 700 13px Arial, sans-serif; letter-spacing: .5px; }
+      .node { stroke-width: 2; filter: url(#shadow); }
+      .flow { fill: none; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1050" fill="url(#canvas)"/>
+  <circle cx="1490" cy="80" r="180" fill="#d2b7d9" opacity="0.22"/>
+  <circle cx="105" cy="980" r="210" fill="#e3a46f" opacity="0.16"/>
+
+  <text x="90" y="86" class="title">KILN static site architecture</text>
+  <text x="90" y="122" class="subtitle">Reviewed source becomes static files; browser interactions remain local.</text>
+
+  <rect x="70" y="170" width="1460" height="330" rx="30" fill="url(#release)" stroke="#d79a67" stroke-width="2"/>
+  <text x="105" y="211" class="boundary-title" fill="#995035">Authoring &amp; release boundary</text>
+
+  <rect x="110" y="255" width="235" height="140" rx="22" fill="#fffaf2" stroke="#b45f3f" class="node"/>
+  <circle cx="152" cy="297" r="19" fill="#e9a06f"/>
+  <path d="M143 298h18M152 289v18" stroke="#6d3526" stroke-width="3" stroke-linecap="round"/>
+  <text x="185" y="303" class="node-title">Maintainer</text>
+  <text x="140" y="344" class="node-copy">Source, content</text>
+  <text x="140" y="368" class="node-copy">and local assets</text>
+
+  <rect x="430" y="255" width="285" height="140" rx="22" fill="#edf3f8" stroke="#365a73" class="node"/>
+  <circle cx="475" cy="297" r="19" fill="#8eb4cf"/>
+  <path d="M466 292h18M466 299h18M466 306h13" stroke="#244459" stroke-width="3" stroke-linecap="round"/>
+  <text x="510" y="303" class="node-title">GitHub</text>
+  <text x="460" y="344" class="node-copy">Source of truth</text>
+  <text x="460" y="368" class="node-copy">and human PR review</text>
+
+  <rect x="800" y="255" width="285" height="140" rx="22" fill="#f0ebf7" stroke="#765894" class="node"/>
+  <circle cx="845" cy="297" r="19" fill="#bba5d2"/>
+  <path d="M835 304l10-15 10 15z" fill="none" stroke="#51396a" stroke-width="3" stroke-linejoin="round"/>
+  <text x="880" y="303" class="node-title">Next.js build</text>
+  <text x="830" y="344" class="node-copy">Static export</text>
+  <text x="830" y="368" class="node-copy">from approved source</text>
+
+  <rect x="1170" y="255" width="315" height="140" rx="22" fill="#e8f4e9" stroke="#4d8052" class="node"/>
+  <circle cx="1215" cy="297" r="19" fill="#98c69d"/>
+  <path d="M1205 289h20v16h-20zM1209 285h12" fill="none" stroke="#315d36" stroke-width="3" stroke-linejoin="round"/>
+  <text x="1250" y="303" class="node-title">out/</text>
+  <text x="1200" y="344" class="node-copy">HTML, CSS, JavaScript,</text>
+  <text x="1200" y="368" class="node-copy">fonts and image variants</text>
+
+  <path d="M345 325H412" class="flow" stroke="#b45f3f" marker-end="url(#arrow-orange)"/>
+  <text x="378" y="244" text-anchor="middle" class="arrow-label" fill="#8f482f">source changes</text>
+  <path d="M715 325H782" class="flow" stroke="#365a73" marker-end="url(#arrow-navy)"/>
+  <text x="748" y="244" text-anchor="middle" class="arrow-label" fill="#365a73">approved commit</text>
+  <path d="M1085 325H1152" class="flow" stroke="#765894" marker-end="url(#arrow-purple)"/>
+  <text x="1118" y="244" text-anchor="middle" class="arrow-label" fill="#65477f">static export</text>
+
+  <rect x="610" y="445" width="380" height="112" rx="26" fill="#fff" stroke="#277a72" class="node"/>
+  <rect x="642" y="466" width="105" height="28" rx="14" fill="#cbe8e2"/>
+  <text x="694" y="485" text-anchor="middle" class="pill" fill="#1f6961">GPT SITES</text>
+  <text x="642" y="526" class="node-title">Static hosting</text>
+  <text x="855" y="526" class="node-copy">serves the approved release</text>
+  <path d="M1328 395V425Q1328 445 1308 445H1008" class="flow" stroke="#4d8052" marker-end="url(#arrow-teal)"/>
+  <text x="1165" y="432" text-anchor="middle" class="arrow-label" fill="#386b3c">release upload</text>
+
+  <rect x="70" y="610" width="1460" height="365" rx="30" fill="url(#browser)" stroke="#5c9c94" stroke-width="2"/>
+  <text x="105" y="651" class="boundary-title" fill="#1f6961">Visitor browser boundary</text>
+
+  <rect x="110" y="710" width="210" height="130" rx="22" fill="#fff8e8" stroke="#c58b32" class="node"/>
+  <circle cx="155" cy="752" r="19" fill="#f0c36e"/>
+  <circle cx="155" cy="746" r="7" fill="none" stroke="#765117" stroke-width="3"/>
+  <path d="M143 765q12-10 24 0" fill="none" stroke="#765117" stroke-width="3" stroke-linecap="round"/>
+  <text x="190" y="758" class="node-title">Visitor</text>
+  <text x="140" y="800" class="node-copy">Requests the page</text>
+  <text x="140" y="824" class="node-copy">and interacts locally</text>
+
+  <rect x="425" y="690" width="330" height="175" rx="22" fill="#eef4fa" stroke="#365a73" class="node"/>
+  <rect x="453" y="718" width="274" height="31" rx="8" fill="#cbddeb"/>
+  <circle cx="472" cy="733" r="5" fill="#b45f3f"/>
+  <circle cx="489" cy="733" r="5" fill="#d49b3d"/>
+  <circle cx="506" cy="733" r="5" fill="#4d8052"/>
+  <text x="455" y="789" class="node-title">Page + local assets</text>
+  <text x="455" y="824" class="node-copy">Semantic sections, CSS, fonts,</text>
+  <text x="455" y="848" class="node-copy">responsive WebP/JPEG imagery</text>
+
+  <rect x="855" y="685" width="285" height="145" rx="22" fill="#f1ebf7" stroke="#765894" class="node"/>
+  <text x="885" y="730" class="node-title">Navigation</text>
+  <text x="885" y="761" class="node-copy">Menu state, focus,</text>
+  <text x="885" y="785" class="node-copy">fragments and wordmark fit</text>
+
+  <rect x="1195" y="685" width="285" height="145" rx="22" fill="#fff0ea" stroke="#b45f3f" class="node"/>
+  <text x="1225" y="730" class="node-title">Demo form</text>
+  <text x="1225" y="761" class="node-copy">Name, email and message</text>
+  <text x="1225" y="785" class="node-copy">validated in page memory</text>
+
+  <rect x="1195" y="875" width="285" height="62" rx="18" fill="#f8d9d2" stroke="#a9473a" stroke-width="2"/>
+  <text x="1338" y="901" text-anchor="middle" class="small" fill="#82362d">NO NETWORK REQUEST</text>
+  <text x="1338" y="922" text-anchor="middle" class="small" fill="#82362d">NO STORAGE</text>
+
+  <path d="M800 557V645Q800 670 775 670H590V672" class="flow" stroke="#277a72" marker-end="url(#arrow-teal)"/>
+  <text x="698" y="654" text-anchor="middle" class="arrow-label" fill="#1f6961">static responses</text>
+  <path d="M320 775H407" class="flow" stroke="#c58b32" marker-end="url(#arrow-orange)"/>
+  <text x="363" y="756" text-anchor="middle" class="arrow-label" fill="#8c611f">request</text>
+  <path d="M755 745H837" class="flow" stroke="#365a73" marker-end="url(#arrow-navy)"/>
+  <text x="796" y="726" text-anchor="middle" class="arrow-label" fill="#365a73">hydrate</text>
+  <path d="M755 815H1177" class="flow" stroke="#b45f3f" marker-end="url(#arrow-orange)"/>
+  <text x="966" y="801" text-anchor="middle" class="arrow-label" fill="#8f482f">input controls</text>
+  <path d="M855 795H775Q755 795 755 775" class="flow" stroke="#765894" marker-end="url(#arrow-purple)"/>
+  <text x="810" y="840" text-anchor="middle" class="arrow-label" fill="#65477f">focus + layout</text>
+  <path d="M1338 830V857" class="flow" stroke="#a9473a" stroke-dasharray="8 8" marker-end="url(#arrow-orange)"/>
+
+  <rect x="92" y="920" width="610" height="33" rx="16" fill="#d2ebe6"/>
+  <text x="397" y="942" text-anchor="middle" class="small" fill="#1f6961">GitHub and ImageGen are not runtime dependencies</text>
+</svg>
