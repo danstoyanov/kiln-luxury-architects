@@ -84,6 +84,7 @@ scripts/         Pinned design-tool source verification
 .openai/         Static hosting configuration for GPT Sites
 ```
 
+- [Architecture](ARCHITECTURE.md) describes system boundaries, data flow and release contracts.
 - [Project brief](brief.md) describes the audience, content and demo constraints.
 - [Design notes](DESIGN.md) record the visual system and its revisions.
 - [Contribution and agent instructions](AGENTS.md) describe the repository workflow.
