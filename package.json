@@ -9,6 +9,7 @@
   "packageManager": "npm@10.9.4",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/verify-fonts.mjs",
     "build": "next build",
     "typecheck": "next typegen && tsc --noEmit",
     "lint": "eslint . --max-warnings=0",

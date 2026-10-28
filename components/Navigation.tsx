@@ -1,15 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState, useSyncExternalStore, type MouseEvent } from "react";
+import { sectionLinks } from "./sectionLinks";
 import styles from "./Navigation.module.css";
-
-const links = [
-  { href: "#projects", label: "Projects" },
-  { href: "#studio", label: "Studio" },
-  { href: "#services", label: "Services" },
-  { href: "#process", label: "Process" },
-  { href: "#contact", label: "Contact" },
-];
 
 function subscribeCompact(onChange: () => void) {
   const query = window.matchMedia("(max-width: 899px)");
@@ -208,7 +201,7 @@ export function Navigation() {
         >
           Luxury Architects
         </a>
-        {links.map((link) => (
+        {sectionLinks.map((link) => (
           <a key={link.href} href={link.href} onClick={closeAndNavigate}>
             {link.label}
           </a>

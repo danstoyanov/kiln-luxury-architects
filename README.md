@@ -43,7 +43,7 @@ Download the official [Panchang](https://www.fontshare.com/fonts/panchang) and [
 | Switzer Regular | `public/fonts/switzer-regular.woff2` |
 | Switzer Medium | `public/fonts/switzer-medium.woff2` |
 
-These three files are ignored by Git. Keep them unmodified and do not commit or redistribute them. Without them, the page uses fallback fonts. The deployed demo already has its fonts; this repository change does not update that deployment.
+These three files are ignored by Git. Keep them unmodified and do not commit or redistribute them. Without them, the page uses Arial fallbacks tuned to the same width and line height, and `npm run build` prints a warning that lists the missing files. The deployed demo already has its fonts; this repository change does not update that deployment.
 
 ### Install and run
 

@@ -115,6 +115,10 @@
 .project:nth-child(2) img {
   object-position: 50% 55%;
 }
+.projectFrame,
+.studioDetail {
+  overflow: clip;
+}
 .projectCaption {
   margin-top: 1rem;
 }
@@ -163,6 +167,25 @@
   max-width: 30ch;
   font-size: var(--step-lead);
   line-height: 1.5;
+}
+/*
+ * Zoom into the stone wall and timber eave at the left end of Ridge House.
+ * The crop uses size and offset instead of transform, because reduced motion
+ * removes all transforms and must not change the picture.
+ */
+.studioDetail {
+  position: relative;
+  max-width: 28rem;
+  aspect-ratio: 5 / 4;
+  margin-top: 3rem;
+}
+/* 2.6× the frame width; the offsets centre the point at 21% / 45% of the image. */
+.studioDetailImage {
+  position: absolute;
+  top: -47.5%;
+  left: -4.6%;
+  width: 260%;
+  max-width: none;
 }
 .studioBody {
   display: grid;
@@ -225,24 +248,46 @@
   max-width: 34ch;
   margin-top: 2rem;
 }
+/* One continuous line joins the four stages, so the order reads top to bottom. */
 .processList {
-  padding: 0;
+  --stage-rail: rgb(242 241 237 / 40%);
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 2.5rem;
+  padding: 0 0 0 2.5rem;
   margin: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-content: start;
-  gap: 3rem 2.5rem;
 }
-.stageHeading {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.25rem;
-  margin-bottom: 1rem;
+.processList::before {
+  content: "";
+  position: absolute;
+  top: 0.9rem;
+  bottom: 0.9rem;
+  left: 0;
+  width: 1px;
+  background: var(--stage-rail);
+  transform-origin: top;
+}
+.processList > li {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  gap: 0.75rem var(--grid-gap);
+  align-items: baseline;
+}
+/* A short tick ties each stage heading to the line. */
+.processList > li::before {
+  content: "";
+  position: absolute;
+  top: 0.9rem;
+  left: -2.5rem;
+  width: 1.5rem;
+  height: 1px;
+  background: var(--color-background);
 }
 .processList p {
-  max-width: 34ch;
+  max-width: 40ch;
 }
 .contact {
   display: grid;
@@ -258,6 +303,8 @@
   padding: 3rem var(--frame-gutter) 0;
   background: var(--color-text);
   color: var(--color-background);
+  /* The rising name must not add scroll height below the page. */
+  overflow: clip;
 }
 .footerTop {
   display: flex;
@@ -278,12 +325,6 @@
 .footerTop a:hover,
 .footerTop a:focus-visible {
   text-decoration: underline;
-}
-.footerNote {
-  margin-top: 2rem;
-  font-size: var(--step-small);
-  line-height: 1.45;
-  max-width: 52ch;
 }
 .footerName {
   font-family: var(--font-heading);
@@ -376,8 +417,8 @@
   .serviceHeading {
     grid-template-columns: 2.5rem minmax(0, 1fr);
   }
-  .processList {
-    gap: 2.5rem;
+  .studioDetail {
+    margin-top: 2rem;
   }
   .contact {
     gap: 3rem;
@@ -402,8 +443,16 @@
     margin-bottom: 1.5rem;
   }
   .studioBody,
-  .processList {
+  .processList > li {
     grid-template-columns: minmax(0, 1fr);
+  }
+  .processList {
+    gap: 2rem;
+    padding-left: 2rem;
+  }
+  .processList > li::before {
+    left: -2rem;
+    width: 1rem;
   }
   .studioNote {
     grid-template-columns: 2rem minmax(0, 1fr);
@@ -423,14 +472,6 @@
   .serviceColumns p {
     margin-left: 3rem;
   }
-  .stageHeading {
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
-  }
-  .processList p {
-    margin-left: 3rem;
-  }
   .footerTop {
     flex-direction: column;
     gap: 1.5rem;
@@ -445,6 +486,65 @@
   }
   .button:active {
     transform: translateY(1px);
+  }
+  /* The arrow points towards the contact section. */
+  .button span {
+    transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .button:hover span,
+  .button:focus-visible span {
+    transform: translate(3px, -3px);
+  }
+
+  /*
+   * One idea carries the scroll effects: the home rises from the ground.
+   * RevealObserver sets data-reveal-state only on elements below the fold,
+   * so text is never hidden and pages without JavaScript stay complete.
+   */
+  .projectFrame,
+  .studioDetail {
+    transition: clip-path 900ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .projectFrame img {
+    transition: transform 1100ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .projectFrame[data-reveal-state="pending"],
+  .studioDetail[data-reveal-state="pending"] {
+    clip-path: inset(32% 0 0 0);
+  }
+  .projectFrame[data-reveal-state="pending"] img {
+    transform: scale(1.06);
+  }
+  /* A slow, small zoom answers the pointer; the projects are not links. */
+  @media (hover: hover) {
+    .project:hover .projectFrame[data-reveal-state="shown"] img,
+    .project:hover .projectFrame:not([data-reveal-state]) img {
+      transform: scale(1.025);
+    }
+  }
+
+  .processList::before {
+    transition: transform 1400ms cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  .processList > li::before {
+    transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+    transform-origin: left;
+  }
+  .processList > li:nth-child(2)::before { transition-delay: 350ms; }
+  .processList > li:nth-child(3)::before { transition-delay: 700ms; }
+  .processList > li:nth-child(4)::before { transition-delay: 1050ms; }
+  .processList[data-reveal-state="pending"]::before {
+    transform: scaleY(0);
+  }
+  .processList[data-reveal-state="pending"] > li::before {
+    transform: scaleX(0);
+  }
+
+  .footerName {
+    transition: transform 900ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .footerName[data-reveal-state="pending"] {
+    transform: translateY(0.18em);
   }
 }
 @media (min-width: 900px) and (prefers-reduced-motion: no-preference) {

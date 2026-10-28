@@ -1,5 +1,7 @@
 import { ConceptImage, type ImageSlot } from "@/components/ConceptImage";
 import { Navigation } from "@/components/Navigation";
+import { QuickNav } from "@/components/QuickNav";
+import { RevealObserver } from "@/components/RevealObserver";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { OutlineIcon, type IconName } from "@/components/OutlineIcon";
 import { FittedWordmark } from "@/components/FittedWordmark";
@@ -78,28 +80,26 @@ const services: Service[] = [
   },
 ];
 
-const stages: Service[] = [
+type Stage = { name: string; description: string };
+
+const stages: Stage[] = [
   {
     name: "Listen",
-    icon: "listen",
     description:
       "Begin with your daily routines, the site, your priorities and a realistic budget.",
   },
   {
     name: "Explore",
-    icon: "explore",
     description:
       "Test the position of the home, the quality of light and the connections between rooms.",
   },
   {
     name: "Resolve",
-    icon: "resolve",
     description:
       "Develop the chosen direction through materials, details and coordinated drawings.",
   },
   {
     name: "Realise",
-    icon: "realise",
     description:
       "Plan the route to construction with the right specialists and a clear scope of work.",
   },
@@ -109,6 +109,7 @@ export default function HomePage() {
   return (
     <>
       <Navigation />
+      <QuickNav />
       <main id="main" tabIndex={-1}>
         <section className={styles.hero} aria-labelledby="hero-title">
           <ConceptImage
@@ -151,7 +152,7 @@ export default function HomePage() {
           <div className={styles.projectWall}>
             {projects.map((project) => (
               <article key={project.name} className={styles.project}>
-                <figure>
+                <figure className={styles.projectFrame} data-reveal>
                   <ConceptImage
                     slot={project.image}
                     sizes={project.sizes}
@@ -184,6 +185,15 @@ export default function HomePage() {
               Like clay in a kiln, a home takes its character from the material,
               the conditions and the care that shapes it.
             </p>
+            {/* A close crop of the Ridge House image keeps the four-image set. */}
+            <figure className={styles.studioDetail} data-reveal>
+              <ConceptImage
+                slot="ridge"
+                imageClassName={styles.studioDetailImage}
+                sizes="(max-width: 599px) 768px, 1536px"
+                alt="Concept visualisation detail: a pale limestone wall beneath a deep timber eave, with a dark-framed window."
+              />
+            </figure>
           </div>
           <div className={styles.studioBody}>
             <div className={styles.studioNote}>
@@ -254,13 +264,11 @@ export default function HomePage() {
               illustration of how a residential project could develop.
             </p>
           </div>
-          <ol className={styles.processList}>
+          {/* The vertical line shows the order: from the first meeting to the finished home. */}
+          <ol className={styles.processList} data-reveal>
             {stages.map((stage) => (
               <li key={stage.name}>
-                <div className={styles.stageHeading}>
-                  <OutlineIcon name={stage.icon} className={styles.sectionIcon} />
-                  <h3>{stage.name}</h3>
-                </div>
+                <h3>{stage.name}</h3>
                 <p>{stage.description}</p>
               </li>
             ))}
@@ -282,10 +290,6 @@ export default function HomePage() {
               What do you imagine for your home? Try the demo with a setting, a
               material or a way you want to live.
             </p>
-            <p>
-              Please use sample details. KILN is a portfolio concept, and this
-              form does not contact a studio.
-            </p>
           </div>
           <EnquiryForm />
         </section>
@@ -293,20 +297,16 @@ export default function HomePage() {
       <footer className={styles.footer}>
         <div className={styles.footerTop}>
           <p>
-            KILN is a fictional studio.
-            <br />
-            All projects are demonstration concepts.
+            KILN is a fictional studio. Its homes are imagined concepts,
+            illustrated with ImageGen.
           </p>
           <a href="#main">Back to top</a>
         </div>
-        <p className={styles.footerNote}>
-          Original concept imagery created with ImageGen. These are imagined homes,
-          not completed commissions.
-        </p>
-        <p className={styles.footerName} aria-hidden="true">
+        <p className={styles.footerName} aria-hidden="true" data-reveal>
           <FittedWordmark />
         </p>
       </footer>
+      <RevealObserver />
     </>
   );
 }

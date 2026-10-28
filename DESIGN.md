@@ -299,3 +299,44 @@ Without backdrop-filter and with prefers-reduced-transparency, the background is
 - Services: a semantic list with three open rows — icon, heading and description. On phones, the description sits below the heading. No cards, badge backgrounds or decorative borders.
 - Process: graphite field without the previous light sheet. Intro/list are 5:7; the four stages form a semantic ol in a 2×2 grid, and one column on phones. The stages have icons for conversation, direction, detail resolution and home. The layout follows the natural DOM order.
 - Nine small authored outline SVG icons (32px viewBox, stroke 1.4, currentColor); decorative and hidden from the accessibility tree. Their meaning is always also present in the text. The icons have no animations or separate library dependency.
+
+## 14. SIN-103 — navigation, fallback fonts and scroll effects
+
+Changes from [SIN-103](https://linear.app/singularity-lab/issue/SIN-103/ui-podobreniya-i-efekti-sled-impeccable-kritika), after an Impeccable critique and the user's choices. They supersede the matching rules in sections 5, 8 and 13; everything else stays.
+
+### Quick navigation
+
+- The main header keeps its section 13 behaviour: it stays in the normal flow, and below 900px its drawer still moves the hero image down. This was a user decision in SIN-47.
+- A second, compact glass bar (`components/QuickNav.tsx`) is fixed at the bottom centre, `max(1rem, safe-area)` from the edge. It appears only after the hero has left the screen, and only while the visitor scrolls up (8px threshold). It hides when scrolling down, and when Contact fills the lower 60% of the screen, so it never covers the form, its errors or anchor targets at the top.
+- From 900px: the five section links and a clay “Discuss your project” pill. Below 900px: Menu and the same CTA; Menu opens the links above the controls. Escape, an outside click, a link and blur close the list. Keyboard focus inside the bar keeps it visible; when hidden it is `inert`.
+- The CTA uses a full pill radius inside the bar to match the glass shape. This is the only exception to the square clay buttons in section 6.
+- Shows/hides with transform and opacity (320ms in, 220ms out). With reduced motion it switches instantly. Reduced transparency and forced colours use the same fallbacks as the header.
+
+### Fonts
+
+`Panchang Fallback` and `Switzer Fallback` are local Arial faces with `size-adjust`, `ascent-override` and `descent-override`, measured with canvas text metrics against the real files: Panchang 149.3% / 65% / 17.4% (matched on “KILN”), Switzer 400 100.1% / 97.9% / 25%, Switzer 500 101.3% / 96.7% / 24.7%. A fresh clone without the Fontshare files keeps the same text widths and line heights. `npm run build` runs `scripts/verify-fonts.mjs` first and prints a warning that lists missing files. It does not stop the build, because the public repository must still build without them.
+
+### Studio and Process
+
+- Studio: below the statement, a 5:4 close crop of the existing Ridge House image shows the limestone wall, timber eave and a dark window frame (`max-width: 28rem`). It reuses the same files, so there are still exactly four images. The crop uses size and offset, not transform, so it looks the same with reduced motion.
+- Studio and Services keep their icons (user decision in SIN-47). Process no longer has icons: the semantic `ol` is one column, with a thin vertical line (mineral at 40%) on the left and a short mineral tick at each stage heading. From 600px each stage is a row: heading 4fr, description 8fr. The line shows the order from Listen to Realise; there is still no visible numbering.
+
+### Motion — replaces “Everything below the hero is static” in section 8
+
+One idea links the effects: the home rises from the ground. All of them run once, use `cubic-bezier(0.16, 1, 0.3, 1)` unless stated, and exist only with `prefers-reduced-motion: no-preference`.
+
+| Element | Behaviour |
+| --- | --- |
+| Project images and the Studio detail | Clip from `inset(32% 0 0 0)` to full, 900ms; project images also go from `scale(1.06)` to 1, 1100ms. The image is never fully hidden. |
+| Process line | Draws downwards with `scaleY(0 → 1)`, 1400ms, `cubic-bezier(0.65, 0, 0.35, 1)`; the four ticks grow from the left with 350ms steps. |
+| Footer KILN | Rises from `translateY(0.18em)`, 900ms. The footer clips this movement, so the page height does not change. Opacity stays 1. |
+| Project image hover | Only on hover-capable devices: `scale(1.025)` over 1100ms. No cursor change, because the projects are not links. |
+| Hero CTA arrow | `translate(3px, -3px)` on hover and focus, 180ms. |
+
+`components/RevealObserver.tsx` uses IntersectionObserver (bottom margin −12%). It sets `data-reveal-state="pending"` only on `[data-reveal]` elements that start below the fold. The server HTML has no pending state, so text and images are complete without JavaScript, and text is never hidden. There is still no parallax, pinned section, scroll-linked animation or animation library.
+
+### Copy
+
+- Contact: the second paragraph (“Please use sample details…”) is removed. The form notice before the fields remains and is now linked to all three fields through `aria-describedby`.
+- Footer: one line, “KILN is a fictional studio. Its homes are imagined concepts, illustrated with ImageGen.” It replaces the two-line disclosure and the separate ImageGen note.
+- The Projects intro disclosure and the exact demo status remain unchanged.
