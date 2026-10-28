@@ -8,8 +8,8 @@
   --color-surface: #e3e0d8;
   --color-focus: var(--color-text);
   --color-error: #983d32;
-  --font-body: "Switzer", Arial, Helvetica, sans-serif;
-  --font-heading: "Panchang", Arial, Helvetica, sans-serif;
+  --font-body: "Switzer", "Switzer Fallback", Arial, Helvetica, sans-serif;
+  --font-heading: "Panchang", "Panchang Fallback", Arial, Helvetica, sans-serif;
   --font-editorial: "Manrope", Arial, Helvetica, sans-serif;
   --color-glass: rgb(242 241 237 / 64%);
   --color-glass-edge: rgb(255 255 255 / 55%);
@@ -52,6 +52,39 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
+}
+/*
+ * Local Arial faces tuned to the Fontshare files. The Fontshare files are not
+ * in Git, so a fresh clone may not have them. These faces keep the same text
+ * width and line height, so the layout does not jump when the real fonts load.
+ * Values were measured in the browser with canvas text metrics.
+ */
+@font-face {
+  font-family: "Panchang Fallback";
+  src: local("Arial Bold"), local("Arial-BoldMT");
+  font-weight: 700;
+  size-adjust: 149.3%;
+  ascent-override: 65%;
+  descent-override: 17.4%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Switzer Fallback";
+  src: local("Arial"), local("ArialMT");
+  font-weight: 400;
+  size-adjust: 100.1%;
+  ascent-override: 97.9%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Switzer Fallback";
+  src: local("Arial"), local("ArialMT");
+  font-weight: 500;
+  size-adjust: 101.3%;
+  ascent-override: 96.7%;
+  descent-override: 24.7%;
+  line-gap-override: 0%;
 }
 * {
   box-sizing: border-box;

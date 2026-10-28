@@ -127,7 +127,9 @@ export function EnquiryForm() {
           autoComplete="off"
           required
           aria-invalid={Boolean(errors.email)}
-          aria-describedby={errors.email ? "email-error" : undefined}
+          aria-describedby={
+            errors.email ? "email-error demo-notice" : "demo-notice"
+          }
         />
         {errors.email && (
           <p id="email-error" className={styles.error}>
@@ -149,7 +151,9 @@ export function EnquiryForm() {
           autoComplete="off"
           required
           aria-invalid={Boolean(errors.message)}
-          aria-describedby={errors.message ? "message-error" : undefined}
+          aria-describedby={
+            errors.message ? "message-error demo-notice" : "demo-notice"
+          }
         />
         {errors.message && (
           <p id="message-error" className={styles.error}>
